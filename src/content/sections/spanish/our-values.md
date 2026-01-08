@@ -1,5 +1,5 @@
 ---
-enable: true # Control the visibility of this section across all pages where it is used
+enable: false # Control the visibility of this section across all pages where it is used
 title: "Empowering Success Through Our Values"
 description: "We're passionate about making a difference, and it all starts with our core values. These values define our approach to consulting and ensure we deliver exceptional results with integrity and collaboration."
 subtitle: ""

@@ -1,54 +1,59 @@
 ---
-enable: true # Control the visibility of this section across all pages where it is used
+enable: true # Controla la visibilidad de esta sección
 
 infoBlock:
   enable: true
   content: |
-    Our team of seasoned consultants provides actionable insights and innovative strategies to help businesses thrive in today's highly competitive environment.
+    En VoiceToPhone ayudamos a las empresas a modernizar sus comunicaciones con soluciones de telefonía en la nube seguras, escalables y fáciles de administrar, diseñadas para mejorar la productividad y reducir costos.
 
 mainBlock:
-  disableSlider: false # if this is true then slider will be disabled and only first slide from below will be shown
+  disableSlider: false
   slides:
-    - title: "The bigger the company gets, the thinner the profit?"
+    - title: "¿Su sistema telefónico limita el crecimiento de su empresa?"
       description: |
-        Growth ≠ Profit. Out-of-control costs and cash flow are eating away at your profits.
+        Los sistemas tradicionales generan altos costos, poca flexibilidad y problemas de escalabilidad.
 
-        What you need is not just effort, but a profit-oriented management system.
+        Con la telefonía en la nube de VoiceToPhone, su empresa puede crecer sin límites, comunicarse desde cualquier lugar y optimizar sus costos operativos.
       backgroundImage: "/images/banner/1.jpg"
       button:
         enable: true
-        label: "Unlock Profit Growth"
+        label: "Descubrir la solución cloud"
         url: "/contact"
         rel: ""
         target: ""
         showIcon: "true"
-        variant: "outline-white" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
-    - title: "The team is bigger, but no one cares about profit?"
-      description: "The problem is not the employees, but the mechanism. The profit budgeting system makes the team 'automatically focus on profit'."
+        variant: "outline-white"
+        hoverEffect: "text-flip"
+
+    - title: "¿Equipos remotos con dificultades para comunicarse?"
+      description: |
+        El trabajo moderno exige comunicación rápida, fluida y sin interrupciones.
+
+        VoiceToPhone conecta a su equipo desde cualquier lugar y dispositivo con una plataforma unificada de llamadas, SMS y contactos.
       backgroundImage: "/images/banner/2.jpg"
       button:
         enable: true
-        label: "Build an Active Team"
+        label: "Conectar a mi equipo"
         url: "/contact"
         rel: ""
         target: ""
         showIcon: "true"
-        variant: "outline-white" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
-    - title: "Is your organizational structure a growth engine or a stumbling block?"
-      description: |
-        Chaotic structure will turn expansion into a disaster. The profit budgeting system is not just a financial system,
+        variant: "outline-white"
+        hoverEffect: "text-flip"
 
-        but also a growth-oriented organizational design blueprint that puts everyone in the right position to drive profit goals.
+    - title: "¿Listo para una telefonía que evolucione con su negocio?"
+      description: |
+        Agregue troncales SIP, números, extensiones, sucursales y funcionalidades avanzadas en minutos.
+
+        La telefonía cloud de VoiceToPhone se adapta a su presente y a su crecimiento futuro, sin contratos de permanencia.
       backgroundImage: "/images/banner/3.jpg"
       button:
         enable: true
-        label: "Restructure Growth Architecture"
+        label: "Escalar sin límites"
         url: "/contact"
         rel: ""
         target: ""
         showIcon: "true"
-        variant: "outline-white" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+        variant: "outline-white"
+        hoverEffect: "text-flip"
 ---

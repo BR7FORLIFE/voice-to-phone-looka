@@ -1,80 +1,65 @@
 ---
-title: ""
-metaDescription: "This is a example description"
+title: "Telefonía en la nube para empresas modernas"
+metaDescription: "Centralice las comunicaciones de su empresa con VoiceToPhone. Telefonía cloud segura, escalable y sin permanencia, diseñada para el trabajo moderno."
 
 # Override Default Content of `/sections/services-section.md`
-# Uncomment key values that you wan to override
 servicesSection:
-  # enable: true # Control the visibility of this section across all services single
-  title: "Additional Services to Maximize Your Business Potential"
-  # subtitle: "Our Services"
+  enable: true
+  title: "Soluciones de comunicación que impulsan su negocio"
+  # subtitle: "Nuestros servicios"
 
-  creativeShape: # Background shape
+  creativeShape:
     enable: true
     position: "bottom"
 
-  # cta: "link" # "link" | "slider-nav" ( Define weather call to action button should be slider control or a link )
-  colorScheme: "dark" # "dark" | "light"; (default "dark"); weather to show services in light or dark color scheme
-  showServicesAs: "slider" # "slider" | "static"; (default "slider"); weather to show services as slider or static list
-  # limit: 3 # number / false (default "3"); Limit the number of services to be displayed (Only work if showServicesAs is static)
+  colorScheme: "dark"
+  showServicesAs: "slider"
 
   button:
     enable: true
-    label: "View All Services"
+    label: "Ver todos los servicios"
     url: "/services"
     rel: ""
     target: ""
     showIcon: "true"
-    variant: "outline-white" # "fill", "outline", "outline-white", "text"
-    hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+    variant: "outline-white"
+    hoverEffect: "text-flip"
 
 # Override Default Content of `/sections/call-to-action.md`
-# Uncomment key values that you wan to override
 callToActionSection:
-  enable: true # Control the visibility of this section across all pages where it is used
-  # title: "Ready to Transform Your Business?"
-  # subtitle: "Business Goals"
-  # description: |
-  #   Partner with our team of experts to unlock your business’s full potential. Schedule your free consultation and discover how we can help you.
+  enable: true
+  title: "¿Listo para modernizar la telefonía de su empresa?"
+  subtitle: "Comunicación empresarial en la nube"
+  description: |
+    Centralice llamadas, SMS y contactos en una sola plataforma cloud.
+    Reduzca costos, mejore la productividad y escale su sistema telefónico sin límites.
 
   button:
     enable: true
-    label: "Get A Free Consultation"
+    label: "Solicitar demo"
     url: "/contact/"
     rel: ""
     showIcon: "true"
-    variant: "outline" # "fill", "outline", "outline-white", "text"
-    hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+    variant: "outline"
+    hoverEffect: "text-flip"
 
-  # ctaShapeOne: "/images/shapes/cta-shape-one.svg"
-  # ctaShapeTwo: "/images/shapes/cta-shape-two.svg"
+  rightContent: "stats"
 
-  rightContent: "stats" # Choose between "image" or "stats" for the content of the right side of the section
-
-
-  # imageBlock:
-  # image: "/images/call-to-action/image.png"
-  # experience:
-  #   label: "Years of Experience"
-  #   prependValue: ""
-  #   value: "12+"
-  #   appendValue: "+"
-
-  # statsBlock:
-  #   list:
-  #     - prependValue: ""
-  #       value: "98"
-  #       appendValue: "%"
-  #       title: "Satisfaction Rate"
-  #       description: "Our clients consistently report high levels of satisfaction"
-  #     - prependValue: ""
-  #       value: "200"
-  #       appendValue: "+"
-  #       title: "Successful Projects"
-  #       description: "our team of consultants brings a wealth of expertise."
-  #     - prependValue: ""
-  #       value: "25"
-  #       appendValue: "+"
-  #       title: "Years of Experience"
-  #       description: "Our strategies have generated over $50 million."
+  statsBlock:
+    list:
+      - prependValue: ""
+        value: "99.9"
+        appendValue: "%"
+        title: "Disponibilidad del servicio"
+        description: "Plataforma confiable y siempre activa"
+      - prependValue: ""
+        value: "0"
+        appendValue: ""
+        title: "Cláusulas de permanencia"
+        description: "Libertad total para su empresa"
+      - prependValue: ""
+        value: "∞"
+        appendValue: ""
+        title: "Escalabilidad"
+        description: "Crezca sin límites ni complicaciones"
 ---

@@ -1,26 +1,25 @@
 ---
 enable: true
-title: "Strategic Business Solutions for Sustainable Growth"
-subtitle: "Our Services"
+title: "Soluciones de comunicación en la nube para empresas modernas"
+subtitle: "Nuestros servicios"
 
 # Services data comes from "/content/services"
-# If you enable this button, the slider navigation buttons will be hidden, and this button will be displayed.
 button:
   enable: true
-  label: "View All Services"
+  label: "Ver todos los servicios"
   url: "/services"
   rel: ""
   target: ""
   showIcon: "true"
-  variant: "outline-white" # "fill", "outline", "outline-white", "text"
-  hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+  variant: "outline-white"
+  hoverEffect: "text-flip"
 
-creativeShape: # Background shape (Used in home & about page)
+creativeShape:
   enable: true
   position: "bottom"
 
-cta: "link" # "link" | "slider-nav" ( Define weather call to action button should be slider control or a link )
-colorScheme: "light" # "dark" | "light"; weather to show services in light or dark color scheme
-showServicesAs: "static" # "slider" | "static"; weather to show services as slider or static list
-limit: 3 # number / false Limit the number of services to be displayed (Only work if showServicesAs is static)
+cta: "link"
+colorScheme: "light"
+showServicesAs: "static"
+limit: 3
 ---

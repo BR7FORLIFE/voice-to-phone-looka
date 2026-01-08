@@ -1,6 +1,6 @@
 ---
-enable: true # Control the visibility of this section across all pages where it is used
-title: "We believe, a truly good enterprise:<br><strong style=\"color: var(--color-accent);\">Earns profits while achieving<br>customer and team success.</strong>"
+enable: false # Control the visibility of this section across all pages where it is used
+title: 'We believe, a truly good enterprise:<br><strong style="color: var(--color-accent);">Earns profits while achieving<br>customer and team success.</strong>'
 description: |
   This is precisely where our mission lies. At MMC, we are not just pursuing double growth in revenue and profit; we are committed to systematizing this concept.
 

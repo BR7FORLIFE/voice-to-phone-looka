@@ -1,5 +1,5 @@
 ---
-enable: true # Control the visibility of this section across all pages where it is used
+enable: false # Control the visibility of this section across all pages where it is used
 headType: "heading" # "heading" | "filter"
 # uniqueId: "section-1" # If headType is "filter", this will be used as the unique id for the filtering.
 filter:

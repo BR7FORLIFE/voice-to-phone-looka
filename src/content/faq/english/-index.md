@@ -1,6 +1,6 @@
 ---
-title: "Frequently Asked Questions"
-metaDescription: "This is a example description"
+title: "Preguntas Frecuentes"
+metaDescription: "Encuentre respuestas sobre telefonía en la nube, VoIP, centralita virtual y servicios de VoiceToPhone."
 draft: false
 
 sectionLayout: "vertical"
@@ -9,154 +9,154 @@ showCategories: true
 minimalFaqLayout: false
 
 list:
-  - label: "General Information"
+  - label: "Información General"
     list:
       - featured: true
         active: true
-        title: "What services do you offer?"
+        title: "¿Qué servicios ofrece VoiceToPhone?"
         content: |
-          We offer a wide range of services including web development, branding, and digital marketing to help businesses grow and succeed.
+          VoiceToPhone ofrece soluciones integrales de comunicación empresarial en la nube, diseñadas para centralizar y optimizar las comunicaciones de su empresa.
 
-          - Focused workshop to identify core values and USP.
-          - In-depth workshop to establish a clear and differentiated brand identity.
-            1. Focused workshop to identify core values and USP.
-            2. In-depth workshop to establish a clear and differentiated brand identity.
-            3. Comprehensive brand positioning strategy encompassing all aspects of your brand.
-          - Comprehensive brand positioning strategy encompassing all aspects of your brand.  
-            - Focused workshop to identify core values and USP.
-            - In-depth workshop to establish a clear and differentiated brand identity.
-            - Comprehensive brand positioning strategy encompassing all aspects of your brand.
+          Nuestros servicios incluyen:
+          - Centralita Virtual IP
+          - Telefonía en la Nube
+          - Líneas Telefónicas Virtuales
+          - Llamadas VoIP
+          - Troncales SIP
+          - Envío de Mensajes de Voz Masivos
+
+          Todas nuestras soluciones son escalables, seguras y sin permanencia.
       - featured: true
         active: false
-        title: "How can I request a quote or proposal?"
+        title: "¿VoiceToPhone tiene permanencia o contratos obligatorios?"
         content: |
-          You can request a quote by filling out the [contact form](#) on our site or emailing us directly at [info@looka.com](#) with your project details.
+          No. En VoiceToPhone no existen cláusulas de permanencia.
+
+          Nuestro servicio habla por sí solo, para que permanezca con nosotros por calidad y no por obligación.
       - featured: false
         active: false
-        title: "What is your turnaround time for projects?"
+        title: "¿Puedo usar el servicio desde cualquier lugar?"
         content: |
-          Our turnaround time depends on the project's complexity, but we typically deliver within 2-4 weeks for standard projects.
+          Sí. Al ser una solución 100% en la nube, puede administrar y utilizar sus comunicaciones desde cualquier lugar con conexión a Internet.
       - featured: false
         active: false
-        title: "Do you offer custom solutions?"
+        title: "¿Las soluciones son escalables?"
         content: |
-          Yes, we specialize in custom solutions tailored to meet the unique needs of your business or project.
+          Absolutamente. Puede agregar o quitar extensiones, líneas y servicios según el crecimiento de su empresa.
       - featured: false
         active: false
-        title: "What industries do you cater to?"
+        title: "¿Qué tipo de empresas pueden usar VoiceToPhone?"
         content: |
-          We cater to a wide range of industries including technology, healthcare, education, and retail, among others.
+          Nuestras soluciones están diseñadas para empresas de todos los tamaños: emprendedores, pymes, call centers y grandes corporaciones.
       - featured: false
         active: false
-        title: "How can I contact support?"
+        title: "¿Cómo puedo contactar con el equipo comercial?"
         content: |
-          For support, please email us at [support@looka.com](#) or use the live chat feature on our website for immediate assistance.
-  - label: "Maintenance"
+          Puede contactarnos a través del formulario de contacto en nuestro sitio web o solicitar directamente una demo personalizada.
+
+  - label: "Soporte y Servicio"
     list:
       - featured: false
         active: true
-        title: "Do you provide ongoing maintenance services?"
+        title: "¿Ofrecen soporte técnico?"
         content: |
-          Yes, we offer comprehensive maintenance packages to ensure your website or application stays updated and secure.
+          Sí. Nuestro equipo de soporte técnico está siempre disponible para ayudarle, capacitarle y asesorarle en el uso de nuestros servicios.
 
-          - **Essentials**: Focused workshop to identify core values and USP.
-          - **Growth**: In-depth workshop to establish a clear and differentiated brand identity.
-          - **Enterprise**: Comprehensive brand positioning strategy encompassing all aspects of your brand.
+          Ofrecemos:
+          - Asistencia en la configuración
+          - Capacitación inicial
+          - Soporte técnico continuo
       - featured: false
         active: false
-        title: "How do I report a technical issue?"
+        title: "¿Cómo reporto un problema técnico?"
         content: |
-          You can report technical issues via our [support form](#) or by emailing us at [tech@looka.com](#) with a detailed description of the problem.
+          Puede reportar cualquier incidencia contactando a nuestro equipo de soporte a través de los canales habilitados en su panel de cliente o desde nuestro sitio web.
       - featured: true
         active: false
-        title: "What is included in your maintenance plans?"
+        title: "¿Incluyen capacitación para el uso del sistema?"
         content: |
-          Our maintenance plans include regular updates, backups, performance checks, and security monitoring to keep your systems running smoothly.
+          Sí. Acompañamos a su equipo durante la implementación y ofrecemos capacitación para garantizar un uso eficiente de la plataforma.
       - featured: true
         active: false
-        title: "How often do you perform updates?"
+        title: "¿Cuánto tiempo tarda la implementación?"
         content: |
-          Updates are performed monthly or as needed, depending on the maintenance package you select.
+          Las implementaciones se realizan en tiempo récord. En la mayoría de los casos, el servicio puede estar operativo en muy poco tiempo.
       - featured: true
         active: false
-        title: "Do you handle website hosting?"
+        title: "¿Puedo personalizar mi solución?"
         content: |
-          Yes, we provide reliable hosting services as part of our maintenance plans or as a standalone service.
+          Sí. Nuestras soluciones son flexibles y se adaptan a las necesidades específicas de cada empresa.
       - featured: true
         active: false
-        title: "Can I upgrade my maintenance package?"
+        title: "¿El soporte tiene costo adicional?"
         content: |
-          Absolutely, you can upgrade your maintenance package at any time by contacting our support team.
-  - label: "User Information"
+          No. El soporte forma parte de nuestro servicio y está incluido en su plan.
+
+  - label: "Cuenta y Configuración"
     list:
       - featured: false
         active: true
-        title: "How do I create an account?"
+        title: "¿Cómo se configura el servicio?"
         content: |
-          Creating an account is easy. Simply click on the "Sign Up" button on our website and follow the instructions.
-
-          - **Essentials**: Focused workshop to identify core values and USP.
-          - **Growth**: In-depth workshop to establish a clear and differentiated brand identity.
-          - **Enterprise**: Comprehensive brand positioning strategy encompassing all aspects of your brand.
+          Nuestro equipo se encarga de guiarle durante todo el proceso de configuración, asegurando que su sistema quede operativo y adaptado a su negocio.
       - featured: false
         active: false
-        title: "Can I update my personal details?"
+        title: "¿Puedo administrar mis líneas y extensiones?"
         content: |
-          Yes, you can update your personal details by logging into your account and navigating to the profile settings page.
+          Sí. Desde el panel de administración puede gestionar extensiones, líneas, desvíos y configuraciones en tiempo real.
       - featured: false
         active: false
-        title: "How do I reset my password?"
+        title: "¿Puedo integrar VoiceToPhone con otros sistemas?"
         content: |
-          To reset your password, click on the "Forgot Password" link on the login page and follow the prompts.
+          Sí. Nuestras soluciones permiten integraciones mediante SIP y otros protocolos estándar.
       - featured: false
         active: false
-        title: "What should I do if I suspect unauthorized access?"
+        title: "¿Qué sucede si necesito agregar más usuarios?"
         content: |
-          If you suspect unauthorized access, immediately change your password and contact our support team for further assistance.
+          Puede hacerlo en cualquier momento. La plataforma está diseñada para crecer junto a su empresa.
       - featured: false
         active: false
-        title: "Do you store user data securely?"
+        title: "¿Mis datos están protegidos?"
         content: |
-          Yes, we prioritize data security and employ advanced encryption techniques to safeguard user information.
+          Sí. Utilizamos tecnologías seguras y estándares de la industria para garantizar la confidencialidad y protección de la información.
       - featured: true
         active: false
-        title: "Can I delete my account?"
+        title: "¿Puedo dar de baja el servicio cuando quiera?"
         content: |
-          Yes, you can request account deletion by contacting our support team. Please note that this action is irreversible.
-  - label: "Financial Information"
+          Sí. Al no existir permanencia, puede cancelar el servicio cuando lo desee.
+
+  - label: "Planes y Facturación"
     list:
       - featured: true
         active: true
-        title: "What payment methods do you accept?"
+        title: "¿Qué planes ofrece VoiceToPhone?"
         content: |
-          We accept various payment methods including credit cards, PayPal, and bank transfers for your convenience.
+          Ofrecemos planes flexibles que se adaptan a las necesidades de cada empresa.
 
-          - **Essentials**: Focused workshop to identify core values and USP.
-          - **Growth**: In-depth workshop to establish a clear and differentiated brand identity.
-          - **Enterprise**: Comprehensive brand positioning strategy encompassing all aspects of your brand.
+          También podemos crear planes personalizados según su volumen y requerimientos.
       - featured: true
         active: false
-        title: "Do you offer refunds?"
+        title: "¿Puedo personalizar un plan?"
         content: |
-          Refunds are available under specific conditions as outlined in our refund policy. Please refer to our [terms and conditions](#) for details.
+          Sí. Nuestro equipo comercial puede diseñar un plan a medida según su operación.
       - featured: false
         active: false
-        title: "Is my payment information secure?"
+        title: "¿Cómo se realiza el pago del servicio?"
         content: |
-          Yes, all payment information is processed securely using industry-standard encryption and trusted payment gateways.
+          Los pagos se realizan de forma periódica según el plan contratado. Para más detalles, consulte con nuestro equipo comercial.
       - featured: false
         active: false
-        title: "Do you provide invoices for transactions?"
+        title: "¿Recibo factura por el servicio?"
         content: |
-          Yes, we provide detailed invoices for every transaction, which are emailed to you upon successful payment.
+          Sí. Emitimos facturación correspondiente por los servicios contratados.
       - featured: false
         active: false
-        title: "Can I set up recurring payments?"
+        title: "¿Puedo cambiar de plan?"
         content: |
-          Yes, recurring payments can be set up for subscription-based services. Contact our billing team for assistance.
+          Sí. Puede actualizar o modificar su plan en cualquier momento según las necesidades de su empresa.
       - featured: false
         active: false
-        title: "What currencies do you accept?"
+        title: "¿Existen costos ocultos?"
         content: |
-          We primarily accept payments in USD but also support other major currencies. Contact us for specific details.
+          No. Nuestros planes son claros y transparentes, sin costos ocultos.
 ---

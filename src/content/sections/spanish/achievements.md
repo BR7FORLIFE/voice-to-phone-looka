@@ -1,5 +1,5 @@
 ---
-enable: true # Control the visibility of this section across all pages where it is used
+enable: false # Control the visibility of this section across all pages where it is used
 title: "Drive Growth with Data, Lock in Profit with Systems"
 subtitle: "Our Philosophy"
 description: |
@@ -17,7 +17,7 @@ button:
 
 featureList:
   # For icon names, see [Lucide Icons](https://lucide.dev/icons/?search=) (remember to capitalize the icon name)
-  - icon: "ChartSpline" 
+  - icon: "ChartSpline"
     title: "Data-Driven Decisions, Bid Farewell to Guesswork"
     description: "We teach you to understand and utilize the most core financial data of your enterprise, ensuring every investment and every expansion is evidence-based and yields expected results."
   - icon: "BadgeCheck"

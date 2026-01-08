@@ -1,161 +1,129 @@
 ---
-title: "Customer Insights and Segmentation"
-description: "Gain insights into market trends, and potential opportunities to make business decisions."
+title: "SMS Empresarial"
+description: "Mensajería de texto confiable y directa para notificaciones críticas, alertas de seguridad y campañas de marketing."
 
-image: "/images/services/5.jpg"
-icon: "AlignVerticalJustifyCenter" # lucide icon name (https://lucide.dev/icons/?search=)
+image: "https://source.unsplash.com/1200x800/?cloud,phone"
+icon: "MessageSquare"
 
-# Short intro about this service
 intro:
   enable: true
-  image: "" # set value to override default service image
-  title: "Unify Your Voice. Stand Out From The Crowd. Drive Brand Recognition."
-  description: "In today's competitive market, a strong brand is your most valuable asset. We help you craft a clear and compelling brand positioning and messaging strategy that sets you apart from the competition and resonates deeply with your target audience."
+  image: ""
+  title: "Conexión instantánea en el bolsillo de su cliente"
+  description: "Asegure la lectura de su mensaje con el canal de mayor tasa de apertura del mercado. Nuestra plataforma de SMS garantiza entregas rápidas para códigos OTP, alertas transaccionales y promociones."
   button:
     enable: true
-    label: "Get A Free Consultation"
+    label: "Solicitar demo"
     url: "/contact"
     rel: ""
     target: ""
     showIcon: "true"
-    variant: "outline" # "fill", "outline", "outline-white", "text"
-    hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+    variant: "outline"
+    hoverEffect: "text-flip"
 
-# How This Service Help Customer
 details:
   enable: true
-  title: "Unleash the Power of Brand Positioning"
-  description: "We help you unlock the power of your customer data to gain a deeper understanding of who your customers are, what motivates them, and how they interact with your brand. Through sophisticated analytics and proven methodologies"
-  # Check "services/-index.md" file for animation settings of below list
+  title: "Infraestructura robusta para mensajería crítica"
+  description: "Desde la validación de usuarios hasta la fidelización de clientes, ofrecemos una solución de SMS diseñada para la velocidad y la seguridad."
   list:
     - enable: true
-      image: "/images/services/service-details/1.jpg"
-      title: "Brand Discovery Workshop"
-      description: "Through collaborative workshops, we'll uncover your brand's core values, target audience."
+      image: "/images/services/service-details/sms-1.jpg"
+      title: "SMS Transaccionales"
+      description: "Envíe códigos de verificación (OTP), confirmaciones de compra y alertas bancarias con rutas de entrega prioritaria."
       button:
         enable: true
-        label: "Start Now"
+        label: "Empezar ahora"
         url: "/contact"
         rel: ""
         target: ""
         showIcon: "true"
-        variant: "outline" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+        variant: "outline"
+        hoverEffect: "text-flip"
 
     - enable: true
-      image: "/images/services/service-details/2.jpg"
-      title: "Competitive Analysis"
-      description: "We'll analyze your competitors' positioning to differentiate your brand."
+      image: "/images/services/service-details/sms-2.jpg"
+      title: "Marketing SMS"
+      description: "Ejecute campañas masivas segmentadas para promociones flash y recordatorios, logrando un impacto inmediato."
       button:
         enable: true
-        label: "Start Now"
+        label: "Empezar ahora"
         url: "/contact"
         rel: ""
         target: ""
         showIcon: "true"
-        variant: "outline" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+        variant: "outline"
+        hoverEffect: "text-flip"
 
     - enable: true
-      image: "/images/services/service-details/3.jpg"
-      title: "Brand Positioning Statement"
-      description: "We'll develop a concise statement that captures the essence of your brand."
+      image: "/images/services/service-details/sms-3.jpg"
+      title: "API para Desarrolladores"
+      description: "Integre capacidades de envío y recepción de SMS en sus propias aplicaciones o CRM con nuestra API RESTful."
       button:
         enable: true
-        label: "Start Now"
+        label: "Empezar ahora"
         url: "/contact"
         rel: ""
         target: ""
         showIcon: "true"
-        variant: "outline" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+        variant: "outline"
+        hoverEffect: "text-flip"
 
-    - enable: true
-      image: "/images/services/service-details/4.jpg"
-      title: "Messaging Framework"
-      description: "We'll create a messaging framework from your website to social media."
-      button:
-        enable: true
-        label: "Start Now"
-        url: "/contact"
-        rel: ""
-        target: ""
-        showIcon: "true"
-        variant: "outline" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
-
-    - enable: true
-      image: "/images/services/service-details/5.jpg"
-      title: "Brand Voice & Tone Guide"
-      description: "We'll define your brand voice and tone, ensuring your communication resonates."
-      button:
-        enable: true
-        label: "Start Now"
-        url: "/contact"
-        rel: ""
-        target: ""
-        showIcon: "true"
-        variant: "outline" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
-
-# Impact of this service
 impact:
   enable: true
-  title: "The Impact of a Clear Brand Message"
-  description: "Effective messaging resonates with your customers, fostering trust and emotional connections. It's about speaking their language and understanding their needs."
+  title: "El poder de la mensajería de texto"
+  description: "El SMS sigue siendo el canal más efectivo para comunicaciones urgentes y universales, sin depender de conexión a datos."
   list:
-    - Increased Brand Awareness
-    - Improved Marketing ROI
-    - Stronger Employee Engagement
-    - Identify customer trends
-    - Improve customer lifetime value
-    - Competitive Advantage
+    - Tasa de apertura superior al 98%
+    - Lectura en los primeros 3 minutos
+    - Compatible con cualquier teléfono móvil
+    - Automatización vía API
+    - Rutas seguras y encriptadas
+    - Cobertura nacional e internacional
 
   statsBlock:
     enable: true
     lg:
       - background:
-          type: "light-color" # "light-color" | "image-overlay"
+          type: "light-color"
           image: ""
         title:
           prependValue: ""
-          value: "71"
+          value: "98"
           appendValue: "%"
-        description: "Studies show that consistent brand messaging can lead to a 71% increase in brand recognition"
+        description: "Tasa de apertura promedio en SMS"
     md:
       - background:
-          type: "image-overlay" # "light-color" | ""
+          type: "image-overlay"
           image: "/images/services/service-impact-stats-bg.jpg"
         title:
           prependValue: ""
-          value: "7 Times More"
+          value: "Global"
           appendValue: ""
-        description: "Customer Retention Rate"
+        description: "Cobertura de operadores móviles"
     sm:
       - background:
-          type: "light-color" # "light-color" | "image-overlay"
+          type: "light-color"
           image: ""
         title:
           prependValue: ""
-          value: "306"
-          appendValue: "%"
-        description: "Customer Retention Rate"
+          value: "API"
+          appendValue: ""
+        description: "Integración nativa y flexible"
       - background:
-          type: "light-color" # "light-color" | "image-overlay"
+          type: "light-color"
           image: ""
         title:
           prependValue: ""
-          value: "500"
+          value: "100"
           appendValue: "%"
-        description: "Target Your Messaging"
+        description: "Escalabilidad inmediata"
 
   button:
     enable: true
-    label: "Get A Free Consultation"
+    label: "Hablar con un experto"
     url: "/contact"
     rel: ""
     target: ""
     showIcon: "true"
-    variant: "outline" # "fill", "outline", "outline-white", "text"
-    hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+    variant: "outline"
+    hoverEffect: "text-flip"
 ---

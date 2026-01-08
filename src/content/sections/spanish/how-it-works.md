@@ -1,55 +1,55 @@
 ---
-enable: true # Control the visibility of this section across all pages where it is used
-title: "MMC Four-Step Profit Growth Method"
-subtitle: "Our Methodology"
+enable: true # Controla la visibilidad de esta sección
+title: "Cómo funciona VoiceToPhone"
+subtitle: "Nuestro proceso"
 bgPatternImage: "/images/line-pattern.svg"
 
 list:
-  - title: "Step 1: [Blueprint Design] Set Profit Targets"
+  - title: "Paso 1: Análisis de necesidades"
     description: |
-      <span class="text-accent text-lg font-semibold mb-2 block">Core Action: Calculate First, Then Execute</span>
-      
-      We don't start from "feeling," but from the "end point." Using our unique financial model, we work with you to accurately forecast the new year's three core targets: income, costs, and cash flow. Together, we create a clear, visible, and actionable annual profit blueprint.
+      <span class="text-accent text-lg font-semibold mb-2 block">Acción clave: Entender su negocio</span>
+
+      Analizamos sus necesidades de comunicación, estructura actual y objetivos de crecimiento. Evaluamos su infraestructura existente, volumen de llamadas y forma de trabajo para diseñar la solución de telefonía cloud ideal para su empresa.
     images:
       src:
-        - "/images/how-it-works/蓝图.webp"
+        - "优化.webp"
       background: "/images/how-it-works/bg.svg"
-      alt: "Blueprint Design Illustration"
+      alt: "Análisis de necesidades de comunicación"
     number: "01"
 
-  - title: "Step 2: [Accountability] Break Down Goals & KPIs"
+  - title: "Paso 2: Diseño de la solución cloud"
     description: |
-      <span class="text-accent text-lg font-semibold mb-2 block">Core Action: Everyone Shares the Load</span>
-      
-      Even the best blueprint needs a strong construction team. We teach you how to scientifically break down the company-level profit blueprint into specific KPIs for each department and position. This ensures that from top to bottom, everyone has clear targets, every task has ownership, and all efforts are focused on the same profit goal.
+      <span class="text-accent text-lg font-semibold mb-2 block">Acción clave: Personalización total</span>
+
+      Configuramos su sistema de telefonía en la nube a medida: troncales SIP, números, extensiones, sucursales y funciones avanzadas como grabación de llamadas, desvíos, integraciones con CRM y analíticas.
     images:
       src:
-        - "/images/how-it-works/责任.webp"
+        - "激励.webp"
       background: "/images/how-it-works/bg.svg"
-      alt: "Accountability Illustration"
+      alt: "Diseño de solución cloud personalizada"
     number: "02"
 
-  - title: "Step 3: [System Incentives] Link Compensation & Rewards"
+  - title: "Paso 3: Implementación rápida"
     description: |
-      <span class="text-accent text-lg font-semibold mb-2 block">Core Action: Pay for Results</span>
-      
-      Building a self-motivated "profit-generating" team comes down to the "art of profit sharing." We help you design a transparent, fair, and highly motivating compensation and reward system that strongly links individual and team income to KPI completion. Employees no longer work for the boss—they fight for their own wallets.
+      <span class="text-accent text-lg font-semibold mb-2 block">Acción clave: Puesta en marcha sin fricción</span>
+
+      Implementamos su sistema en tiempo récord, sin interrumpir la operación de su negocio. Nuestro equipo se encarga de la configuración, pruebas y capacitación para que su equipo empiece a comunicarse de inmediato.
     images:
       src:
-        - "/images/how-it-works/激励.webp"
+        - "蓝图.webp"
       background: "/images/how-it-works/bg.svg"
-      alt: "System Incentives Illustration"
+      alt: "Implementación de telefonía en la nube"
     number: "03"
 
-  - title: "Step 4: [Continuous Optimization] Review & Adjust"
+  - title: "Paso 4: Soporte y escalabilidad continua"
     description: |
-      <span class="text-accent text-lg font-semibold mb-2 block">Core Action: Continuous Iteration</span>
-      
-      Markets change, and plans must change with them. We provide a simple and efficient review mechanism (daily reports, weekly meetings, monthly analysis) to help you and your team continuously track results, identify issues, and quickly adjust actions. This ensures your profit blueprint remains dynamic, forming a virtuous cycle of continuous growth and self-optimization.
+      <span class="text-accent text-lg font-semibold mb-2 block">Acción clave: Crecer sin límites</span>
+
+      Acompañamos a su empresa con soporte experto y mejoras continuas. Agregue nuevos usuarios, números o funcionalidades cuando lo necesite, sin contratos de permanencia y con tecnología siempre actualizada.
     images:
       src:
-        - "/images/how-it-works/优化.webp"
+        - "责任.webp"
       background: "/images/how-it-works/bg.svg"
-      alt: "Continuous Optimization Illustration"
+      alt: "Soporte y escalabilidad continua"
     number: "04"
 ---

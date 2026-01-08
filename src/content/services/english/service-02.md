@@ -1,161 +1,123 @@
 ---
-title: "Competitive Analysis"
-description: "Understand your competitors' strengths and weaknesses."
+title: "Centralita Virtual IP"
+description: "Gestione llamadas, extensiones y sucursales desde una única plataforma en la nube."
 
 image: "/images/services/2.jpg"
-icon: "ChartNoAxesColumn" # lucide icon name (https://lucide.dev/icons/?search=)
+icon: "PhoneCall"
 
-# Short intro about this service
 intro:
   enable: true
-  image: "" # set value to override default service image
-  title: "Unify Your Voice. Stand Out From The Crowd. Drive Brand Recognition."
-  description: "In today's competitive market, a strong brand is your most valuable asset. We help you craft a clear and compelling brand positioning and messaging strategy that sets you apart from the competition and resonates deeply with your target audience."
+  image: ""
+  title: "La central telefónica moderna para su empresa"
+  description: "Nuestra Centralita Virtual IP le ofrece control total de sus comunicaciones sin necesidad de hardware físico."
   button:
     enable: true
-    label: "Get A Free Consultation"
+    label: "Solicitar demo"
     url: "/contact"
     rel: ""
     target: ""
     showIcon: "true"
-    # variant: "outline" # "fill", "outline", "outline-white", "text"
-    hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+    variant: "outline"
+    hoverEffect: "text-flip"
 
-# How This Service Help Customer
 details:
   enable: true
-  title: "Unleash the Power of Brand Positioning"
-  description: "We help you unlock the power of your customer data to gain a deeper understanding of who your customers are, what motivates them, and how they interact with your brand. Through sophisticated analytics and proven methodologies"
-  # Check "services/-index.md" file for animation settings of below list
+  title: "Control y flexibilidad en una sola plataforma"
+  description: "Configure, administre y escale su central telefónica de forma simple e intuitiva."
   list:
     - enable: true
       image: "/images/services/service-details/1.jpg"
-      title: "Brand Discovery Workshop"
-      description: "Through collaborative workshops, we'll uncover your brand's core values, target audience."
+      title: "Extensiones y sucursales"
+      description: "Cree extensiones y gestione múltiples sedes fácilmente."
       button:
         enable: true
-        label: "Start Now"
+        label: "Empezar ahora"
         url: "/contact"
-        rel: ""
-        target: ""
         showIcon: "true"
-        # variant: "outline" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+        variant: "outline"
+        hoverEffect: "text-flip"
 
     - enable: true
       image: "/images/services/service-details/2.jpg"
-      title: "Competitive Analysis"
-      description: "We'll analyze your competitors' positioning to differentiate your brand."
+      title: "Desvíos inteligentes"
+      description: "Configure reglas por horarios, usuarios o disponibilidad."
       button:
         enable: true
-        label: "Start Now"
+        label: "Empezar ahora"
         url: "/contact"
-        rel: ""
-        target: ""
         showIcon: "true"
-        # variant: "outline" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+        variant: "outline"
+        hoverEffect: "text-flip"
 
     - enable: true
       image: "/images/services/service-details/3.jpg"
-      title: "Brand Positioning Statement"
-      description: "We'll develop a concise statement that captures the essence of your brand."
+      title: "Grabación y monitoreo"
+      description: "Mejore la calidad y control de las llamadas."
       button:
         enable: true
-        label: "Start Now"
+        label: "Empezar ahora"
         url: "/contact"
-        rel: ""
-        target: ""
         showIcon: "true"
-        # variant: "outline" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+        variant: "outline"
+        hoverEffect: "text-flip"
 
-    - enable: true
-      image: "/images/services/service-details/4.jpg"
-      title: "Messaging Framework"
-      description: "We'll create a messaging framework from your website to social media."
-      button:
-        enable: true
-        label: "Start Now"
-        url: "/contact"
-        rel: ""
-        target: ""
-        showIcon: "true"
-        # variant: "outline" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
-
-    - enable: true
-      image: "/images/services/service-details/5.jpg"
-      title: "Brand Voice & Tone Guide"
-      description: "We'll define your brand voice and tone, ensuring your communication resonates."
-      button:
-        enable: true
-        label: "Start Now"
-        url: "/contact"
-        rel: ""
-        target: ""
-        showIcon: "true"
-        # variant: "outline" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
-
-# Impact of this service
 impact:
   enable: true
-  title: "The Impact of a Clear Brand Message"
-  description: "Effective messaging resonates with your customers, fostering trust and emotional connections. It's about speaking their language and understanding their needs."
+  title: "Resultados que se notan"
+  description: "Una centralita virtual optimiza la atención al cliente y la comunicación interna."
   list:
-    - Increased Brand Awareness
-    - Improved Marketing ROI
-    - Stronger Employee Engagement
-    - Identify customer trends
-    - Improve customer lifetime value
-    - Competitive Advantage
+    - Mejor experiencia del cliente
+    - Mayor control operativo
+    - Imagen profesional
+    - Administración sencilla
+    - Integración con CRM
+    - Crecimiento sin fricción
 
   statsBlock:
     enable: true
     lg:
       - background:
-          type: "light-color" # "light-color" | "image-overlay"
+          type: "light-color"
           image: ""
         title:
           prependValue: ""
-          value: "71"
+          value: "99.9"
           appendValue: "%"
-        description: "Studies show that consistent brand messaging can lead to a 71% increase in brand recognition"
+        description: "Disponibilidad del servicio"
     md:
       - background:
-          type: "image-overlay" # "light-color" | ""
+          type: "image-overlay"
           image: "/images/services/service-impact-stats-bg.jpg"
         title:
           prependValue: ""
-          value: "7 Times More"
-          appendValue: ""
-        description: "Customer Retention Rate"
+          value: "1"
+          appendValue: " Plataforma"
+        description: "Para todas sus comunicaciones"
     sm:
       - background:
-          type: "light-color" # "light-color" | "image-overlay"
+          type: "light-color"
           image: ""
         title:
           prependValue: ""
-          value: "306"
-          appendValue: "%"
-        description: "Customer Retention Rate"
+          value: "0"
+          appendValue: ""
+        description: "Hardware requerido"
       - background:
-          type: "light-color" # "light-color" | "image-overlay"
+          type: "light-color"
           image: ""
         title:
           prependValue: ""
-          value: "500"
-          appendValue: "%"
-        description: "Target Your Messaging"
+          value: "∞"
+          appendValue: ""
+        description: "Extensiones disponibles"
 
   button:
     enable: true
-    label: "Get A Free Consultation"
+    label: "Conocer la centralita"
     url: "/contact"
     rel: ""
     target: ""
     showIcon: "true"
-    # variant: "outline" # "fill", "outline", "outline-white", "text"
-    hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+    variant: "outline"
+    hoverEffect: "text-flip"
 ---

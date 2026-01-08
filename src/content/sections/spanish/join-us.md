@@ -1,5 +1,5 @@
 ---
-enable: true # Control the visibility of this section across all pages where it is used
+enable: false # Control the visibility of this section across all pages where it is used
 subtitle: "Join With Us"
 title: "Fast-Growing Company Seeks Top Talent"
 description: "Be a part of something bigger than yourself. We're revolutionizing the business consulting industry, and we're looking for passionate and talented individuals to join our team."

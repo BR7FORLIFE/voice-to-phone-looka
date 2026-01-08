@@ -1,161 +1,129 @@
 ---
-title: "Brand Positioning and Messaging"
-description: "Craft detailed strategic plans that align with your long-term business goals."
+title: "Telefonía en la Nube Empresarial"
+description: "Centralice y administre las comunicaciones de su empresa con una solución cloud flexible, segura y escalable."
 
 image: "/images/services/1.jpg"
-icon: "Award" # lucide icon name (https://lucide.dev/icons/?search=)
+icon: "Cloud"
 
-# Short intro about this service
 intro:
   enable: true
-  image: "" # set value to override default service image
-  title: "Unify Your Voice. Stand Out From The Crowd. Drive Brand Recognition."
-  description: "In today's competitive market, a strong brand is your most valuable asset. We help you craft a clear and compelling brand positioning and messaging strategy that sets you apart from the competition and resonates deeply with your target audience."
+  image: ""
+  title: "Comunicación empresarial sin límites ni infraestructura"
+  description: "La telefonía en la nube de VoiceToPhone le permite comunicarse desde cualquier lugar, reducir costos operativos y escalar su sistema telefónico al ritmo de su negocio."
   button:
     enable: true
-    label: "Get A Free Consultation"
+    label: "Solicitar demo"
     url: "/contact"
     rel: ""
     target: ""
     showIcon: "true"
-    variant: "outline" # "fill", "outline", "outline-white", "text"
-    hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+    variant: "outline"
+    hoverEffect: "text-flip"
 
-# How This Service Help Customer
 details:
   enable: true
-  title: "Unleash the Power of Brand Positioning"
-  description: "We help you unlock the power of your customer data to gain a deeper understanding of who your customers are, what motivates them, and how they interact with your brand. Through sophisticated analytics and proven methodologies"
-  # Check "services/-index.md" file for animation settings of below list
+  title: "Una plataforma cloud diseñada para el trabajo moderno"
+  description: "Ofrecemos una solución de telefonía empresarial que elimina las limitaciones de los sistemas tradicionales y se adapta a equipos modernos y distribuidos."
   list:
     - enable: true
       image: "/images/services/service-details/1.jpg"
-      title: "Brand Discovery Workshop"
-      description: "Through collaborative workshops, we'll uncover your brand's core values, target audience."
+      title: "Acceso desde cualquier lugar"
+      description: "Utilice su sistema telefónico desde móvil, tablet o computador con conexión a internet."
       button:
         enable: true
-        label: "Start Now"
+        label: "Empezar ahora"
         url: "/contact"
         rel: ""
         target: ""
         showIcon: "true"
-        variant: "outline" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+        variant: "outline"
+        hoverEffect: "text-flip"
 
     - enable: true
       image: "/images/services/service-details/2.jpg"
-      title: "Competitive Analysis"
-      description: "We'll analyze your competitors' positioning to differentiate your brand."
+      title: "Ahorro en costos"
+      description: "Reduzca gastos en infraestructura, mantenimiento y reparaciones."
       button:
         enable: true
-        label: "Start Now"
+        label: "Empezar ahora"
         url: "/contact"
         rel: ""
         target: ""
         showIcon: "true"
-        variant: "outline" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+        variant: "outline"
+        hoverEffect: "text-flip"
 
     - enable: true
       image: "/images/services/service-details/3.jpg"
-      title: "Brand Positioning Statement"
-      description: "We'll develop a concise statement that captures the essence of your brand."
+      title: "Escalabilidad inmediata"
+      description: "Agregue usuarios, números o funcionalidades en minutos."
       button:
         enable: true
-        label: "Start Now"
+        label: "Empezar ahora"
         url: "/contact"
         rel: ""
         target: ""
         showIcon: "true"
-        variant: "outline" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+        variant: "outline"
+        hoverEffect: "text-flip"
 
-    - enable: true
-      image: "/images/services/service-details/4.jpg"
-      title: "Messaging Framework"
-      description: "We'll create a messaging framework from your website to social media."
-      button:
-        enable: true
-        label: "Start Now"
-        url: "/contact"
-        rel: ""
-        target: ""
-        showIcon: "true"
-        variant: "outline" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
-
-    - enable: true
-      image: "/images/services/service-details/5.jpg"
-      title: "Brand Voice & Tone Guide"
-      description: "We'll define your brand voice and tone, ensuring your communication resonates."
-      button:
-        enable: true
-        label: "Start Now"
-        url: "/contact"
-        rel: ""
-        target: ""
-        showIcon: "true"
-        variant: "outline" # "fill", "outline", "outline-white", "text"
-        hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
-
-# Impact of this service
 impact:
   enable: true
-  title: "The Impact of a Clear Brand Message"
-  description: "Effective messaging resonates with your customers, fostering trust and emotional connections. It's about speaking their language and understanding their needs."
+  title: "El impacto de la telefonía cloud en su empresa"
+  description: "Las comunicaciones en la nube mejoran la productividad, reducen costos y facilitan la colaboración."
   list:
-    - Increased Brand Awareness
-    - Improved Marketing ROI
-    - Stronger Employee Engagement
-    - Identify customer trends
-    - Improve customer lifetime value
-    - Competitive Advantage
+    - Menores costos operativos
+    - Mayor flexibilidad
+    - Soporte al trabajo remoto
+    - Escalabilidad sin límites
+    - Comunicación centralizada
+    - Mayor eficiencia operativa
 
   statsBlock:
     enable: true
     lg:
       - background:
-          type: "light-color" # "light-color" | "image-overlay"
+          type: "light-color"
           image: ""
         title:
           prependValue: ""
-          value: "71"
+          value: "40"
           appendValue: "%"
-        description: "Studies show that consistent brand messaging can lead to a 71% increase in brand recognition"
+        description: "Reducción promedio de costos frente a sistemas tradicionales"
     md:
       - background:
-          type: "image-overlay" # "light-color" | ""
+          type: "image-overlay"
           image: "/images/services/service-impact-stats-bg.jpg"
         title:
           prependValue: ""
-          value: "7 Times More"
+          value: "24/7"
           appendValue: ""
-        description: "Customer Retention Rate"
+        description: "Acceso al sistema desde cualquier lugar"
     sm:
       - background:
-          type: "light-color" # "light-color" | "image-overlay"
+          type: "light-color"
           image: ""
         title:
           prependValue: ""
-          value: "306"
-          appendValue: "%"
-        description: "Customer Retention Rate"
+          value: "0"
+          appendValue: ""
+        description: "Cláusulas de permanencia"
       - background:
-          type: "light-color" # "light-color" | "image-overlay"
+          type: "light-color"
           image: ""
         title:
           prependValue: ""
-          value: "500"
+          value: "100"
           appendValue: "%"
-        description: "Target Your Messaging"
+        description: "Escalable según su negocio"
 
   button:
     enable: true
-    label: "Get A Free Consultation"
+    label: "Hablar con un experto"
     url: "/contact"
     rel: ""
     target: ""
     showIcon: "true"
-    variant: "outline" # "fill", "outline", "outline-white", "text"
-    hoverEffect: "text-flip" # "text-flip", "creative-fill", "magnetic", "magnetic-text-flip"
+    variant: "outline"
+    hoverEffect: "text-flip"
 ---
