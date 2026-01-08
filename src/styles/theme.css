@@ -3,20 +3,29 @@
   /* Configure font families in `src/config/fonts.json` */
   --leading-body: 1.8;
   --leading-inherit: inherit;
+  /* Colors (ajustados para buen contraste y armonía) */
+  --color-primary: #0075C9;
+  --color-primary-dark: #005A9C;
+  --color-primary-light: #4DA6F1;
 
-  /* Colors */
-  --color-primary: #004750;
-  --color-secondary: #CED9D8;
-  --color-accent: #BDAF94;
-  --color-body: #fff;
-  --color-border-light: #E5E5E5;
-  --color-theme-dark: #00323E;
-  --color-theme-light: #F9FBFF;
-  
-  --color-text-default: #2E2E2E;
-  --color-dark: #000E30; /* Heading colors */
-  --color-light: #565555;
+  --color-accent: #FF9A00; /* acento cálido para CTA */
 
+  --color-secondary: #F6F9FB; /* superficie secundaria: suave y legible */
+  --color-body: #FFFFFF; /* fondo principal */
+
+  --color-border-light: #0075C9;
+
+  --color-theme-dark: var(--color-primary-dark);
+  --color-theme-light: var(--color-primary-light);
+
+  /* Text colors / contraste */
+  --color-text-default: #0F1724; /* texto principal sobre fondos claros */
+  --color-on-primary: #FFFFFF; /* texto sobre primary */
+  --color-on-accent: #1A1A1A; /* texto sobre accent */
+  --color-on-secondary: #0F1724;
+
+  --color-dark: #0B1220; /* headings / tonos oscuros */
+  --color-light: #FFFFFF; /* texto claro sobre fondos oscuros */
   /* Screen */
   --breakpoint-*: initial;
   --breakpoint-xs: 440px;
