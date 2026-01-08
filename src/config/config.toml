@@ -75,7 +75,7 @@
     text   = "© VoiceToPhone. Todos los derechos reservados."
 
   [settings.subscription]
-    enable     = true
+    enable     = false
     title      = "Reciba novedades sobre comunicaciones cloud"
     formAction = "https://gmail.us11.list-manage.com/subscribe/post?u=d870b06d86c16269e4b1f9b39&amp;id=12cf0c6ac2&amp;f_id=007e61e1f0"
 

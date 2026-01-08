@@ -2,394 +2,217 @@
   "main": [
     {
       "enable": true,
-      "name": "Mega Menú",
-      "hasMegaMenu": true,
-      "testimonial": {
-        "enable": true,
-        "image": "/images/customer-image.png",
-        "content": "La planificación estratégica de MMC FP nos ayudó a optimizar las operaciones y a abrir nuevas oportunidades de mercado. Hemos observado un notable aumento del 25% en los ingresos en el último año."
-      },
-      "services": {
-        "enable": true,
-        "name": "SERVICIOS"
-      },
-      "menus": [
-        {
-          "name": "PÁGINAS REGULARES",
-          "enable": true,
-          "children": [
-            {
-              "name": "",
-              "enable": true,
-              "children": [
-                {
-                  "enable": true,
-                  "name": "Servicios",
-                  "url": "/services/"
-                },
-                {
-                  "enable": true,
-                  "name": "Servicio",
-                  "url": "/services/service-01/"
-                },
-                {
-                  "enable": true,
-                  "name": "Caso de Estudio",
-                  "url": "/case-studies/case-studies-01/"
-                },
-                {
-                  "enable": true,
-                  "name": "Carreras",
-                  "url": "/career/"
-                },
-                {
-                  "enable": true,
-                  "name": "Oferta de Empleo",
-                  "url": "/career/job-01/"
-                }
-              ]
-            },
-            {
-              "name": "",
-              "enable": true,
-              "children": [
-                {
-                  "enable": true,
-                  "name": "Sobre Nosotros",
-                  "url": "/about/"
-                },
-                {
-                  "enable": true,
-                  "name": "Preguntas Frecuentes",
-                  "url": "/faq"
-                },
-                {
-                  "enable": true,
-                  "name": "Equipo",
-                  "url": "/team"
-                },
-                {
-                  "enable": true,
-                  "name": "Precios",
-                  "url": "/pricing/",
-                  "badge": {
-                    "enable": true,
-                    "label": "NUEVO",
-                    "color": "primary",
-                    "_color_comment": "valor de color esperado - primary, info, success, danger",
-                    "type": "text"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "BLOG",
-          "enable": true,
-          "children": [
-            {
-              "name": "LISTA",
-              "enable": true,
-              "children": [
-                {
-                  "enable": true,
-                  "name": "Clásico",
-                  "url": "/blog/"
-                },
-                {
-                  "enable": true,
-                  "name": "Moderno",
-                  "url": ""
-                }
-              ]
-            },
-            {
-              "name": "INDIVIDUAL",
-              "enable": true,
-              "children": [
-                {
-                  "enable": true,
-                  "name": "Minimal",
-                  "url": ""
-                },
-                {
-                  "enable": true,
-                  "name": "Moderno",
-                  "url": "/blog/post-1/"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "DISEÑOS DE PORTAFOLIO",
-          "enable": true,
-          "children": [
-            {
-              "name": "LISTA",
-              "enable": true,
-              "children": [
-                {
-                  "enable": true,
-                  "name": "Clásico y Mosaico",
-                  "url": ""
-                },
-                {
-                  "enable": true,
-                  "name": "Superposición y Mosaico",
-                  "url": ""
-                }
-              ]
-            },
-            {
-              "name": "INDIVIDUAL",
-              "enable": true,
-              "children": [
-                {
-                  "enable": true,
-                  "name": "Moderno",
-                  "url": ""
-                },
-                {
-                  "enable": true,
-                  "name": "Moderno con Barra Lateral",
-                  "url": "/case-studies/case-studies-01/"
-                }
-              ]
-            }
-          ]
-        }
-      ]
+      "name": "Telefonía IP",
+      "url": "/que-es-la-telefonia-ip-como-funciona/es"
     },
     {
-      "name": "Páginas",
       "enable": true,
+      "name": "Servicios",
       "hasChildren": true,
       "children": [
         {
           "enable": true,
-          "name": "Inicio",
-          "url": "/"
+          "name": "PBX Virtual",
+          "url": "/pbx-virtual/es"
         },
         {
           "enable": true,
-          "name": "Sobre Nosotros",
-          "url": "/about/"
+          "name": "Troncal SIP",
+          "url": "/troncal-sip/es"
         },
         {
           "enable": true,
-          "name": "Servicios",
-          "hasChildren": true,
-          "children": [
-            {
-              "enable": true,
-              "name": "Servicios",
-              "url": "/services/"
-            },
-            {
-              "enable": true,
-              "name": "Servicio",
-              "url": "/services/service-01/"
-            }
-          ]
+          "name": "Número Virtual",
+          "url": "/numero-virtual/es"
         },
         {
           "enable": true,
-          "name": "Casos de Estudio",
-          "hasChildren": true,
-          "children": [
-            {
-              "enable": true,
-              "name": "Clásico",
-              "url": "/case-studies/classic/"
-            },
-            {
-              "enable": true,
-              "name": "Clásico Mosaico",
-              "url": "/case-studies/classic-masonry/"
-            },
-            {
-              "enable": true,
-              "name": "Superposición",
-              "url": "/case-studies/overlay/"
-            },
-            {
-              "enable": true,
-              "name": "Superposición Mosaico",
-              "url": "/case-studies/"
-            },
-            {
-              "enable": true,
-              "name": "Detalle",
-              "url": "/case-studies/case-studies-01/"
-            }
-          ]
+          "name": "VoIP Empresas",
+          "url": "/que-es-voip-como-funciona/es"
         },
         {
           "enable": true,
-          "name": "Carreras",
-          "hasChildren": true,
-          "children": [
-            {
-              "enable": true,
-              "name": "Carreras",
-              "url": "/career/"
-            },
-            {
-              "enable": true,
-              "name": "Oferta de Empleo",
-              "url": "/career/job-01/"
-            }
-          ]
+          "name": "Mensajes de Texto Masivos",
+          "url": "/mensajes-de-texto-masivos/es"
         },
         {
           "enable": true,
-          "name": "Blog",
-          "hasChildren": true,
-          "children": [
-            {
-              "enable": true,
-              "name": "Clásico",
-              "url": "/blog/"
-            },
-            {
-              "enable": true,
-              "name": "Moderno",
-              "url": "/blog/modern/"
-            },
-            {
-              "enable": true,
-              "name": "Publicación Minimal",
-              "url": "/blog/single-minimal/"
-            },
-            {
-              "enable": true,
-              "name": "Publicación Moderna",
-              "url": "/blog/post-1/"
-            }
-          ]
-        },
-        {
-          "enable": true,
-          "name": "Equipo",
-          "url": "/team"
-        },
-        {
-          "enable": true,
-          "name": "Precios",
-          "url": "/pricing/",
-          "badge": {
-            "enable": true,
-            "label": "NUEVO",
-            "color": "primary",
-            "colorComment": "valor de color esperado - primary, info, success, danger",
-            "type": "text"
-          }
-        },
-        {
-          "enable": true,
-          "name": "Preguntas Frecuentes",
-          "url": "/faq"
+          "name": "WhatsApp Multiagente",
+          "url": "/whatsapp-multiagente/es"
         }
       ]
     },
     {
       "enable": true,
-      "name": "Componentes",
-      "url": "/elements/",
-      "badge": {
-        "enable": true,
-        "label": "NUEVO",
-        "color": "primary",
-        "_color_comment": "valor de color esperado - primary, info, success, danger",
-        "type": "text"
-      }
+      "name": "Software",
+      "hasChildren": true,
+      "children": [
+        {
+          "enable": true,
+          "name": "Software Call Center",
+          "url": "/software-call-center/es"
+        },
+        {
+          "enable": true,
+          "name": "Software Telemarketing",
+          "hasChildren": true,
+          "children": [
+            {
+              "enable": true,
+              "name": "Llamadas Automáticas",
+              "url": "/llamadas-automaticas-marcaciones-automaticas/es"
+            },
+            {
+              "enable": true,
+              "name": "Marcador Predictivo",
+              "url": "/marcador-predictivo/es"
+            },
+            {
+              "enable": true,
+              "name": "Marcador Progresivo",
+              "url": "/marcador-progresivo/es"
+            },
+            {
+              "enable": true,
+              "name": "Marcador Preview",
+              "url": "/marcador-preview/es"
+            }
+          ]
+        }
+      ]
     },
     {
       "enable": true,
-      "name": "Contacto",
-      "url": "/contact/",
-      "badge": {
-        "enable": true,
-        "label": "NUEVO",
-        "color": "danger",
-        "_color_comment": "valor de color esperado - primary, info, success, danger",
-        "type": "dot"
-      }
+      "name": "Precios",
+      "hasChildren": true,
+      "children": [
+        {
+          "enable": true,
+          "name": "Números Virtuales",
+          "url": "/rates/5/es"
+        },
+        {
+          "enable": true,
+          "name": "PBX Virtual o IP PBX",
+          "url": "/rates/6/es"
+        },
+        {
+          "enable": true,
+          "name": "Llamadas VoIP",
+          "url": "/rates/4/es"
+        },
+        {
+          "enable": true,
+          "name": "Software Call Center",
+          "url": "/rates/7/es"
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "name": "Ayuda",
+      "url": "/help/es"
+    },
+    {
+      "enable": false,
+      "name": "FAQ",
+      "url": "/faq/es"
+    },
+    {
+      "enable": false,
+      "name": "Contáctenos",
+      "url": "/contact/es"
     }
   ],
   "footerMenu": [
     {
       "enable": true,
       "name": "Términos y Condiciones",
-      "url": "/terms-conditions/"
+      "url": "/terms/es"
     },
     {
       "enable": true,
       "name": "Política de Privacidad",
-      "url": "/privacy-policy/"
+      "url": "/privacy/es"
     }
   ],
+
   "footerMenuQuickLink": [
     {
       "enable": true,
-      "name": "Sobre Nosotros",
+      "name": "Sobre VoiceToPhone",
       "url": "/about/"
     },
     {
       "enable": true,
       "name": "Contáctanos",
-      "url": "/contact/"
+      "url": "/contact/es"
     },
     {
       "enable": true,
       "name": "Precios",
-      "url": "/pricing/"
+      "url": "/rates/5/es"
     },
     {
       "enable": true,
-      "name": "Testimonios",
-      "url": "/"
-    },
-    {
-      "enable": true,
-      "name": "Miembros del Equipo",
-      "url": "/team/"
-    },
-    {
-      "enable": true,
-      "name": "Nuestros Servicios",
-      "url": "/services/"
-    }
-  ],
-  "footerMenuResources": [
-    {
-      "enable": true,
-      "name": "Blog",
-      "url": "/blog/"
+      "name": "Ayuda",
+      "url": "/help/es"
     },
     {
       "enable": true,
       "name": "Preguntas Frecuentes",
-      "url": "/faq/"
+      "url": "/faq/es"
     },
     {
       "enable": true,
-      "name": "Casos de Estudio",
-      "url": "/case-studies/"
+      "name": "Servicios",
+      "url": "/services/"
     }
   ],
+
+  "footerMenuResources": [
+    {
+      "enable": true,
+      "name": "Telefonía IP",
+      "url": "/que-es-la-telefonia-ip-como-funciona/es"
+    },
+    {
+      "enable": true,
+      "name": "PBX Virtual",
+      "url": "/pbx-virtual/es"
+    },
+    {
+      "enable": true,
+      "name": "Troncal SIP",
+      "url": "/troncal-sip/es"
+    },
+    {
+      "enable": true,
+      "name": "Números Virtuales",
+      "url": "/numero-virtual/es"
+    },
+    {
+      "enable": true,
+      "name": "VoIP Empresas",
+      "url": "/que-es-voip-como-funciona/es"
+    },
+    {
+      "enable": true,
+      "name": "Mensajes de Texto Masivos",
+      "url": "/mensajes-de-texto-masivos/es"
+    }
+  ],
+
   "footerMenuLegal": [
     {
       "enable": true,
       "name": "Términos y Condiciones",
-      "url": "/terms-conditions/"
+      "url": "/terms/es"
     },
     {
       "enable": true,
       "name": "Política de Privacidad",
-      "url": "/privacy-policy/"
+      "url": "/privacy/es"
     }
   ]
 }
