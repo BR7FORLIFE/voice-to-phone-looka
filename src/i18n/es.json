@@ -1,0 +1,42 @@
+{
+  "common": {
+    "readMore": "Leer más",
+    "readMoreAbout": "Leer más sobre",
+    "learnMoreAbout": "Más información sobre",
+    "viewMoreDetails": "Ver más detalles",
+    "emailPlaceholder": "Dirección de correo electrónico",
+    "monthlyPlan": "Mensual",
+    "paginationNext": "Siguiente",
+    "paginationPrevious": "Anterior"
+  },
+  "widgets": {
+    "postSearchTitle": "Buscar publicación",
+    "postSearchFormPlaceholder": "Buscar...",
+    "categoriesTitle": "Categoría",
+    "recentPostsTitle": "Entradas recientes"
+  },
+  "career": {
+    "location": "Ubicación",
+    "deadline": "Fecha límite de solicitud",
+    "jobType": "Tipo de trabajo"
+  },
+  "blog": {
+    "writtenBy": "Escrito por",
+    "publishedOn": "Publicado el",
+    "category": "Categoría"
+  },
+  "navigation": {
+    "buttonLabel": "Comenzar"
+  },
+  "subscription": {
+    "label": "Suscríbete a nuestro boletín para recibir las últimas actualizaciones"
+  },
+  "footer": {
+    "quickLinks": "Enlaces rápidos",
+    "legal": "Legal",
+    "resources": "Recursos",
+    "description": "MMC FP es una empresa de diseño y tecnología con sede en San Francisco fundada en 2016. Su misión es democratizar el diseño haciendo herramientas profesionales de marca accesibles para todos.",
+    "copyright": "Copyright {{ year }} / Todos los derechos reservados por MMC FP / Creado con cariño usando [Astro Themes](https://getastrothemes.com/)",
+    "_comment": "Agradecemos amablemente que conserve el copyright del tema. ¡Gracias por apoyar a Getastrothemes!"
+  }
+}

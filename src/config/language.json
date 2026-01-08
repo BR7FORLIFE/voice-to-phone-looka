@@ -10,5 +10,11 @@
     "languageCode": "zh",
     "contentDir": "chinese",
     "weight": 2
+  },
+  {
+    "languageName": "Es",
+    "languageCode": "es",
+    "contentDir": "spanish",
+    "weight": 3
   }
 ]
