@@ -1,19 +1,19 @@
 ---
-title: "Troncales SIP y VoIP"
-description: "Conectividad de voz profesional con alta calidad, estabilidad y costos optimizados."
+title: "Troncales SIP"
+description: "Conecte su central telefónica IP actual a la red pública con la máxima calidad de voz y menores costos."
 
-image: "/images/services/3.jpg"
-icon: "Network"
+image: "/images/services/sip-trunk-main.jpg"
+icon: "Server"
 
 intro:
   enable: true
   image: ""
-  title: "Infraestructura de voz preparada para crecer"
-  description: "Las Troncales SIP de VoiceToPhone permiten realizar y recibir llamadas VoIP con máxima eficiencia y confiabilidad."
+  title: "Potencia y ahorro para su infraestructura actual"
+  description: "Si ya cuenta con una IP-PBX (Asterisk, 3CX, Issabel, etc.), nuestras Troncales SIP le permiten realizar y recibir llamadas simultáneas con tarifas competitivas y calidad HD."
   button:
     enable: true
-    label: "Solicitar información"
-    url: "/contact"
+    label: "Cotizar Troncal"
+    url: "/contacto"
     rel: ""
     target: ""
     showIcon: "true"
@@ -22,56 +22,56 @@ intro:
 
 details:
   enable: true
-  title: "Conectividad flexible y escalable"
-  description: "Soluciones SIP diseñadas para empresas que necesitan rendimiento y crecimiento continuo."
+  title: "Escalabilidad inmediata sin hardware extra"
+  description: "Olvídese de las líneas análogas limitadas. Aumente canales de voz según la demanda de su negocio."
   list:
     - enable: true
-      image: "/images/services/service-details/1.jpg"
-      title: "Canales dinámicos"
-      description: "Aumente o reduzca canales según la demanda."
+      image: "/images/services/service-details/sip-1.jpg"
+      title: "Alta Disponibilidad"
+      description: "Rutas de voz premium para garantizar estabilidad y claridad en cada conversación."
       button:
         enable: true
-        label: "Empezar ahora"
-        url: "/contact"
+        label: "Ver detalles"
+        url: "/contacto"
         showIcon: "true"
         variant: "outline"
         hoverEffect: "text-flip"
 
     - enable: true
-      image: "/images/services/service-details/2.jpg"
-      title: "Alta calidad de llamadas"
-      description: "Audio claro y estable para comunicaciones profesionales."
+      image: "/images/services/service-details/sip-2.jpg"
+      title: "Compatible con su PBX"
+      description: "Funciona con cualquier centralita IP, Softswitch o Gateway del mercado."
       button:
         enable: true
-        label: "Empezar ahora"
-        url: "/contact"
+        label: "Ver compatibilidad"
+        url: "/contacto"
         showIcon: "true"
         variant: "outline"
         hoverEffect: "text-flip"
 
     - enable: true
-      image: "/images/services/service-details/3.jpg"
-      title: "Integración total"
-      description: "Compatible con centralitas IP y sistemas existentes."
+      image: "/images/services/service-details/sip-3.jpg"
+      title: "Ahorro de Costos"
+      description: "Reduzca significativamente su factura telefónica en llamadas nacionales e internacionales."
       button:
         enable: true
-        label: "Empezar ahora"
-        url: "/contact"
+        label: "Calcular ahorro"
+        url: "/contacto"
         showIcon: "true"
         variant: "outline"
         hoverEffect: "text-flip"
 
 impact:
   enable: true
-  title: "Beneficios para su operación"
-  description: "VoIP y SIP diseñados para reducir costos y aumentar capacidad."
+  title: "Infraestructura robusta"
+  description: "Ideal para Call Centers y empresas con alto volumen de llamadas que buscan eficiencia."
   list:
-    - Menor costo por llamada
-    - Mayor capacidad de tráfico
-    - Infraestructura moderna
-    - Alta confiabilidad
-    - Escalabilidad inmediata
-    - Sin permanencia
+    - Canales ilimitados (según plan)
+    - Codecs de audio HD
+    - Soporte técnico especializado
+    - Sin contratos de permanencia
+    - Activación en minutos
+    - Facturación transparente
 
   statsBlock:
     enable: true
@@ -81,40 +81,40 @@ impact:
           image: ""
         title:
           prependValue: ""
-          value: "60"
-          appendValue: "%"
-        description: "Ahorro promedio frente a líneas tradicionales"
+          value: "HD"
+          appendValue: ""
+        description: "Calidad de voz G.711/G.729"
     md:
       - background:
           type: "image-overlay"
-          image: "/images/services/service-impact-stats-bg.jpg"
+          image: "/images/services/sip-bg-stats.jpg"
         title:
           prependValue: ""
-          value: "HD"
-          appendValue: ""
-        description: "Calidad de audio"
+          value: "100"
+          appendValue: "%"
+        description: "Compatibilidad IP"
     sm:
       - background:
           type: "light-color"
           image: ""
         title:
-          prependValue: ""
-          value: "∞"
-          appendValue: ""
-        description: "Canales escalables"
+          prependValue: "-"
+          value: "40"
+          appendValue: "%"
+        description: "En costos operativos"
       - background:
           type: "light-color"
           image: ""
         title:
           prependValue: ""
-          value: "0"
+          value: "24/7"
           appendValue: ""
-        description: "Contratos forzosos"
+        description: "Monitoreo de red"
 
   button:
     enable: true
-    label: "Hablar con un especialista"
-    url: "/contact"
+    label: "Configurar mi Troncal"
+    url: "/contacto"
     rel: ""
     target: ""
     showIcon: "true"

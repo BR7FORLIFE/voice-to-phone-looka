@@ -13,32 +13,32 @@
         {
           "enable": true,
           "name": "PBX Virtual",
-          "url": "/pbx-virtual/es"
+          "url": "/services/pbx-virtual/es"
         },
         {
           "enable": true,
           "name": "Troncal SIP",
-          "url": "/troncal-sip/es"
+          "url": "/services/troncal-sip/es"
         },
         {
           "enable": true,
           "name": "Número Virtual",
-          "url": "/numero-virtual/es"
+          "url": "/services/numero-virtual/es"
         },
         {
           "enable": true,
           "name": "VoIP Empresas",
-          "url": "/que-es-voip-como-funciona/es"
+          "url": "/services/voip-empresas/es"
         },
         {
           "enable": true,
           "name": "Mensajes de Texto Masivos",
-          "url": "/mensajes-de-texto-masivos/es"
+          "url": "/services/mensajes-de-texto-masivos/es"
         },
         {
           "enable": true,
           "name": "WhatsApp Multiagente",
-          "url": "/whatsapp-multiagente/es"
+          "url": "/services/whatsapp-multiagente/es"
         }
       ]
     },
@@ -50,7 +50,7 @@
         {
           "enable": true,
           "name": "Software Call Center",
-          "url": "/software-call-center/es"
+          "url": "/software/software-call-center/es"
         },
         {
           "enable": true,

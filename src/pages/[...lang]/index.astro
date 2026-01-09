@@ -13,6 +13,7 @@ import ServicesSection from "@/components/sections/ServicesSection.astro";
 import PortfolioSection from "@/components/sections/PortfolioSection.astro";
 import VideoModal from "@/components/widgets/VideoModal.astro";
 import VideoInline from "@/shortcodes/VideoInline.astro";
+import FeatureCard from "@/components/cards/FeatureCard.astro";
 
 export function getStaticPaths() {
   return generatePaths();
@@ -26,12 +27,17 @@ const homepage = await getEntryCTM("homepage", "-index", Astro.currentLocale);
 
   <Customers />
   <AboutUs />
-
+  <ServicesSection content={homepage?.data.servicesSection} />
   <section class="mx-auto w-full max-w-7xl px-4">
+    <FeatureCard
+      icon="/images/icons/feature-icon-1.svg"
+      title="Innovative Communication Solutions"
+      description="Discover cutting-edge tools designed to enhance your business communication and streamline operations."
+      alternateLayout={true}
+    />
     <VideoInline src="aOkzRTPIkQk" provider="youtube" />
   </section>
 
-  <ServicesSection content={homepage?.data.servicesSection} />
   <HowItWorks />
 
   <!-- <PortfolioSection /> -->

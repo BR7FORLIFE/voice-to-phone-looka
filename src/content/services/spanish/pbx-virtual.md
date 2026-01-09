@@ -1,5 +1,5 @@
 ---
-title: "Centralita Virtual IP"
+title: "PBX Virtual — Centralita Virtual IP"
 description: "Gestione llamadas, extensiones y sucursales desde una única plataforma en la nube."
 
 image: "/images/services/2.jpg"

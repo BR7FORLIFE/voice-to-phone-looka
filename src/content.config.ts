@@ -85,6 +85,23 @@ const servicesSection = z.object({
   button: sharedButtonTag.optional(),
 });
 
+const softwareSection = z.object({
+  enable: z.boolean().optional(),
+  title: z.string().optional(),
+  subtitle: z.string().optional(),
+  creativeShape: z
+    .object({
+      enable: z.boolean(),
+      position: z.enum(["top", "bottom"]),
+    })
+    .optional(),
+  cta: z.enum(["link", "slider-nav"]).optional(),
+  colorScheme: z.enum(["dark", "light"]).optional(),
+  showSoftwareAs: z.enum(["slider", "static"]).optional(),
+  limit: z.union([z.number(), z.literal(false)]).optional(),
+  button: sharedButtonTag.optional(),
+});
+
 // Service collection schema
 const serviceCollection = defineCollection({
   schema: page.merge(
@@ -269,6 +286,7 @@ export const collections = {
   services: serviceCollection,
   "case-studies": portfolioCollection,
 
+  software: serviceCollection,
   pages: pagesCollection,
   sections: defineCollection({}),
   about: defineCollection({}),

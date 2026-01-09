@@ -1,13 +1,13 @@
 ---
-title: "Telefonía en la Nube Empresarial"
+title: "VoIP para Empresas — Telefonía en la Nube"
 description: "Centralice y administre las comunicaciones de su empresa con una solución cloud flexible, segura y escalable."
 
-image: "https://source.unsplash.com/1200x800/?cloud,phone"
+image: "/images/services/voip-companies.jpg"
 icon: "Cloud"
 
 intro:
   enable: true
-  image: ""
+  image: "/images/services/voip-companies.jpg"
   title: "Comunicación empresarial sin límites ni infraestructura"
   description: "La telefonía en la nube de VoiceToPhone le permite comunicarse desde cualquier lugar, reducir costos operativos y escalar su sistema telefónico al ritmo de su negocio."
   button:
@@ -26,7 +26,7 @@ details:
   description: "Ofrecemos una solución de telefonía empresarial que elimina las limitaciones de los sistemas tradicionales y se adapta a equipos modernos y distribuidos."
   list:
     - enable: true
-      image: "https://source.unsplash.com/800x600/?support,call-center"
+      image: "/images/services/voip-companies.jpg"
       title: "Acceso desde cualquier lugar"
       description: "Utilice su sistema telefónico desde móvil, tablet o computador con conexión a internet."
       button:
@@ -40,7 +40,7 @@ details:
         hoverEffect: "text-flip"
 
     - enable: true
-      image: "https://source.unsplash.com/800x600/?automation,system"
+      image: "/images/services/voip-companies.jpg"
       title: "Ahorro en costos"
       description: "Reduzca gastos en infraestructura, mantenimiento y reparaciones."
       button:
@@ -54,7 +54,7 @@ details:
         hoverEffect: "text-flip"
 
     - enable: true
-      image: "https://source.unsplash.com/800x600/?analytics,data"
+      image: "/images/services/voip-companies.jpg"
       title: "Escalabilidad inmediata"
       description: "Agregue usuarios, números o funcionalidades en minutos."
       button:
@@ -84,7 +84,7 @@ impact:
     lg:
       - background:
           type: "light-color"
-          image: ""
+          image: "/images/services/voip-companies.jpg"
         title:
           prependValue: ""
           value: "40"
@@ -102,7 +102,7 @@ impact:
     sm:
       - background:
           type: "light-color"
-          image: ""
+          image: "/images/services/voip-companies.jpg"
         title:
           prependValue: ""
           value: "0"
@@ -110,7 +110,7 @@ impact:
         description: "Cláusulas de permanencia"
       - background:
           type: "light-color"
-          image: ""
+          image: "/images/services/voip-companies.jpg"
         title:
           prependValue: ""
           value: "100"

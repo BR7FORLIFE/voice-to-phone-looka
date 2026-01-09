@@ -61,9 +61,10 @@
   servicesFolder  = "services"
   portfolioFolder = "case-studies"
 
-  pagination   = 4
-  stickyHeader = true
-  brandName    = "VoiceToPhone"
+  pagination     = 4
+  stickyHeader   = true
+  brandName      = "VoiceToPhone"
+  softwareFolder = "software"
 
   contactFormAction   = "https://formsubmit.co/contacto@voicetophone.com"
   contactFormProvider = "formsubmit.co"

@@ -1,19 +1,19 @@
 ---
-title: "SMS Empresarial"
-description: "Mensajería de texto confiable y directa para notificaciones críticas, alertas de seguridad y campañas de marketing."
+title: "SMS y Mensajes de Voz Masivos"
+description: "Comuníquese con miles de clientes al instante. Campañas de marketing y notificaciones efectivas."
 
-image: "https://source.unsplash.com/1200x800/?cloud,phone"
-icon: "MessageSquare"
+image: "/images/services/sms-main.jpg"
+icon: "Send"
 
 intro:
   enable: true
   image: ""
-  title: "Conexión instantánea en el bolsillo de su cliente"
-  description: "Asegure la lectura de su mensaje con el canal de mayor tasa de apertura del mercado. Nuestra plataforma de SMS garantiza entregas rápidas para códigos OTP, alertas transaccionales y promociones."
+  title: "El canal más directo a su cliente"
+  description: "Asegure que su mensaje sea leído. Los SMS tienen una tasa de apertura del 98%, muy superior al correo electrónico."
   button:
     enable: true
-    label: "Solicitar demo"
-    url: "/contact"
+    label: "Lanzar campaña"
+    url: "/contacto"
     rel: ""
     target: ""
     showIcon: "true"
@@ -22,62 +22,56 @@ intro:
 
 details:
   enable: true
-  title: "Infraestructura robusta para mensajería crítica"
-  description: "Desde la validación de usuarios hasta la fidelización de clientes, ofrecemos una solución de SMS diseñada para la velocidad y la seguridad."
+  title: "Automatización de notificaciones"
+  description: "Ideal para cobranzas, recordatorios de citas, códigos OTP y promociones flash."
   list:
     - enable: true
       image: "/images/services/service-details/sms-1.jpg"
-      title: "SMS Transaccionales"
-      description: "Envíe códigos de verificación (OTP), confirmaciones de compra y alertas bancarias con rutas de entrega prioritaria."
+      title: "Mensajes de Voz (Blaster)"
+      description: "Envíe un audio pregrabado a miles de teléfonos fijos o móviles simultáneamente."
       button:
         enable: true
-        label: "Empezar ahora"
-        url: "/contact"
-        rel: ""
-        target: ""
+        label: "Escuchar demo"
+        url: "/contacto"
         showIcon: "true"
         variant: "outline"
         hoverEffect: "text-flip"
 
     - enable: true
       image: "/images/services/service-details/sms-2.jpg"
-      title: "Marketing SMS"
-      description: "Ejecute campañas masivas segmentadas para promociones flash y recordatorios, logrando un impacto inmediato."
+      title: "SMS Marketing"
+      description: "Mensajes de texto cortos, directos y con enlaces rastreables para medir conversión."
       button:
         enable: true
-        label: "Empezar ahora"
-        url: "/contact"
-        rel: ""
-        target: ""
+        label: "Ver planes"
+        url: "/contacto"
         showIcon: "true"
         variant: "outline"
         hoverEffect: "text-flip"
 
     - enable: true
       image: "/images/services/service-details/sms-3.jpg"
-      title: "API para Desarrolladores"
-      description: "Integre capacidades de envío y recepción de SMS en sus propias aplicaciones o CRM con nuestra API RESTful."
+      title: "Personalización"
+      description: "Use variables para personalizar cada mensaje con el nombre o saldo del cliente."
       button:
         enable: true
-        label: "Empezar ahora"
-        url: "/contact"
-        rel: ""
-        target: ""
+        label: "Ver opciones"
+        url: "/contacto"
         showIcon: "true"
         variant: "outline"
         hoverEffect: "text-flip"
 
 impact:
   enable: true
-  title: "El poder de la mensajería de texto"
-  description: "El SMS sigue siendo el canal más efectivo para comunicaciones urgentes y universales, sin depender de conexión a datos."
+  title: "Alcance masivo al instante"
+  description: "Herramientas potentes para cobranza, fidelización y logística."
   list:
-    - Tasa de apertura superior al 98%
-    - Lectura en los primeros 3 minutos
-    - Compatible con cualquier teléfono móvil
-    - Automatización vía API
-    - Rutas seguras y encriptadas
-    - Cobertura nacional e internacional
+    - Alta tasa de entrega
+    - Reportes en tiempo real
+    - Integración API
+    - Programación de envíos
+    - Filtrado de base de datos
+    - Costo por mensaje reducido
 
   statsBlock:
     enable: true
@@ -89,16 +83,16 @@ impact:
           prependValue: ""
           value: "98"
           appendValue: "%"
-        description: "Tasa de apertura promedio en SMS"
+        description: "Tasa de apertura"
     md:
       - background:
           type: "image-overlay"
-          image: "/images/services/service-impact-stats-bg.jpg"
+          image: "/images/services/sms-bg-stats.jpg"
         title:
           prependValue: ""
-          value: "Global"
+          value: "10k+"
           appendValue: ""
-        description: "Cobertura de operadores móviles"
+        description: "Envíos por minuto"
     sm:
       - background:
           type: "light-color"
@@ -107,20 +101,20 @@ impact:
           prependValue: ""
           value: "API"
           appendValue: ""
-        description: "Integración nativa y flexible"
+        description: "Para desarrolladores"
       - background:
           type: "light-color"
           image: ""
         title:
           prependValue: ""
-          value: "100"
-          appendValue: "%"
-        description: "Escalabilidad inmediata"
+          value: "24/7"
+          appendValue: ""
+        description: "Plataforma activa"
 
   button:
     enable: true
-    label: "Hablar con un experto"
-    url: "/contact"
+    label: "Crear cuenta de envíos"
+    url: "/contacto"
     rel: ""
     target: ""
     showIcon: "true"
