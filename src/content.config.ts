@@ -308,32 +308,32 @@ export const ratePageCollection = defineCollection({
 });
 
 export const rateVirtualNumberByCountryCollection = defineCollection({
-  schema: page.merge(
-    z.object({
-      whatIs: z.string().optional(),
-      feature: z.string().optional(),
-      getItNow: sharedButtonTag.optional(),
-      adquireVirtualNumber: z.string().optional(),
-      howAdquire: z.object({
-        description: z.string().optional(),
-        steps: z.array(z.string()).optional(),
-      }),
+  // schema: page.merge(
+  //   z.object({
+  //     whatIs: z.string().optional(),
+  //     feature: z.string().optional(),
+  //     getItNow: sharedButtonTag.optional(),
+  //     adquireVirtualNumber: z.string().optional(),
+  //     howAdquire: z.object({
+  //       description: z.string().optional(),
+  //       steps: z.array(z.string()).optional(),
+  //     }),
 
-      adventages: z
-        .object({
-          descripction: z.string().optional(),
-          items: z
-            .array(
-              z.object({
-                title: z.string(),
-                icon: z.string().optional(),
-              }),
-            )
-            .optional(),
-        })
-        .optional(),
-    }),
-  ),
+  //     adventages: z
+  //       .object({
+  //         descripction: z.string().optional(),
+  //         items: z
+  //           .array(
+  //             z.object({
+  //               title: z.string(),
+  //               icon: z.string().optional(),
+  //             }),
+  //           )
+  //           .optional(),
+  //       })
+  //       .optional(),
+  //   }),
+  // ),
 });
 
 // Export collections
