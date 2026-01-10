@@ -1,4 +1,5 @@
 import { defineCollection, z } from "astro:content";
+import { he } from "date-fns/locale";
 import { title } from "node:process";
 
 export const sharedButton = z
@@ -358,4 +359,5 @@ export const collections = {
   author: defineCollection({}),
   career: defineCollection({}),
   widgets: defineCollection({}),
+  help: defineCollection({}),
 };

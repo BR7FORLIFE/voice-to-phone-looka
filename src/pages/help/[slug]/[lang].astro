@@ -1,0 +1,48 @@
+---
+import Base from "@/layouts/Base.astro";
+import { getCollectionCTM, getEntryCTM } from "@/lib/contentParser.astro";
+import { render } from "astro:content";
+import { supportedLanguages } from "@/lib/utils/i18nUtils.ts";
+import config from ".astro/config.generated.json" assert { type: "json" };
+
+export async function getStaticPaths() {
+  const paths = [];
+  const { defaultLanguage, showDefaultLangInUrl } =
+    config.settings.multilingual;
+
+  for (const lang of supportedLanguages) {
+    const pages = await getCollectionCTM("help", lang.languageCode);
+    const contentDir = lang.contentDir;
+
+    for (const p of pages) {
+      const idNoExt = p.id.replace(/\.mdx?$/, "");
+      const parts = idNoExt.split("/");
+
+      // top-level section pages only
+      if (parts.length === contentDir.split("/").length + 1) {
+        const sectionSlug = parts[parts.length - 1];
+        paths.push({
+          params: {
+            slug: sectionSlug,
+            lang: lang.languageCode,
+          },
+          props: { page: p },
+        });
+      }
+    }
+  }
+
+  return paths;
+}
+
+const { page } = Astro.props;
+const lang = Astro.params.lang;
+const { Content } = await render(page);
+---
+
+<Base {...page.data}>
+  <article class="prose prose-lg mx-auto my-12 max-w-4xl">
+    {page.data.title && <h1 set:html={page.data.title} />}
+    <Content />
+  </article>
+</Base>

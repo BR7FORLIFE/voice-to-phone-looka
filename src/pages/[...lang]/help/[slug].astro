@@ -1,0 +1,50 @@
+---
+import Base from "@/layouts/Base.astro";
+import { getCollectionCTM } from "@/lib/contentParser.astro";
+import config from ".astro/config.generated.json" assert { type: "json" };
+import { supportedLanguages } from "@/lib/utils/i18nUtils.ts";
+
+export async function getStaticPaths() {
+  const paths = [];
+
+  for (const lang of supportedLanguages) {
+    const pages = await getCollectionCTM("help", lang.languageCode);
+    for (const p of pages) {
+      // Only include top-level section pages (files directly under the section directory or directly under contentDir)
+      const idNoExt = p.id.replace(/\.mdx?$/, "");
+      const parts = idNoExt.split("/");
+      // id example: help/spanish/inquietudes-basicas or help/spanish/inquietudes-basicas/como-empezar
+      // We want pages where the last part is the section slug and there are exactly 3 parts (help, contentDir, section)
+      if (parts.length === 3) {
+        const sectionSlug = parts[2];
+        paths.push({
+          params: {
+            lang:
+              lang.languageCode ===
+                config.settings.multilingual.defaultLanguage &&
+              !config.settings.multilingual.showDefaultLangInUrl
+                ? undefined
+                : lang.languageCode,
+            slug: sectionSlug,
+          },
+          props: {
+            page: p,
+          },
+        });
+      }
+    }
+  }
+
+  return paths;
+}
+
+const { page } = Astro.props;
+const { Content } = await page.render();
+---
+
+<Base {...page.data}>
+  <article class="prose prose-lg mx-auto my-12 max-w-4xl">
+    {page.data.title && <h1 set:html={page.data.title} />}
+    <Content />
+  </article>
+</Base>

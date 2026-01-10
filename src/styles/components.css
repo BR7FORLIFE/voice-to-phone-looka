@@ -330,6 +330,84 @@ footer {
   }
 }
 
+/* Help details & cards styling */
+.help-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.help-card {
+  display: block;
+  padding: 1rem;
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--card-border, #e6e6e6);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.help-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.help-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.help-card p {
+  margin: 0;
+  color: var(--muted, #6b7280);
+  font-size: 0.95rem;
+}
+
+/* Details styling */
+details {
+  margin-bottom: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  background: #ffffff;
+}
+
+details[open] {
+  background: #fbfbff;
+}
+
+details summary {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 0.2rem 0.2rem;
+}
+
+details summary::marker {
+  display: none;
+}
+
+details > p,
+details > div,
+details > ul {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.help-card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* Clip Path For Image Overlay Clipping */
 .has-clip-path {
   clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);

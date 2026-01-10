@@ -1,0 +1,55 @@
+---
+import Base from "@/layouts/Base.astro";
+import { getCollectionCTM } from "@/lib/contentParser.astro";
+import config from ".astro/config.generated.json" assert { type: "json" };
+import { supportedLanguages } from "@/lib/utils/i18nUtils.ts";
+
+export async function getStaticPaths() {
+  const paths = [];
+
+  for (const lang of supportedLanguages) {
+    const pages = await getCollectionCTM("help", lang.languageCode);
+    for (const p of pages) {
+      const idNoExt = p.id.replace(/\.mdx?$/, "");
+      const parts = idNoExt.split("/");
+      // Only include pages that look like help/<lang>/<section>/<question>
+      if (parts.length === 4) {
+        const sectionSlug = parts[2];
+        const questionSlug = parts[3];
+        paths.push({
+          params: {
+            lang:
+              lang.languageCode ===
+                config.settings.multilingual.defaultLanguage &&
+              !config.settings.multilingual.showDefaultLangInUrl
+                ? undefined
+                : lang.languageCode,
+            slug: sectionSlug,
+            question: questionSlug,
+          },
+          props: {
+            page: p,
+          },
+        });
+      }
+    }
+  }
+
+  return paths;
+}
+
+const { page } = Astro.props;
+const { Content } = await page.render();
+---
+
+<Base {...page.data}>
+  <article class="prose prose-lg mx-auto my-12 max-w-4xl">
+    {page.data.title && <h1 set:html={page.data.title} />}
+    <Content />
+    <p class="mt-6">
+      <a href={page.data.parent ? `/help/${page.data.parent}/es` : "/help/es"}>
+        Volver a la sección
+      </a>
+    </p>
+  </article>
+</Base>
