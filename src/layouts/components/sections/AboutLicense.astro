@@ -52,21 +52,21 @@ let {
           {/* Left Column - Image */}
           {image && (
             <div class="lg:max-w-2xl" data-aos="fade-right-sm">
-              <div class="bg-white rounded-lg shadow-lg p-6">
+              <div class="rounded-lg bg-white p-6 shadow-lg">
                 <OptimizedImage
                   src={image.src}
                   alt={image.alt}
-                  class="w-full h-auto rounded-lg"
+                  class="h-auto w-full rounded-lg"
                 />
                 {image.caption && (
-                  <p class="text-sm text-gray-500 mt-4 text-center">
+                  <p class="mt-4 text-center text-sm text-gray-500">
                     {image.caption}
                   </p>
                 )}
               </div>
             </div>
           )}
-          
+
           {/* Right Column - Content */}
           <div class="lg:max-w-2xl">
             <div data-aos="fade-up-sm">
@@ -125,5 +125,3 @@ let {
     </section>
   )
 }
-
-

@@ -87,7 +87,10 @@ const formattedTitle = markdownTitle.replace(
           data-aos-delay="300">
           <Marquee marqueeElements={list.length} {...marquee}>
             {list.map((item, index) => {
-              const imageItem = typeof item === "string" ? { src: item, size: index % 2 === 0 ? "large" : "small" } : item;
+              const imageItem =
+                typeof item === "string"
+                  ? { src: item, size: index % 2 === 0 ? "large" : "small" }
+                  : item;
               const isLarge = imageItem.size === "large";
               return (
                 <div
@@ -107,7 +110,10 @@ const formattedTitle = markdownTitle.replace(
               );
             })}
             {list.map((item, index) => {
-              const imageItem = typeof item === "string" ? { src: item, size: index % 2 === 0 ? "large" : "small" } : item;
+              const imageItem =
+                typeof item === "string"
+                  ? { src: item, size: index % 2 === 0 ? "large" : "small" }
+                  : item;
               const isLarge = imageItem.size === "large";
               return (
                 <div

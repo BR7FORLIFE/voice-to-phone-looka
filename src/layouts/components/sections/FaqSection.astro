@@ -149,9 +149,7 @@ if (!showCategories) {
               )}
               {
                 <div
-                  class:list={[
-                    !minimalFaqLayout && "rounded-lg bg-white p-6",
-                  ]}>
+                  class:list={[!minimalFaqLayout && "rounded-lg bg-white p-6"]}>
                   {list.map((tab: FAQCategory, index: number) => (
                     <AccordionList
                       role="tabpanel"

@@ -221,7 +221,7 @@ export const getLocaleUrlCTM = (
 
   // Don't handle external url
   if (isExternalUrl) return url;
-  
+
   // if url contain .md or .mdx remove it
   if (url.endsWith(".mdx") || url.endsWith(".md")) {
     updatedUrl = url.replace(/\.(md|mdx)$/, "");

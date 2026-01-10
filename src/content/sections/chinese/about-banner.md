@@ -1,6 +1,6 @@
 ---
 enable: true # Control the visibility of this section across all pages where it is used
-title: "我们相信，真正的好企业：<br><strong style=\"color: var(--color-accent);\">在成就客户与团队中，<br>赢取利润。</strong>"
+title: '我们相信，真正的好企业：<br><strong style="color: var(--color-accent);">在成就客户与团队中，<br>赢取利润。</strong>'
 description: |
   这正是我们的使命所在。在MMC，我们不仅仅是追求收入与利润的双增长，我们致力于将这个理念系统化。
 

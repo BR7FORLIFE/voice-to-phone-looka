@@ -1,6 +1,6 @@
 ---
 enable: true # 控制此区块显示
-title: "20年实战，专注帮助企业实现<br><strong style=\"color: var(--color-accent);\">收入利润双增长</strong>"
+title: '20年实战，专注帮助企业实现<br><strong style="color: var(--color-accent);">收入利润双增长</strong>'
 button:
   enable: true
   label: "了解我们的团队"

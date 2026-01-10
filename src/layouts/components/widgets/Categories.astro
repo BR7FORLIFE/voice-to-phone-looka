@@ -3,10 +3,7 @@ import Icons from "@/helpers/Icons.astro";
 import config from ".astro/config.generated.json" assert { type: "json" };
 import { getCollectionCTM } from "@/lib/contentParser.astro";
 import { getTaxonomy } from "@/lib/taxonomyParser.astro";
-import {
-  getLocaleUrlCTM,
-  useTranslations,
-} from "@/lib/utils/i18nUtils.ts";
+import { getLocaleUrlCTM, useTranslations } from "@/lib/utils/i18nUtils.ts";
 
 interface Category {
   name: string;

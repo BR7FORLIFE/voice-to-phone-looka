@@ -29,8 +29,7 @@ let actualContent = {
 } as sectionType;
 
 // Extracting required values from 'content' object
-let { limit, title, enable, button, subtitle } =
-  actualContent as sectionType;
+let { limit, title, enable, button, subtitle } = actualContent as sectionType;
 
 let career = await getCollectionCTM("career", Astro.currentLocale);
 

@@ -10,8 +10,7 @@ import OptimizedImage from "@/components/utilities/OptimizedImage.astro";
 import AnimatedNumber from "@/layouts/components/widgets/AnimatedNumber.astro";
 
 // Type for this section data
-type sectionType = Section &
-  InferEntrySchema<"services">["impact"];
+type sectionType = Section & InferEntrySchema<"services">["impact"];
 type Props = {
   content?: sectionType;
 };

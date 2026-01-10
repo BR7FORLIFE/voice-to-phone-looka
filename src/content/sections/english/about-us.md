@@ -1,6 +1,6 @@
 ---
 enable: true # Control the visibility of this section across all pages where it is used
-title: "20 Years of Practice, Focused on Helping Businesses Achieve<br><strong style=\"color: var(--color-accent);\">Both Revenue and Profit Growth</strong>"
+title: '20 Years of Practice, Focused on Helping Businesses Achieve<br><strong style="color: var(--color-accent);">Both Revenue and Profit Growth</strong>'
 button:
   enable: true
   label: "Meet Our Team"

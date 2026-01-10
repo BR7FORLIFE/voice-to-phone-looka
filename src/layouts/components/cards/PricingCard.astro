@@ -45,30 +45,30 @@ if (!enable) return;
             const numericValue = isNumericValue(item.value);
 
             return (
-            <div
-              data-plan={toLowerCase(item.type)}
-              class:list={[
-                "has-list has-list-slash price-wrapper flex flex-wrap items-center gap-1.5 transition-all duration-300",
-                {
-                  active: index === 0,
-                },
-                {
-                  hidden: index !== 0,
-                },
-              ]}>
-              <span class="text-h2 text-primary font-secondary after:bg-primary/50 flex gap-0 leading-none font-bold after:h-1/2!">
-                <AnimatedNumber
-                  animateOn="click"
-                  transitionTime="1.2s"
-                  enable={numericValue}
-                  content={item}
+              <div
+                data-plan={toLowerCase(item.type)}
+                class:list={[
+                  "has-list has-list-slash price-wrapper flex flex-wrap items-center gap-1.5 transition-all duration-300",
+                  {
+                    active: index === 0,
+                  },
+                  {
+                    hidden: index !== 0,
+                  },
+                ]}>
+                <span class="text-h2 text-primary font-secondary after:bg-primary/50 flex gap-0 leading-none font-bold after:h-1/2!">
+                  <AnimatedNumber
+                    animateOn="click"
+                    transitionTime="1.2s"
+                    enable={numericValue}
+                    content={item}
+                  />
+                </span>
+                <span
+                  class="text-primary pricing-type text-lg leading-none capitalize"
+                  set:html={item.type}
                 />
-              </span>
-              <span
-                class="text-primary pricing-type text-lg leading-none capitalize"
-                set:html={item.type}
-              />
-            </div>
+              </div>
             );
           })
         }

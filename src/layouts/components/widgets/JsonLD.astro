@@ -21,11 +21,7 @@ let {
 } = content;
 
 title =
-  !disableTagline && metaTitle
-    ? metaTitle
-    : title
-      ? title
-      : config.site.title;
+  !disableTagline && metaTitle ? metaTitle : title ? title : config.site.title;
 
 // Add tagline & separator to title
 // prettier-ignore

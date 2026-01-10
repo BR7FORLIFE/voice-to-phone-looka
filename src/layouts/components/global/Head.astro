@@ -17,7 +17,9 @@ const fontVariables = fontsJson.map((font) => font.cssVariable) as any[];
   <meta charset="UTF-8" />
   <meta
     http-equiv="Content-Language"
-    content={Astro.currentLocale || config.settings.multilingual.defaultLanguage || "en"}
+    content={Astro.currentLocale ||
+      config.settings.multilingual.defaultLanguage ||
+      "en"}
   />
   <meta
     name="viewport"

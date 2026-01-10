@@ -1,4 +1,5 @@
 import { defineCollection, z } from "astro:content";
+import { title } from "node:process";
 
 export const sharedButton = z
   .object({
@@ -280,6 +281,61 @@ export const portfolioCollection = defineCollection({
   ),
 });
 
+export const ratesCollection = defineCollection({
+  schema: page.merge(
+    z.object({
+      title: z.string(),
+      description: z.string().optional(),
+    }),
+  ),
+});
+
+export const ratePageCollection = defineCollection({
+  schema: page.merge(
+    z.object({
+      ratePlans: z
+        .array(
+          z.object({
+            planName: z.string(),
+            price: z.string(),
+            features: z.array(z.string()),
+            button: sharedButtonTag.optional(),
+          }),
+        )
+        .optional(),
+    }),
+  ),
+});
+
+export const rateVirtualNumberByCountryCollection = defineCollection({
+  schema: page.merge(
+    z.object({
+      whatIs: z.string().optional(),
+      feature: z.string().optional(),
+      getItNow: sharedButtonTag.optional(),
+      adquireVirtualNumber: z.string().optional(),
+      howAdquire: z.object({
+        description: z.string().optional(),
+        steps: z.array(z.string()).optional(),
+      }),
+
+      adventages: z
+        .object({
+          descripction: z.string().optional(),
+          items: z
+            .array(
+              z.object({
+                title: z.string(),
+                icon: z.string().optional(),
+              }),
+            )
+            .optional(),
+        })
+        .optional(),
+    }),
+  ),
+});
+
 // Export collections
 export const collections = {
   blog: blogCollection,
@@ -287,6 +343,10 @@ export const collections = {
   "case-studies": portfolioCollection,
   software: serviceCollection,
   pages: pagesCollection,
+  rates: ratesCollection,
+  "rate-page": ratePageCollection,
+  "rate-virtual-number-by-country": rateVirtualNumberByCountryCollection,
+
   "ip-telephony": defineCollection({}),
   sections: defineCollection({}),
   about: defineCollection({}),

@@ -89,22 +89,22 @@
         {
           "enable": true,
           "name": "Números Virtuales",
-          "url": "/rates/5/es"
+          "url": "/rates/virtual-numbers/es"
         },
         {
           "enable": true,
           "name": "PBX Virtual o IP PBX",
-          "url": "/rates/6/es"
+          "url": "/rates/pbx-virtual-ip-pbx/es"
         },
         {
           "enable": true,
           "name": "Llamadas VoIP",
-          "url": "/rates/4/es"
+          "url": "/rates/calls-voip/es"
         },
         {
           "enable": true,
           "name": "Software Call Center",
-          "url": "/rates/7/es"
+          "url": "/rates/software-call-center/es"
         }
       ]
     },
@@ -151,7 +151,7 @@
     {
       "enable": true,
       "name": "Precios",
-      "url": "/rates/5/es"
+      "url": "/rates/es"
     },
     {
       "enable": true,

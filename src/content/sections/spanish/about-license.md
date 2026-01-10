@@ -1,26 +1,30 @@
 ---
-enable: true # Control the visibility of this section across all pages where it is used
-title: "Licensed Financial Institution, Compliant Operations"
-subtitle: "Regulatory Compliance Certification"
+enable: true # Control the visibility of this section
+title: "Telefonía IP para Empresas y Negocios"
+subtitle: "Soluciones de Voz IP con Cobertura Global"
 description: |
-  MMC FP Sdn Bhd is a licensed financial institution formally authorized by the Securities Commission Malaysia.
-  We hold a valid Capital Markets Services Licence with registration number eCMSL/A0224/2008,
-  licensed since March 28, 2008, specializing in financial planning services. This ensures our services meet
-  the highest standards of Malaysian financial regulation, providing clients with safe, professional, and
-  compliant financial planning solutions.
+  VoiceToPhone ofrece soluciones avanzadas de Telefonía IP que permiten integrar voz y datos bajo una misma red basada en protocolo IP. 
+  Nuestra tecnología VoIP elimina la necesidad de infraestructuras físicas costosas, ofreciendo una comunicación estable, 
+  escalable y de alta calidad. Con presencia en más de 80 países, facilitamos la comunicación global de tu empresa 
+  con el máximo ahorro y fiabilidad del mercado.
 
 image:
-  src: "/images/team/MMC Financial Securities Commission.webp"
-  alt: "MMC Financial Securities Commission Malaysia Registration Certificate"
-  caption: "Securities Commission Malaysia Public Register - MMC FP Sdn Bhd Registration Information"
+  src: "/images/solutions/voicetophone-telefonia-ip.webp"
+  alt: "Plataforma de Telefonía IP VoiceToPhone funcionando en múltiples dispositivos"
+  caption: "Infraestructura de red de VoiceToPhone: Conectividad global sin fronteras"
 
 featureList:
-  # For icon names, see [Lucide Icons](https://lucide.dev/icons/?search=) (remember to capitalize the icon name)
-  - icon: "BadgeCheck"
-    title: "Licensed Operations, Legal Compliance"
-    description: "Holding a Capital Markets Services Licence issued by the Securities Commission Malaysia, ensuring all financial planning services comply with regulatory requirements"
-  - icon: "TrendingUp"
-    title: "18 Years of Professional Experience"
-    description: "Since obtaining the license in 2008, we have accumulated over 18 years of professional financial planning experience, providing compliant services to 500+ enterprises"
+  # Icon names from Lucide Icons (https://lucide.dev/icons/)
+  - icon: "Cloud"
+    title: "Centralita Virtual Cloud"
+    description: "Gestione sus comunicaciones al 100% desde la nube, sin límites de extensiones y con total flexibilidad para su negocio."
+  - icon: "PhoneCall"
+    title: "Números Virtuales (DIDs)"
+    description: "Obtenga presencia local inmediata con números telefónicos en más de 80 países, garantizando alta disponibilidad."
+  - icon: "Layers"
+    title: "Troncales SIP de Alta Capacidad"
+    description: "Conecte su infraestructura actual a la telefonía pública con canales de voz bidireccionales y escalabilidad inmediata."
+  - icon: "Smartphone"
+    title: "Movilidad Multi-dispositivo"
+    description: "Utilice su extensión en teléfonos IP, computadoras o smartphones, permitiendo que su equipo trabaje desde cualquier lugar."
 ---
-
