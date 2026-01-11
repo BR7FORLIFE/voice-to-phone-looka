@@ -1,10 +1,10 @@
 ---
-title: Pbx virtual
+title: Virtual PBX
 source_url: "https://www.voicetophone.com/help/5/es"
 date_scraped: "2026-01-10T21:27:15.330Z"
 route: /help/pbx-virtual/es/
 draft: false
-description: Porque debería utilizar un pbx virtual en mi empresa?
+description: Why should I use a virtual PBX in my company?
 qids:
   - pbx-virtual-q-0-porque-deberia-utilizar-un-pbx-virtual-en-mi-empresa
   - pbx-virtual-q-1-como-empezar
@@ -18,125 +18,125 @@ qids:
 ---
 
 <details id="pbx-virtual-q-0-porque-deberia-utilizar-un-pbx-virtual-en-mi-empresa" open>
-<summary>Porque debería utilizar un pbx virtual en mi empresa?</summary>
+<summary>Why should I use a virtual PBX in my company?</summary>
 
-Porque debería utilizar un pbx virtual en mi empresa?
+Why should I use a virtual PBX in my company?
 
-Un Pbx Virtual esta lleno de beneficos para su empresa o negocio. Por ser un sistema telefónico que utiliza [Voz Ip](https://www.voicetophone.com/que-es-la-telefonia-ip-como-funciona/es), está lleno de ventajas que permiten tener excelentes opciones para empresas y usuarios individuales que buscan una forma más económica, segura y accesible de comunicarse. A continucación enunciamos mas significativas que le harán tomar la decisión de reemplazar su antiguo sistema de telecomunicaciones:
+A virtual PBX offers many benefits for your company or business. As a telephone system that uses [Voice over IP](https://www.voicetophone.com/que-es-la-telefonia-ip-como-funciona/es), it provides advantages that are excellent for companies and individual users seeking a more economical, secure, and accessible way to communicate. Below are the most significant benefits that may lead you to replace your old telecommunications system:
 
-- Importantes ahorros de tiempo y dinero en la creacion de nuevas infrestructuras de telecomunicaciones.
+- Significant time and cost savings in creating new telecommunications infrastructure.
 
-- Cero costos en mantenimientos.
+- Zero maintenance costs.
 
-- Alta confiabilidad y seguridad en sus comunicaciones.
+- High reliability and security in communications.
 
-- Importantes ahorros en minutos locales y larga distancia internacional.
+- Significant savings on local and long-distance minutes.
 
-- Personalizable y flexibilible: facil expansion sin importar las distancias.
+- Customizable and flexible: easy expansion regardless of distance.
 
-- Múltiples caracteristicas.
+- Multiple features.
 
-- Interfaz web amigable.
+- Friendly web interface.
 
-- Soporte personalizado gratuito.
+- Personalized support included.
 
 </details>
 
 <details id="pbx-virtual-q-1-como-empezar">
-<summary>Como empezar ?</summary>
+<summary>How to get started?</summary>
 
-Como empezar ?
+How to get started?
 
-Contáctanos rellenando los campos del formulario de contacto y envíanos tus inquietudes. Nosotros te responderemos y te enviaremos la cotización que más se amolde a tus necesidades.
+Contact us by filling out the contact form and send us your questions. We will reply and send you a quote that best fits your needs.
 
 </details>
 
 <details id="pbx-virtual-q-2-cuanto-demora-la-instalacion-del-servicio">
-<summary>Cuanto demora la instalación del servicio?</summary>
+<summary>How long does service installation take?</summary>
 
-Cuanto demora la instalación del servicio?
+How long does service installation take?
 
-La entrega del servicio se hace en cuestión de minutos cuando son sistemas con requerimientos básicos. Sin embargo para sistemas mas complejos se podrian entregar en solo cuestion de horas. La instalación incluye el acceso a la plataforma, números telefónicos, canales adicionales, extensiones y herramientas según las necesidades de cada cliente.
+Service delivery can be a matter of minutes for systems with basic requirements. For more complex systems, it may take a few hours. Installation includes access to the platform, phone numbers, additional channels, extensions, and tools according to each client's needs.
 
 </details>
 
 <details id="pbx-virtual-q-3-que-funcionalidades-ofrece-un-pbx-virtual-de-voice-to-phone">
-<summary>Que funcionalidades ofrece un pbx virtual de Voice to Phone?</summary>
+<summary>What features does Voice to Phone's virtual PBX offer?</summary>
 
-Que funcionalidades ofrece un pbx virtual de Voice to Phone?
+What features does Voice to Phone's virtual PBX offer?
 
-Nuestra Pbx Virtual te ofrece las mismas funcionalidades de una planta telefonica tradicional pero con muchas más ventajas.
+Our virtual PBX provides the same functionality as a traditional telephone system but with many more advantages.
 
-Dentro de nustras principales funcionalidades encontrarás:
+Among our main features you will find:
 
-- Locuciones de voz (mensajes de bienvenida)
+- Voice prompts (welcome messages)
 
-- Conferencias
+- Conference calls
 
-- Multidispositivo
+- Multi-device support
 
-- [Números Virtuales](https://www.voicetophone.com/numero-virtual/es)
+- [Virtual Numbers](https://www.voicetophone.com/numero-virtual/es)
 
-- Buzón de voz
+- Voicemail
 
-- Extensiones flexibles
+- Flexible extensions
 
-- Colas de espera
+- Call queues
 
-- Transferncia de llamadas
+- Call transfer
 
-- Desvío de llamadas
+- Call forwarding
 
-- Muchas más...
+- And much more...
 
 </details>
 
 <details id="pbx-virtual-q-4-cuantas-extensiones-puedo-tener-en-mi-pbx-virtual">
-<summary>Cuantas extensiones puedo tener en mi pbx virtual?</summary>
+<summary>How many extensions can I have on my virtual PBX?</summary>
 
-Cuantas extensiones puedo tener en mi pbx virtual?
+How many extensions can I have on my virtual PBX?
 
-Nuestra central telefonica virtual acompañará y ayudará al crecimiento de su empresa.
+Our virtual telephone system will support and aid your company's growth.
 
-Las extensiones son flexibles, es decir pueden ampliarse ilimitadamente según sus necesidades, sin importar si el destino es otra ciudad o país.
+Extensions are flexible and can be expanded indefinitely based on your needs, regardless of whether the destination is another city or country.
 
 </details>
 
 <details id="pbx-virtual-q-5-puedo-utilizar-el-mismo-numero-de-mi-linea-telefonica-actual">
-<summary>Puedo utilizar el mismo número de mi linea telefónica actual?</summary>
+<summary>Can I use the same number from my current telephone line?</summary>
 
-Puedo utilizar el mismo número de mi linea telefónica actual?
+Can I use the same number from my current telephone line?
 
-Si, Nuestra tecnología permite integrar las líneas telefónicas analógas a la red [VOIP](https://www.voicetophone.com/que-es-voip-como-funciona/es) , aunque esto no influye en la disminución del precio a pagar por mes del Pbx virtual.
+Yes. Our technology allows integrating analog telephone lines into the [VoIP](https://www.voicetophone.com/que-es-voip-como-funciona/es) network, although this does not affect the monthly price of the virtual PBX.
 
 </details>
 
 <details id="pbx-virtual-q-6-las-extensiones-son-gratis">
-<summary>Las extensiones son gratis?</summary>
+<summary>Are extensions free?</summary>
 
-Las extensiones son gratis?
+Are extensions free?
 
-Si, las primeras 5 extensiones son gratis. A partir de la sexta extension son cobradas a un valor simbólico mensualmente.
+Yes, the first 5 extensions are free. From the sixth extension onwards, a small monthly fee applies.
 
 </details>
 
 <details id="pbx-virtual-q-7-debo-comprar-telefonos-ip-para-usar-la-pbx-virtual">
-<summary>Debo comprar teléfonos IP para usar la PBX Virtual?</summary>
+<summary>Do I need to buy IP phones to use the Virtual PBX?</summary>
 
-Debo comprar teléfonos IP para usar la PBX Virtual?
+Do I need to buy IP phones to use the Virtual PBX?
 
-No, no es necesario. Puedes utilizar nuestra aplicación o software de llamadas (Softphone) en tu ordenador o en dispositivos móviles inteligentes para hacer y recibir llamadas como lo haces en telefonos convencionales.
+No, it is not necessary. You can use our calling application or softphone on your computer or mobile devices to make and receive calls as you would on conventional phones.
 
-El uso de telefonos IP es por requerimientos especiales del cliente o por propio gusto.
+IP phones are only required for special customer requirements or personal preference.
 
 </details>
 
 <details id="pbx-virtual-q-8-que-medios-de-pago-que-aceptan">
-<summary>Que medios de pago que aceptan?</summary>
+<summary>What payment methods do you accept?</summary>
 
-Que medios de pago que aceptan?
+What payment methods do you accept?
 
-Aceptamos pagos a través de Paypal y transferencia internacional a la cuenta cuenta de nuestra compañia.
+We accept payments via PayPal and international bank transfer to our company's account.
 
 </details>
 

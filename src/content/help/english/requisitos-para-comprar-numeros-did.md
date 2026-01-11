@@ -1,25 +1,25 @@
 ---
-title: Requisitos para comprar Números DID
+title: Requirements to buy DID Numbers
 source_url: "https://www.voicetophone.com/help/11/es"
 date_scraped: "2026-01-10T21:27:41.481Z"
 route: /help/requisitos-para-comprar-numeros-did/es/
 draft: false
-description: Cuales son los requisitos para comprar un número Virtual?
+description: What are the requirements to buy a Virtual Number?
 qids:
   - >-
     requisitos-para-comprar-numeros-did-q-0-cuales-son-los-requisitos-para-comprar-un-numero-virtual
 ---
 
 <details id="requisitos-para-comprar-numeros-did-q-0-cuales-son-los-requisitos-para-comprar-un-numero-virtual" open>
-<summary>Cuales son los requisitos para comprar un número Virtual?</summary>
+<summary>What are the requirements to buy a Virtual Number?</summary>
 
-Cuales son los requisitos para comprar un número Virtual?
+What are the requirements to buy a Virtual Number?
 
-De acuerdo a la regulación en materia de telecomunicaciones de cada pais, podrían exigirse requisitos o NO para adquirir números virtuales.
+According to telecommunications regulations in each country, requirements may or may not be required to acquire virtual numbers.
 
-Por favor consulta en la siguiente tabla los requisitos dependiendo del pais: [https://www.voicetophone.com/requisitos-para-comprar-numeros-virtuales/es](https://www.voicetophone.com/requisitos-para-comprar-numeros-virtuales/es)
+Please check the following table for requirements depending on the country: [https://www.voicetophone.com/requisitos-para-comprar-numeros-virtuales/es](https://www.voicetophone.com/requisitos-para-comprar-numeros-virtuales/es)
 
-Si el pais del cual requieres el número DID no aparece en la lista, quiere decir que no exigen requisitos en dicho pais.
+If the country from which you require the DID number does not appear on the list, it means no requirements are enforced in that country.
 
 </details>
 

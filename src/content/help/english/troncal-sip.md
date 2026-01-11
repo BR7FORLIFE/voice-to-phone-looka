@@ -1,10 +1,10 @@
 ---
-title: Troncal Sip
+title: SIP Trunk
 source_url: "https://www.voicetophone.com/help/12/es"
 date_scraped: "2026-01-10T21:27:45.065Z"
 route: /help/troncal-sip/es/
 draft: false
-description: Que obtengo con el servicio de troncal SIP para mi compañia?
+description: What do I get with a SIP trunk service for my company?
 qids:
   - troncal-sip-q-0-que-obtengo-con-el-servicio-de-troncal-sip-para-mi-compania
   - troncal-sip-q-1-como-obtengo-una-prueba-gratuita
@@ -18,101 +18,101 @@ qids:
 ---
 
 <details id="troncal-sip-q-0-que-obtengo-con-el-servicio-de-troncal-sip-para-mi-compania" open>
-<summary>Que obtengo con el servicio de troncal SIP para mi compañia?</summary>
+<summary>What do I get with a SIP trunk service for my company?</summary>
 
-Que obtengo con el servicio de troncal SIP para mi compañia?
+What do I get with a SIP trunk service for my company?
 
-Con el servicio de troncal SIP obtendrás un enlace que permitirá conectar nuestro servicio telefónico con tu central telefónica , planta telefónica o centro de llamadas para hacer o recibir llamadas con conexion SIP a bajos costos, y con la cantidad de canales simultaneos segun requerimiento.
+With a SIP trunk service you get a link that connects our telephony service to your PBX, telephone system, or call center to make or receive calls via SIP at low cost, with the number of simultaneous channels required.
 
-Nuestra conexion es a traves de autenticacion por dirección Ip, o por usuario y contraseña si no tienes una dirección Ip establecida.
+Our connection can be authenticated by IP address or by username and password if you do not have a fixed IP.
 
 </details>
 
 <details id="troncal-sip-q-1-como-obtengo-una-prueba-gratuita">
-<summary>Como obtengo una prueba gratuita?</summary>
+<summary>How do I get a free trial?</summary>
 
-Como obtengo una prueba gratuita?
+How do I get a free trial?
 
-Es muy fácil, rellena el formulario de [contáctenos](https://www.voicetophone.com/contact/es) y solicita una prueba o demo gratuito para que pruebes la calidad de nuestro servicio.
+It's very easy: fill out the [contact us](https://www.voicetophone.com/contact/es) form and request a free trial or demo to test our service quality.
 
-Normalmente entregamos una troncal sip para llamadas salientes con un pequeño saldo suficiente para realizar varias llamadas.
+We typically provide a SIP trunk for outbound calls with a small balance sufficient to make several calls.
 
 </details>
 
 <details id="troncal-sip-q-2-cuales-son-los-precios-por-minuto-para-llamadas-salientes">
-<summary>Cuáles son los precios por minuto para llamadas salientes?</summary>
+<summary>What are the per-minute prices for outbound calls?</summary>
 
-Cuáles son los precios por minuto para llamadas salientes?
+What are the per-minute prices for outbound calls?
 
-Solo tenemos troncales sip con alta calidad de llamada.
+We offer SIP trunks with high call quality.
 
-Manejamos planes de minutos que varian de acuerdo al pais de destino. Otro factor que influye en el costo por minuto es la cantidad , porfavor [contáctenos](https://www.voicetophone.com/contact/es) para mayor informacion.
+We manage minute plans that vary according to the destination country. Another factor affecting cost per minute is the volume. Please [contact us](https://www.voicetophone.com/contact/es) for more information.
 
 </details>
 
 <details id="troncal-sip-q-3-puedo-asociar-uno-o-mas-numeros-did-a-una-troncal-sip">
-<summary>Puedo asociar uno o más números DID a una troncal Sip?</summary>
+<summary>Can I associate one or more DID numbers with a SIP trunk?</summary>
 
-Puedo asociar uno o más números DID a una troncal Sip?
+Can I associate one or more DID numbers with a SIP trunk?
 
-Si, para recibir llamadas puedes asociar uno o varios [numeros virtuales](https://www.voicetophone.com/numero-virtual/es) (DIDs) , e inclusive de diferentes destinos en la misma troncal de llamadas salientes. Ambos canales (entrantes y salientes) se ocuparan por independiente en la misma troncal.
+Yes. To receive calls, you can associate one or several [virtual numbers](https://www.voicetophone.com/numero-virtual/es) (DIDs), including numbers from different destinations on the same outbound trunk. Both channels (incoming and outgoing) will be used independently on the same trunk.
 
-El costo de cada número virtual que desees asociar lo puedes revisar [aqui](https://www.voicetophone.com/rates/5/es).
+The cost of each virtual number you want to associate can be reviewed [here](https://www.voicetophone.com/rates/5/es).
 
 </details>
 
 <details id="troncal-sip-q-4-que-necesito-para-empezar-utilizar-el-servicio-de-troncal-si">
-<summary>Que necesito para empezar utilizar el servicio de troncal SIP?</summary>
+<summary>What do I need to start using the SIP trunk service?</summary>
 
-Que necesito para empezar utilizar el servicio de troncal SIP?
+What do I need to start using the SIP trunk service?
 
-Para empezar a utilizar el servicio se necesita lo siguiente:
+To start using the service you need the following:
 
-- Crear una [cuenta sip](https://go.voicetophone.com/VUP/login) y comprar plan de minutos que se usaran en la troncal.
+- Create a [SIP account](https://go.voicetophone.com/VUP/login) and purchase a minutes plan to be used on the trunk.
 
-- Una Central telefónica o Planta telefónica fisica con conexion SIP.
+- A PBX or physical telephone system with SIP connectivity.
 
-- Una dirección Ip, si se requiere de autenticación por Ip.
+- An IP address if IP authentication is required.
 
-- Conexión a internet, preferiblemente banda ancha.
+- Internet connection, preferably broadband.
 
-- Ordenadores o dispositivos móviles inteligentes para hacer o recibir las llamadas.
+- Computers or mobile devices to make or receive calls.
 
 </details>
 
 <details id="troncal-sip-q-5-y-si-se-agotan-los-minutos-contratados-en-el-plan">
-<summary>Y si se agotan los minutos contratados en el plan?</summary>
+<summary>What happens if the contracted minutes in the plan run out?</summary>
 
-Y si se agotan los minutos contratados en el plan?
+What happens if the contracted minutes in the plan run out?
 
-No hay problema, puedes solicitar a tu asesor de ventas un paquete adicional de minutos o aumentar el plan contratado. Lo importante es que no pierdas continuidad en el servicio.
+No problem; you can request an additional minutes package from your sales advisor or increase the contracted plan. The important thing is not to lose service continuity.
 
 </details>
 
 <details id="troncal-sip-q-6-ofrecen-descuentos-por-pago-anual">
-<summary>Ofrecen descuentos por pago anual?</summary>
+<summary>Do you offer discounts for annual payment?</summary>
 
-Ofrecen descuentos por pago anual?
+Do you offer discounts for annual payment?
 
-Si, ofrecemos descuentos por pago anticipado de un año del 15%, por favor pongase en contacto con su asesor de confianza.
+Yes, we offer a 15% discount for annual prepayment; please contact your trusted advisor.
 
 </details>
 
 <details id="troncal-sip-q-7-puedo-grabar-todas-las-llamadas-generadas-en-la-troncal-sip">
-<summary>¿Puedo grabar todas las llamadas generadas en la troncal sip?</summary>
+<summary>Can I record all calls generated on the SIP trunk?</summary>
 
-¿Puedo grabar todas las llamadas generadas en la troncal sip?
+Can I record all calls generated on the SIP trunk?
 
-Si, para obtener el servicio de grabacion debes solicitarlo y adicionarlo al plan contratado. Este servicio tiene un costo adicional.
+Yes. To obtain the recording service you must request and add it to the contracted plan. This service has an additional cost.
 
 </details>
 
 <details id="troncal-sip-q-8-que-medios-de-pago-aceptan-para-el-pago-de-los-servicios">
-<summary>Qué medios de pago aceptan para el pago de los servicios?</summary>
+<summary>What payment methods do you accept for service payments?</summary>
 
-Qué medios de pago aceptan para el pago de los servicios?
+What payment methods do you accept for service payments?
 
-Aceptamos pagos a través de transferencia bancaria y Paypal. Para mas informacion, por favor contacte a su asesor de confianza.
+We accept payments via bank transfer and PayPal. For more information, please contact your trusted advisor.
 
 </details>
 

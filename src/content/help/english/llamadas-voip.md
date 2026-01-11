@@ -1,10 +1,10 @@
 ---
-title: Llamadas Voip
+title: VoIP Calls
 source_url: "https://www.voicetophone.com/help/8/es"
 date_scraped: "2026-01-10T21:27:27.410Z"
 route: /help/llamadas-voip/es/
 draft: false
-description: Que es la Nube?
+description: What is the Cloud?
 qids:
   - llamadas-voip-q-0-que-es-la-nube
   - llamadas-voip-q-1-por-que-las-llamadas-por-internet-son-mas-economicas
@@ -17,89 +17,89 @@ qids:
 ---
 
 <details id="llamadas-voip-q-0-que-es-la-nube" open>
-<summary>Que es la Nube?</summary>
+<summary>What is the Cloud?</summary>
 
-Que es la Nube?
+What is the Cloud?
 
-La Nube, tambien conocido como computación en la nube, es un termino que hace referencia a servicios y aplicaciones que se ejecutan en internet en lugar de hacerlo físicamente a nivel local. En lugar de almacenar información y datos localmente, se almacenan en servidores remotos accesibles desde cualquier lugar a través de internet.
+The Cloud, also known as cloud computing, refers to services and applications that run on the internet instead of locally. Instead of storing information and data locally, they are stored on remote servers accessible from anywhere via the internet.
 
-Las aplicaciones de centrales VoIP en la Nube por ejemplo se refieren a la utilización de servicios de comunicación, como llamadas telefónicas, videoconferencias, mensajería instantánea y otros tipos de comunicación, que se realizan a través de internet utilizando servidores remotos en lugar de utilizar infraestructuras físicas.
+VoIP PBX applications in the Cloud, for example, refer to communication services such as phone calls, video conferencing, instant messaging, and other types of communication that are carried out over the internet using remote servers instead of physical infrastructures.
 
 </details>
 
 <details id="llamadas-voip-q-1-por-que-las-llamadas-por-internet-son-mas-economicas">
-<summary>Por que las llamadas por internet son más económicas?</summary>
+<summary>Why are internet calls more economical?</summary>
 
-Por que las llamadas por internet son más económicas?
+Why are internet calls more economical?
 
-Porque para transportar Voip o Voz iP solo se necesita internet, y no requiere de una infraestructura fisica para hacer llegar el servicio a los clientes, lo que finalmente afecta el precio de las llamadas.
+Because transporting VoIP only requires the internet and does not need physical infrastructure to deliver the service to customers, which ultimately affects the cost of calls.
 
 </details>
 
 <details id="llamadas-voip-q-2-como-debo-marcar-mis-llamadas">
-<summary>Como debo marcar mis llamadas?</summary>
+<summary>How should I dial my calls?</summary>
 
-Como debo marcar mis llamadas?
+How should I dial my calls?
 
-Para marcar tus llamadas, debes utilizar la siguiente regla:
+To dial your calls, use the following rule:
 
-Internacional fijo: Código Pais + Codigo Area + Numero fijo
+International landline: Country Code + Area Code + Landline number
 
-Internacional Celular: Código Pais + Numero Celular
+International mobile: Country Code + Mobile number
 
-Ejemplo: para llamar a España
+Example: to call Spain
 
-Número fijo : 34 + 91+ 1234567
+Landline: 34 + 91 + 1234567
 
-Número Móvil : 34 + 656561234
+Mobile: 34 + 656561234
 
 </details>
 
 <details id="llamadas-voip-q-3-donde-encontrar-los-prefijos-de-todos-los-paises-del-mundo">
-<summary>Donde encontrar los prefijos de todos los países del mundo?</summary>
+<summary>Where to find country dialing prefixes?</summary>
 
-Donde encontrar los prefijos de todos los países del mundo?
+Where to find country dialing prefixes?
 
-A través de tu portal puedes ver en la opción "Tarifas", todos los prefijos de cada Pais para llamar a fijos y móviles.
+Through your portal, under the "Rates" section, you can see all prefixes for each country for calling landlines and mobiles.
 
 </details>
 
 <details id="llamadas-voip-q-4-como-recargar-saldo-a-mi-cuenta-voip">
-<summary>Como recargar saldo a mi cuenta voip?</summary>
+<summary>How to top up my VoIP account?</summary>
 
-Como recargar saldo a mi cuenta voip?
+How to top up my VoIP account?
 
-Para recargar tu cuenta solo debes transferir el monto que desees recargar a través de nuestras cuentas de bancos o Paypal.
+To top up your account, transfer the desired amount via our bank accounts or PayPal.
 
-Solicita nuestra cuenta de bancos a tu asesor de ventas.
+Request our bank account details from your sales advisor.
 
 </details>
 
 <details id="llamadas-voip-q-5-que-debo-hacer-cuando-las-llamadas-no-conectan-o-se-escuchan">
-<summary>Que debo hacer cuando las llamadas no conectan o se escuchan entrecortadas?</summary>
+<summary>What to do when calls do not connect or sound choppy?</summary>
 
-Que debo hacer cuando las llamadas no conectan o se escuchan entrecortadas?
+What to do when calls do not connect or sound choppy?
 
-1. La calidad de las llamadas Voip dependen de muchos factores, como por ejemplo:
+1. VoIP call quality depends on many factors, such as:
 
-- La disponibilidad de ancho de banda donde esta ubicado el dispositivo.
+- The available bandwidth where the device is located.
 
-- El estado cableado proveniente del moden de internet al dispositivo Voip
+- The cabling from the internet modem to the VoIP device.
 
-- El abuso de programas de descargas dentro de la red
+- Heavy use of download programs within the network.
 
-- Las condiciones del telefono conectado al Voip.
+- The condition of the phone connected to VoIP.
 
-Cuando es alguna de las anteriores, se recomienda reiniciar el moden de internet y el dispositivo Voip, Revisar cableado y teléfono, reemplazandolos con otros, realizando nuevas pruebas. 2. En otros casos la calidad de las llamadas puede verse afectada por el bloqueo de puertos por parte del operador de telefonía , y para ello se debe solicitar la apertura de los puertos 5060, 5061 UDP y TCP , asi como tambien los puertos 80, 8080, y los rangos del 2000 al 20000 UDP. 3. Revisar los codecs de audio configurados en la cuenta y en el dispositivo Voip. 4. Si aún no hay soluciones es recomendable contactar con soporte voicetophone enviando un email a soporte@voicetophone.com
+When any of the above occur, it is recommended to restart the internet modem and the VoIP device, check cabling and the phone, replace them if necessary, and run tests. 2. In other cases, call quality may be affected by port blocking by the telecom operator; request opening ports 5060 and 5061 (UDP and TCP), as well as ports 80, 8080, and the UDP range 2000–20000. 3. Check the audio codecs configured in the account and the VoIP device. 4. If there is still no solution, contact Voicetophone support by emailing soporte@voicetophone.com
 
 </details>
 
 <details id="llamadas-voip-q-6-en-que-dispositivos-podre-utilizar-mi-cuenta-voip">
-<summary>En que dispositivos podré utilizar mi cuenta voip?</summary>
+<summary>On which devices can I use my VoIP account?</summary>
 
-En que dispositivos podré utilizar mi cuenta voip?
+On which devices can I use my VoIP account?
 
-Su cuenta Voip puede ser utilizada en diferentes dispositivos como : Atas (Voipiador) , Pc , teléfonos inteligentes, tablets y teléfonos Ip.
+Your VoIP account can be used on various devices such as ATAs (Voip adapters), PC, smartphones, tablets, and IP phones.
 
 </details>
 

@@ -1,10 +1,10 @@
 ---
-title: Inquietudes básicas
+title: Basic Questions
 source_url: "https://www.voicetophone.com/help/3/es"
 date_scraped: "2026-01-10T21:27:02.119Z"
 route: /help/inquietudes-basicas/es/
 draft: false
-description: Cómo empezar ?
+description: How to get started?
 qids:
   - inquietudes-basicas-q-0-como-empezar
   - inquietudes-basicas-q-1-porque-elegir-voice-to-phone
@@ -20,131 +20,131 @@ qids:
 ---
 
 <details id="inquietudes-basicas-q-0-como-empezar" open>
-<summary>Cómo empezar ?</summary>
+<summary>How to get started?</summary>
 
-Cómo empezar ?
+How to get started?
 
-Empezar a disfrutar de nuestros servicios es muy facil siguiendo 3 sencillos pasos:
+Getting started with our services is easy by following these 3 simple steps:
 
-1. Registro : crea una cuenta a través del link [https://go.voicetophone.com/VUP ](https://go.voicetophone.com/VUP) .
-2. Solcitud de servicios : rellene el formulario de contacto con sus datos y solicite su servicio con detalles especificos.
-3. Respuesta : Nuestro equipo de ventas se pondra en contacto con usted lo mas pronto posible.
+1. Registration: create an account via the link [https://go.voicetophone.com/VUP](https://go.voicetophone.com/VUP).
+2. Service request: fill out the contact form with your details and request the service with specific information.
+3. Response: Our sales team will contact you as soon as possible.
 
 </details>
 
 <details id="inquietudes-basicas-q-1-porque-elegir-voice-to-phone">
-<summary>Porque elegir Voice to Phone?</summary>
+<summary>Why choose Voice to Phone?</summary>
 
-Porque elegir Voice to Phone?
+Why choose Voice to Phone?
 
-"Voice to Phone" posee un conjunto completo de soluciones de telefonía Ip para su empresa o negocio que se adaptan a cualquier necesidad en materia de telecomunicaciones. Nuestra plataforma es segura, robusta, flexible y de facil manejo, con un soporte especializado y disponible para atender sus necesidades.
+Voice to Phone offers a complete set of IP telephony solutions for your company or business that adapt to any telecommunications need. Our platform is secure, robust, flexible, and easy to use, with specialized support available to assist you.
 
-"Voice to Phone" es rico en caracteristicas que permiten brindarle numerosas opciones a la hora de poner en marcha su proyecto de telecomunicaciones sin importar la ubicación específica de su empresa o si existen diferentes sedes con la menor inversion de dinero, permitiendo asi grandes beneficios en productividad, movilidad, y reduccion de costos.
+Voice to Phone is rich in features that provide numerous options when launching your telecommunications project regardless of your company's location or multiple sites, enabling significant benefits in productivity, mobility, and cost reduction.
 
-Por todo esto y mucho más , Voice to phone es su mejor opcion.
+For all these reasons and more, Voice to Phone is your best option.
 
 </details>
 
 <details id="inquietudes-basicas-q-2-que-es-telefonia-ip">
-<summary>Que es telefonía Ip?</summary>
+<summary>What is IP telephony?</summary>
 
-Que es telefonía Ip?
+What is IP telephony?
 
-Es un servicio telefónico que utiliza el protocolo Voip para hacer o recibir llamadas a muy bajo costo sin importar el lugar de ubicación. Tambien es llamada como Voz Ip y permite la conversion de la señal de voz en paquetes de datos a través de internet en lugar de enviarse analógicamente como lo hace la telefonía convencional.
+It is a telephone service that uses the VoIP protocol to make or receive calls at very low cost regardless of location. Also called Voice over IP, it converts the voice signal into data packets over the internet instead of sending it analogically as traditional telephony does.
 
 </details>
 
 <details id="inquietudes-basicas-q-3-como-pagar-mis-servicios">
-<summary>Como pagar mis servicios?</summary>
+<summary>How to pay for my services?</summary>
 
-Como pagar mis servicios?
+How to pay for my services?
 
-Dependiendo del plan o servicio adquirido se debe recargar la cuenta con el valor especificado en el convenio.
+Depending on the plan or service purchased, you must top up your account with the amount specified in the agreement.
 
-Aceptamos pagos a través de Paypal, Bancolombia, Davivienda, o Baloto.
+We accept payments via PayPal, Bancolombia, Davivienda, or Baloto.
 
-Nota: Las cuentas de clientes de números virtuales como PBX y Call Center poseen pagos automáticos programados mensualemnte y deben tener saldo suficiente en su cuenta antes de llegar al vencimiento del número para que sea deducido el valor mensual.
+Note: Accounts for virtual numbers such as PBX and Call Center have scheduled automatic monthly payments and must have sufficient balance before the number's renewal date to deduct the monthly fee.
 
 </details>
 
 <details id="inquietudes-basicas-q-4-como-reportar-mis-pagos">
-<summary>Como reportar mis pagos?</summary>
+<summary>How to report my payments?</summary>
 
-Como reportar mis pagos?
+How to report my payments?
 
-Todos los pagos deben ser reportados al correo electrónico de ventas@voicetophone.com .
+All payments should be reported to ventas@voicetophone.com.
 
-En el reporte debe enviarse imagen o copia escaneada del soporte de pago , especificando el nombre de usuario al que se asignará el saldo consignado.
+In the report, include an image or scanned copy of the payment proof and specify the username to which the credited balance should be assigned.
 
 </details>
 
 <details id="inquietudes-basicas-q-5-donde-ver-el-historial-de-las-llamadas-realizadas">
-<summary>Donde ver el historial de las llamadas realizadas?</summary>
+<summary>Where to view the call history?</summary>
 
-Donde ver el historial de las llamadas realizadas?
+Where to view the call history?
 
-El historial de llamadas, saldos, pagos y mucho más... estan disponibles para todos nuestros clientes en el portal asignado a cada uno dependiendo del tipo de cuenta registrada.
+Call history, balances, payments, and more are available to all our customers in the portal assigned based on the account type.
 
-Para clientes retail elportal es : https://go.voicetophone.com/VUP
+For retail customers, the portal is: https://go.voicetophone.com/VUP
 
-Para clientes Callshop el portal es: https://go.voicetophone.com/Callshop
+For Callshop customers, the portal is: https://go.voicetophone.com/Callshop
 
-Para clientes Pbx el portal es : https://go.voicetophone.com/VUC
+For PBX customers, the portal is: https://go.voicetophone.com/VUC
 
 </details>
 
 <details id="inquietudes-basicas-q-6-los-saldos-tienen-vencimiento">
-<summary>Los saldos tienen vencimiento?</summary>
+<summary>Do balances expire?</summary>
 
-Los saldos tienen vencimiento?
+Do balances expire?
 
-Los saldos de clientes retail y callshop tienen vencimiento de 3 meses.
+Retail and callshop customer balances expire after 3 months.
 
-Nota: las cuentas inactivas por mas de 12 meses serán desactivadas y perderán el historial de llmadas, pagos, etc.
+Note: Accounts inactive for more than 12 months will be deactivated and will lose call history, payments, etc.
 
 </details>
 
 <details id="inquietudes-basicas-q-7-necesito-internet">
-<summary>Necesito internet ?</summary>
+<summary>Do I need internet?</summary>
 
-Necesito internet ?
+Do I need internet?
 
-Si. Por ser una tecnología basada en la nube, se requiere conexión de internet banda ancha , 3G o 4G , dependiendo de si es un dispositivos Voip como telefonos Ip o ATAs , un PC o una Aplicación de llamadas para teléfonos inteligentes.
+Yes. As a cloud-based technology, a broadband internet connection, 3G, or 4G is required depending on whether the device is a VoIP phone, ATA, PC, or a calling app on a smartphone.
 
-Sin embargo, para algunos servicios como el desvio de llamadas en el caso números virtuales no es necesario el servicio de internet.
+However, for some services like call forwarding for virtual numbers, an internet connection is not required.
 
 </details>
 
 <details id="inquietudes-basicas-q-8-como-es-la-calidad-de-las-llamadas">
-<summary>Como es la calidad de las llamadas?</summary>
+<summary>How is call quality?</summary>
 
-Como es la calidad de las llamadas?
+How is call quality?
 
-Las llamadas internas de la red "Voice to Phone" son de alta definición, con excelente audio y voz cristalina.
+Internal calls within the Voice to Phone network are high definition, with excellent audio and clear voice.
 
-Para ello trabajamos cada dia ofreciendo la mejor calidad en el servicio y utilizando las últimas tecnologías para lograrlo.
+We work daily to provide the best service quality using the latest technologies.
 
-En relación a las llamadas externas, inter-operamos con proveedores de diferentes paises que nos brindan diferentes calidades pero siempre manteniendo la relacion costo - calidad.
+For external calls, we interconnect with providers from different countries that offer varying qualities, but we always strive to maintain a good cost-quality ratio.
 
-Nota : otro factor a tomar en cuenta es la calidad y disponibilidad del servicio de internet que posee el cliente en el negocio o empresa, porque dependiendo de esta, tambien obtendrá mejores resultados en la calidad de las llamadas.
+Note: Another factor to consider is the quality and availability of the customer's internet service, as this also affects call quality.
 
 </details>
 
 <details id="inquietudes-basicas-q-9-debo-firmar-un-contrato-de-permanencia">
-<summary>Debo firmar un contrato de permanencia?</summary>
+<summary>Do I need to sign a contract?</summary>
 
-Debo firmar un contrato de permanencia?
+Do I need to sign a contract?
 
-No. Los servicios que ofrecemos no tienen permanencia mínima y puedes solicitar el retiro informándonos previamente.
+No. Our services do not have a minimum commitment period, and you can request cancellation by notifying us in advance.
 
 </details>
 
 <details id="inquietudes-basicas-q-10-lista-de-contactos">
-<summary>Lista de contactos.</summary>
+<summary>Contacts list.</summary>
 
-Lista de contactos.
+Contacts list.
 
-- Usted no tiene que agregar amigos a la lista de contactos Voipeer. Esta opción está disponible, pero la lista Voipeer se integra automáticamente con la lista en el teléfono
+- You do not need to add friends to the Voipeer contacts list. This option is available, but the Voipeer list integrates automatically with the phone's contact list.
 
 </details>
 

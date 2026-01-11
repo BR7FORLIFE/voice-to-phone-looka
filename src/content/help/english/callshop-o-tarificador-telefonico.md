@@ -1,73 +1,73 @@
 ---
-title: Callshop o Tarificador telefónico
+
+title: Call Shop or Rate Calculator
 source_url: "https://www.voicetophone.com/help/9/es"
 date_scraped: "2026-01-10T21:27:32.990Z"
 route: /help/callshop-o-tarificador-telefonico/es/
 draft: false
-description: Que es un Call shop?
+description: What is a call shop?
 qids:
-  - callshop-o-tarificador-telefonico-q-0-que-es-un-call-shop
-  - >-
-    callshop-o-tarificador-telefonico-q-1-a-que-tipo-de-negocios-esta-enfocado-call-shop
-  - >-
-    callshop-o-tarificador-telefonico-q-2-por-que-debo-tener-un-call-shop-en-mi-negocio
-  - callshop-o-tarificador-telefonico-q-3-que-ventajas-tiene-un-call-shop
-  - >-
-    callshop-o-tarificador-telefonico-q-4-porque-el-call-shop-de-voicetophone-es-el-mejor
+
+- callshop-o-tarificador-telefonico-q-0-que-es-un-call-shop
+- > - callshop-o-tarificador-telefonico-q-1-a-que-tipo-de-negocios-esta-enfocado-call-shop
+- > - callshop-o-tarificador-telefonico-q-2-por-que-debo-tener-un-call-shop-en-mi-negocio
+- callshop-o-tarificador-telefonico-q-3-que-ventajas-tiene-un-call-shop
+- > - callshop-o-tarificador-telefonico-q-4-porque-el-call-shop-de-voicetophone-es-el-mejor
+
 ---
 
 <details id="callshop-o-tarificador-telefonico-q-0-que-es-un-call-shop" open>
-<summary>Que es un Call shop?</summary>
+<summary>What is a call shop?</summary>
 
-Que es un Call shop?
+What is a call shop?
 
 </details>
 
 <details id="callshop-o-tarificador-telefonico-q-1-a-que-tipo-de-negocios-esta-enfocado-call-shop">
-<summary>A que tipo de negocios está enfocado Call shop?</summary>
+<summary>What types of businesses is a call shop aimed at?</summary>
 
-A que tipo de negocios está enfocado Call shop?
+What types of businesses is a call shop aimed at?
 
 </details>
 
 <details id="callshop-o-tarificador-telefonico-q-2-por-que-debo-tener-un-call-shop-en-mi-negocio">
-<summary>Por que debo tener un Call shop en mi negocio?</summary>
+<summary>Why should I have a call shop in my business?</summary>
 
-Por que debo tener un Call shop en mi negocio?
+Why should I have a call shop in my business?
 
 </details>
 
 <details id="callshop-o-tarificador-telefonico-q-3-que-ventajas-tiene-un-call-shop">
-<summary>Que ventajas tiene un Call shop?</summary>
+<summary>What are the advantages of a call shop?</summary>
 
-Que ventajas tiene un Call shop?
+What are the advantages of a call shop?
 
-respuesta es
+Answer:
 
 </details>
 
 <details id="callshop-o-tarificador-telefonico-q-4-porque-el-call-shop-de-voicetophone-es-el-mejor">
-<summary>Porque el Call shop de Voicetophone es el mejor?</summary>
+<summary>Why is Voicetophone's call shop the best?</summary>
 
-Porque el Call shop de Voicetophone es el mejor?
+Why is Voicetophone's call shop the best?
 
-- Por que es intuitivo y amigable.
+- Because it is intuitive and user-friendly.
 
-- Flexible cuando hay necesidad de aumentar cabinas.
+- Flexible when scaling booths.
 
-- Es gratuito para los usuarios Voicetophone.
+- It is free for Voicetophone users.
 
-- Porque no necesitas descargar ningun programa.
+- Because you don't need to download any program.
 
-- Porque posee nivel de administrador y usuario.
+- It offers both administrator and user levels.
 
-- Porque permite modificar las tarifas del cliente final.
+- It allows adjusting end-customer rates.
 
-- Se puede configurar en cualquier dispositivo .
+- It can be configured on any device.
 
-- Permite visualización en Pc, smartphone, y tablets.
+- Viewable on PC, smartphone, and tablets.
 
-- Y mucho más....
+- And much more....
 
 </details>
 

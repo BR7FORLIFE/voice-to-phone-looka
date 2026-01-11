@@ -1,10 +1,10 @@
 ---
-title: Software para call center
+title: Call Center Software
 source_url: "https://www.voicetophone.com/help/6/es"
 date_scraped: "2026-01-10T21:27:21.810Z"
 route: /help/software-para-call-center/es/
 draft: false
-description: Que es un software de centro de llamadas basado en la nube?
+description: What is cloud-based call center software?
 qids:
   - >-
     software-para-call-center-q-0-que-es-un-software-de-centro-de-llamadas-basado-en-la-nube
@@ -22,69 +22,69 @@ qids:
 ![Software](/images/pexels/call-center/call-center-1.jpg)
 
 <details id="software-para-call-center-q-0-que-es-un-software-de-centro-de-llamadas-basado-en-la-nube" open>
-<summary>Que es un software de centro de llamadas basado en la nube?</summary>
+<summary>What is cloud-based call center software?</summary>
 
-Que es un software de centro de llamadas basado en la nube?
+What is cloud-based call center software?
 
-Un software de centro de llamadas basado en la nube es una solución que se instala y se ejecuta en servidores alojados en el centro de datos de un proveedor de servicios. Esta solución, que utiliza[](https://www.voicetophone.com/que-es-la-telefonia-ip-como-funciona/es)[telefonía IP](https://www.voicetophone.com/que-es-la-telefonia-ip-como-funciona/es), permite a los agentes del call center trabajar desde cualquier lugar con conexión a Internet y a los administradores monitorear el desempeño del equipo en tiempo real. Además, la nube ofrece escalabilidad y flexibilidad para adaptarse a las necesidades cambiantes de su empresa.
+Cloud-based call center software is a solution installed and run on servers hosted in a service provider's data center. This solution, which uses [IP telephony](https://www.voicetophone.com/que-es-la-telefonia-ip-como-funciona/es), allows call center agents to work from anywhere with an internet connection and enables administrators to monitor team performance in real time. Additionally, the cloud provides scalability and flexibility to adapt to your company's changing needs.
 
 </details>
 
 <details id="software-para-call-center-q-1-por-que-es-mejor-una-solucion-de-centro-de-llamadas-en-la-nu">
-<summary>Por qué es mejor una solución de centro de llamadas en la nube?</summary>
+<summary>Why is a cloud call center solution better?</summary>
 
-Por qué es mejor una solución de centro de llamadas en la nube?
+Why is a cloud call center solution better?
 
-Decidirse por una solución de centro de llamadas en la nube significa obtener mayor escalabilidad, flexibilidad, confiabilidad, reducción de costos, integración sencilla, actualizaciones automáticas y mejores capacidades de análisis para su negocio.
+Choosing a cloud call center solution provides greater scalability, flexibility, reliability, cost reduction, easy integration, automatic updates, and improved analytics capabilities for your business.
 
 </details>
 
 <details id="software-para-call-center-q-2-puedo-evaluar-la-actividad-de-los-agentes">
-<summary>Puedo evaluar la actividad de los agentes?</summary>
+<summary>Can I monitor agent activity?</summary>
 
-Puedo evaluar la actividad de los agentes?
+Can I monitor agent activity?
 
-Si, Nuestro software para call center posee herramientas de monitoreo que permiten a los supervisores ver en tiempo real la actividad de los agentes, como por ejemplo escuchar las llamadas, ver el número de llamadas atendidas, la duración promedio de las llamadas y el tiempo que los agentes pasan en pausa. Los reportes de rendimiento proporcionan información detallada sobre el desempeño individual y del equipo, lo que ayuda a identificar áreas de mejora y tomar decisiones informadas. Estas herramientas son muy útiles para mejorar la eficiencia y la calidad del servicio al cliente.
+Yes. Our call center software includes monitoring tools that allow supervisors to view agent activity in real time, such as listening to calls, viewing the number of handled calls, average call duration, and time agents spend on break. Performance reports provide detailed insights on individual and team performance, helping identify areas for improvement and make informed decisions. These tools are very useful to improve efficiency and service quality.
 
 </details>
 
 <details id="software-para-call-center-q-3-cuantos-agentes-puede-tener-el-software-para-call-center">
-<summary>Cuantos agentes puede tener el software para Call Center?</summary>
+<summary>How many agents can the call center software support?</summary>
 
-Cuantos agentes puede tener el software para Call Center?
+How many agents can the call center software support?
 
-Nuestro Software Call center es escalable y Flexibe, por lo tanto nuestro clientes pueden tener la cantidad de agentes que necesiten según su necesidad. No existen límites!
+Our call center software is scalable and flexible; therefore, our clients can have as many agents as they need. There are no limits!
 
 </details>
 
 <details id="software-para-call-center-q-4-cuanto-cuesta-el-software-de-call-center">
-<summary>Cuanto cuesta el software de call center?</summary>
+<summary>How much does call center software cost?</summary>
 
-Cuanto cuesta el software de call center?
+> How much does call center software cost?
 
-Cada cliente tiene diferentes necesidades y diferentes estructuras. Por ejemplo, diferente cantidad de minutos a consumir, troncales de llamadas entrantes, canales de simultaneidad, número de agentes, espacio para grabaciones, etc. Eso significa que el tamaño de su empresa, la cantidad de agentes y el conjunto de características preferidas determinarán qué opción sería la más adecuada para su organización.
+Each client has different needs and structures. For example, varying amounts of minutes consumed, inbound trunks, concurrency channels, number of agents, storage for recordings, etc. This means your company's size, number of agents, and preferred feature set will determine the best option for your organization.
 
-VoiceToPhone tiene los mejores precios del mercado!. Por favor [contáctenos](https://www.voicetophone.com/contact/es) para asesorarle y brindarle nuestra mejor oferta.
+VoiceToPhone offers competitive pricing. Please [contact us](https://www.voicetophone.com/contact/es) for a consultation and our best offer.
 
 </details>
 
 <details id="software-para-call-center-q-5-existe-un-limite-de-llamadas-simultaneas">
-<summary>Existe un límite de llamadas simultáneas?</summary>
+<summary>Is there a limit on simultaneous calls?</summary>
 
-Existe un límite de llamadas simultáneas?
+Is there a limit on simultaneous calls?
 
-No. El límite lo pone usted.
+No. You set the limit.
 
-Tenemos a su disposición la cantidad de canales entrantes y saliente que usted solicite. Por favor consulte acerca de su requerimiento al representante más cercano.
+We can provide the number of inbound and outbound channels you request. Please consult your nearest representative regarding your requirements.
 
 </details>
 
 <details id="software-para-call-center-q-6-que-requisitos-tecnicos-necesito-para-usar-el-software-de-ca">
-<summary>Que requisitos técnicos necesito para usar el software de call center?</summary>
+<summary>What technical requirements are needed to use the call center software?</summary>
 
-Que requisitos técnicos necesito para usar el software de call center?
+What technical requirements are needed to use the call center software?
 
-Para empezar a utilizar el software de Call Center es necesario disponer de un ordenador, tablet o teléfono inteligente con conexión a internet de buena calidad. Cada agente será capaz de ingresar a traves de su navegador con una clave y usuario únicos, o a traves de una App si es un teléfono inteligente.
+To start using the call center software, you need a computer, tablet, or smartphone with a good internet connection. Each agent can log in via their browser with a unique username and password, or via an app on a smartphone.
 
 </details>
 

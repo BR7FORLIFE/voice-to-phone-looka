@@ -1,10 +1,10 @@
 ---
-title: Número Virtual
+title: Virtual Number
 source_url: "https://www.voicetophone.com/help/4/es"
 date_scraped: "2026-01-10T21:27:09.431Z"
 route: /help/numero-virtual/es/
 draft: false
-description: Puedo probar este servicio?
+description: Can I try this service?
 qids:
   - numero-virtual-q-0-puedo-probar-este-servicio
   - numero-virtual-q-1-es-necesario-tener-internet
@@ -21,113 +21,113 @@ qids:
 ---
 
 <details id="numero-virtual-q-0-puedo-probar-este-servicio" open>
-<summary>Puedo probar este servicio?</summary>
+<summary>Can I try this service?</summary>
 
-Puedo probar este servicio?
+Can I try this service?
 
-Si, Puedes probar nuestro servicio por varios dias, y para que tengas una referencia real del funcionamiento te entregamos números virtuales de USA y Colombia.
+Yes. You can try our service for several days, and to give you a real reference of operation we provide virtual numbers from the USA and Colombia.
 
-Toma en cuenta que el funcionamiento y la calidad de nuestro servicio siempre será igual para todos los paises , así que puedes probarlo en un softphone o incluso en tu centralita o planta telefónica.
+Keep in mind that the performance and quality of our service is the same across countries, so you can test it on a softphone or even on your PBX or telephone system.
 
 </details>
 
 <details id="numero-virtual-q-1-es-necesario-tener-internet">
-<summary>Es necesario tener internet?</summary>
+<summary>Is internet required?</summary>
 
-Es necesario tener internet?
+Is internet required?
 
-No. Las llamadas recibidas en tu número DID pueden ser desviadas y respondidas en cualquier número fijo o móvil, y no es necesario tener internet.
+No. Calls received on your DID number can be forwarded and answered on any landline or mobile number, and an internet connection is not required.
 
-Sin embargo, cuando se desea recibir llamadas en un softphone para PC o móviles inteligentes si es necesario, así como tambien cuando se reciben directamente en teléfonos Ip o en dispositivos ATAS.
+However, if you want to receive calls on a softphone for PC or mobile devices, an internet connection is necessary, as well as when receiving directly on IP phones or ATA devices.
 
 </details>
 
 <details id="numero-virtual-q-2-como-comprar-un-numero-did">
-<summary>Como comprar un número DID?</summary>
+<summary>How to buy a DID number?</summary>
 
-Como comprar un número DID?
+How to buy a DID number?
 
-Comprar uno o varios numeros DID es muy facil y lo puedes hacer siguiendo estos 6 simples pasos:
+Buying one or several DID numbers is very easy and you can do it by following these 6 simple steps:
 
-1. Verifica la cobertura de tus DID en nuestra seccion de precios.
-2. Verifica si se existen requisitos para comprar números de ese pais en nuestra seccion de ayuda.
-3. Solicita tu cuenta en [contáctenos](https://www.voicetophone.com/contact/es) , o crea tu cuenta directamente en : https://go.voicetophone.com/VUP/login
-4. Ya dentro del portal de tu cuenta , agrega saldo desde : Account/Top Up
-5. Con saldo en tu cuenta ingresas en : Account/Phone numbers
-6. Click en ADD , seleccione el pais y el area donde lo desea y finalmente click en SUBMIT para finalizar.
+1. Check DID coverage in our pricing section.
+2. Verify if there are requirements to purchase numbers for that country in our help section.
+3. Request your account at [contact us](https://www.voicetophone.com/contact/es), or create your account directly at: https://go.voicetophone.com/VUP/login
+4. Once in your account portal, add funds from: Account/Top Up
+5. With balance in your account, go to: Account/Phone numbers
+6. Click ADD, select the country and area you want, and finally click SUBMIT to finish.
 
 ![image](/images/help/numero-virtual-2-0.png)
 
 </details>
 
 <details id="numero-virtual-q-3-que-cobertura-posee-voicetophone-para-numeros-virtuales">
-<summary>Que cobertura posee VoiceToPhone para números virtuales?</summary>
+<summary>What coverage does VoiceToPhone have for virtual numbers?</summary>
 
-Que cobertura posee VoiceToPhone para números virtuales?
+What coverage does VoiceToPhone have for virtual numbers?
 
-Tenemos cobertura en mas de 80 paises y miles de ciudades en todo el mundo. Por favor ingresa en https://www.voicetophone.com/rates/5/es para revisar la cobertura.
+We have coverage in more than 80 countries and thousands of cities worldwide. Please visit https://www.voicetophone.com/rates/5/es to review coverage.
 
 </details>
 
 <details id="numero-virtual-q-4-cuantas-llamadas-simultaneas-puedo-recibir">
-<summary>Cuántas llamadas simultáneas puedo recibir ?</summary>
+<summary>How many simultaneous calls can I receive?</summary>
 
-Cuántas llamadas simultáneas puedo recibir ?
+How many simultaneous calls can I receive?
 
-Regularmente cada número DID posee 2 canales de simultaneidad .
+Typically each DID number has 2 simultaneous channels.
 
-Esto significa que si un número posee 2 canales asignados, una tercera llamada saldra con tono de ocupado.
+This means that if a number has 2 channels assigned, a third incoming call will receive a busy signal.
 
-Canales adicionales deben ser solicitados a su agente vendedor.
+Additional channels must be requested from your sales agent.
 
 </details>
 
 <details id="numero-virtual-q-5-puedo-hacer-llamadas-desde-mi-numero-did">
-<summary>Puedo hacer llamadas desde mi número DID?</summary>
+<summary>Can I make calls from my DID number?</summary>
 
-Puedo hacer llamadas desde mi número DID?
+Can I make calls from my DID number?
 
-Si es posible, pero desde la misma cuenta voip que tiene asociado el número, y para ello se debe agregar un poco de saldo o crédito para poder realizar llamadas salientes.
+Yes. It is possible, but from the same VoIP account associated with the number, and you must add some balance or credit to make outbound calls.
 
 </details>
 
 <details id="numero-virtual-q-6-cuando-se-ocupan-mis-canales-entrantes-puedo-realizar-llamad">
-<summary>Cuando se ocupan mis canales entrantes, puedo realizar llamadas?</summary>
+<summary>When my incoming channels are busy, can I make calls?</summary>
 
-Cuando se ocupan mis canales entrantes, puedo realizar llamadas?
+When my incoming channels are busy, can I make calls?
 
-Si. Los canales salientes son independientes a los canales entrantes.
+Yes. Outgoing channels are independent from incoming channels.
 
 </details>
 
 <details id="numero-virtual-q-7-cuanto-debo-pagar-por-un-numero-virtual-did">
-<summary>Cuanto debo pagar por un Número Virtual DID?</summary>
+<summary>How much do I pay for a Virtual DID Number?</summary>
 
-Cuanto debo pagar por un Número Virtual DID?
+How much do I pay for a Virtual DID Number?
 
-Los precios de los números virtuales varían de acuerdo al pais, y su renovación se hace automáticamente més a més. Para ello la cuenta voip debe tener saldo en la fecha de vencimiento y así evitar la cancelación del número.
+Virtual number prices vary by country, and renewals are automatic monthly. The VoIP account must have sufficient balance on the renewal date to avoid number cancellation.
 
-Conoce los precios y cobertura de este servicio en : https://www.voicetophone.com/rates/5/es
+See prices and coverage for this service at: https://www.voicetophone.com/rates/5/es
 
 </details>
 
 <details id="numero-virtual-q-8-puedo-comprar-dids-de-diferentes-paises">
-<summary>Puedo comprar DIDs de diferentes paises?</summary>
+<summary>Can I buy DIDs from different countries?</summary>
 
-Puedo comprar DIDs de diferentes paises?
+Can I buy DIDs from different countries?
 
-Si. Puedes adquirir todos los números que desees, asociandolos a tu cuenta voip y responderlos donde quieras. Por ejemplo , en una misma cuenta voip puedes tener asociado los números de chile, argentina, USA, Francia, etc.
+Yes. You can acquire as many numbers as you want, associating them with your VoIP account and answering them wherever you wish. For example, the same VoIP account can have numbers from Chile, Argentina, USA, France, etc.
 
 </details>
 
 <details id="numero-virtual-q-9-puedo-asociar-mi-numero-virtual-a-una-pbx-o-central-telefoni">
-<summary>Puedo asociar mi número virtual a una PBX o central telefónica en la nube?</summary>
+<summary>Can I associate my virtual number with a PBX or cloud telephone system?</summary>
 
-Puedo asociar mi número virtual a una PBX o central telefónica en la nube?
+Can I associate my virtual number with a PBX or cloud telephone system?
 
-Sí, incluso podrías tener varios números DID asociados a una misma Pbx virtual.
+Yes, you can even have multiple DID numbers associated with the same virtual PBX.
 
-Recuerda que la Pbx virtual es un servicio de Telefonía IP y por tanto los números virtuales asociados podran recibir llamadas de forma global.
+Remember that a virtual PBX is an IP telephony service and therefore the associated virtual numbers can receive calls globally.
 
 </details>
 

@@ -1,10 +1,10 @@
 ---
-title: Ayuda
-description: Estamos comprometidos en ayudarle a resolver sus inquietudes
+title: Help
+description: We are committed to helping you resolve your questions
 draft: false
 image: "/images/pexels/call-center/call-center-3.jpg"
 ---
 
-<div class="help-cards"><a class="help-card" href="/help/inquietudes-basicas/es/"><h3>Inquietudes básicas</h3><p>Cómo empezar ?</p></a><a class="help-card" href="/help/numero-virtual/es/"><h3>Número Virtual</h3><p>Puedo probar este servicio?</p></a><a class="help-card" href="/help/pbx-virtual/es/"><h3>Pbx virtual</h3><p>Porque debería utilizar un pbx virtual en mi empresa?</p></a><a class="help-card" href="/help/software-para-call-center/es/"><h3>Software para call center</h3><p>Que es un software de centro de llamadas basado en la nube?</p></a><a class="help-card" href="/help/llamadas-voip/es/"><h3>Llamadas Voip</h3><p>Que es la Nube?</p></a><a class="help-card" href="/help/callshop-o-tarificador-telefonico/es/"><h3>Callshop o Tarificador telefónico</h3><p>Que es un Call shop?</p></a><a class="help-card" href="/help/telefonia-ip/es/"><h3>Telefonía IP</h3><p>Como debería ser un sistema de telefonía IP ideal?</p></a><a class="help-card" href="/help/requisitos-para-comprar-numeros-did/es/"><h3>Requisitos para comprar Números DID</h3><p>Cuales son los requisitos para comprar un número Virtual?</p></a><a class="help-card" href="/help/troncal-sip/es/"><h3>Troncal Sip</h3><p>Que obtengo con el servicio de troncal SIP para mi compañia?</p></a></div>
+<div class="help-cards"><a class="help-card" href="/help/inquietudes-basicas/en/"><h3>Basic Questions</h3><p>How to get started?</p></a><a class="help-card" href="/help/numero-virtual/en/"><h3>Virtual Number</h3><p>Can I try this service?</p></a><a class="help-card" href="/help/pbx-virtual/en/"><h3>Virtual PBX</h3><p>Why should I use a virtual PBX in my company?</p></a><a class="help-card" href="/help/software-para-call-center/en/"><h3>Call Center Software</h3><p>What is cloud-based call center software?</p></a><a class="help-card" href="/help/llamadas-voip/en/"><h3>VoIP Calls</h3><p>What is the Cloud?</p></a><a class="help-card" href="/help/callshop-o-tarificador-telefonico/en/"><h3>Call Shop or Rate Calculator</h3><p>What is a call shop?</p></a><a class="help-card" href="/help/telefonia-ip/en/"><h3>IP Telephony</h3><p>What should an ideal IP telephony system look like?</p></a><a class="help-card" href="/help/requisitos-para-comprar-numeros-did/en/"><h3>Requirements to buy DID Numbers</h3><p>What are the requirements to purchase a virtual number?</p></a><a class="help-card" href="/help/troncal-sip/en/"><h3>SIP Trunk</h3><p>What do I get with a SIP trunk service for my company?</p></a></div>
 
-Selecciona una tarjeta para ver las preguntas y respuestas de esa sección.
+Select a card to view the questions and answers for that section.
