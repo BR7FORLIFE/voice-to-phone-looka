@@ -1,6 +1,6 @@
 ---
 enable: true # Control the visibility of this section across all pages where it is used
-description: "Estamos orgullosos de trabajar codo a codo con nuestros distinguidos patrocinadores"
+description: "We are proud to work hand-in-hand with our distinguished partners"
 
 marquee:
   marqueeElementWidth: "11.25rem"

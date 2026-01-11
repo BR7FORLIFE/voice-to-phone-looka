@@ -1,12 +1,12 @@
 ---
 enable: true
-title: "Soluciones de comunicación en la nube para empresas modernas"
-subtitle: "Nuestros servicios"
+title: "Cloud communication solutions for modern businesses"
+subtitle: "Our services"
 
 # Services data comes from "/content/services"
 button:
   enable: true
-  label: "Ver todos los servicios"
+  label: "View all services"
   url: "/services"
   rel: ""
   target: ""

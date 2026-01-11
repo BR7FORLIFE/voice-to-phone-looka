@@ -1,11 +1,11 @@
 ---
-enable: true # Controla la visibilidad de esta sección
+enable: true # Control the visibility of this section
 
-title: 'Comunicación en la nube diseñada para<br><strong style="color: var(--color-secondary);">empresas que quieren crecer</strong>'
+title: 'Cloud communication designed for<br><strong style="color: var(--color-secondary);">companies that want to grow</strong>'
 
 button:
   enable: true
-  label: "Conozca VoiceToPhone"
+  label: "Learn about VoiceToPhone"
   url: "/about"
   rel: ""
   target: ""
@@ -19,13 +19,13 @@ achievements:
     - value: "100"
       prependValue: ""
       appendValue: "%"
-      description: "Soluciones de telefonía cloud enfocadas en confiabilidad, seguridad y alto rendimiento para empresas de todos los tamaños."
+      description: "Cloud telephony solutions focused on reliability, security, and high performance for businesses of all sizes."
     - value: "24"
       prependValue: ""
       appendValue: "/7"
-      description: "Soporte técnico especializado disponible para acompañar a su equipo en cada etapa de la implementación y operación."
+      description: "Specialized technical support available to assist your team at every stage of implementation and operation."
     - value: "0"
       prependValue: ""
       appendValue: ""
-      description: "Cláusulas de permanencia. Creemos en la calidad del servicio para que nunca quiera cambiar."
+      description: "No lock-in clauses. We believe in the quality of our service so you'll never want to switch."
 ---

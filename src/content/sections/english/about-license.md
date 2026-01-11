@@ -1,30 +1,29 @@
 ---
 enable: true # Control the visibility of this section
-title: "Telefonía IP para Empresas y Negocios"
-subtitle: "Soluciones de Voz IP con Cobertura Global"
+title: "IP Telephony for Businesses and Enterprises"
+subtitle: "Global VoIP Solutions"
 description: |
-  VoiceToPhone ofrece soluciones avanzadas de Telefonía IP que permiten integrar voz y datos bajo una misma red basada en protocolo IP. 
-  Nuestra tecnología VoIP elimina la necesidad de infraestructuras físicas costosas, ofreciendo una comunicación estable, 
-  escalable y de alta calidad. Con presencia en más de 80 países, facilitamos la comunicación global de tu empresa 
-  con el máximo ahorro y fiabilidad del mercado.
+  VoiceToPhone offers advanced IP telephony solutions that allow you to integrate voice and data on a single IP-based network.
+  Our VoIP technology eliminates the need for costly physical infrastructures, providing stable, scalable, and high-quality communication.
+  With a presence in over 80 countries, we enable your company's global communication with maximum savings and market-leading reliability.
 
 image:
   src: "/images/solutions/voicetophone-telefonia-ip.webp"
-  alt: "Plataforma de Telefonía IP VoiceToPhone funcionando en múltiples dispositivos"
-  caption: "Infraestructura de red de VoiceToPhone: Conectividad global sin fronteras"
+  alt: "VoiceToPhone IP telephony platform running on multiple devices"
+  caption: "VoiceToPhone network infrastructure: Global connectivity without borders"
 
 featureList:
   # Icon names from Lucide Icons (https://lucide.dev/icons/)
   - icon: "Cloud"
-    title: "Centralita Virtual Cloud"
-    description: "Gestione sus comunicaciones al 100% desde la nube, sin límites de extensiones y con total flexibilidad para su negocio."
+    title: "Cloud PBX"
+    description: "Manage your communications 100% from the cloud, with unlimited extensions and full flexibility for your business."
   - icon: "PhoneCall"
-    title: "Números Virtuales (DIDs)"
-    description: "Obtenga presencia local inmediata con números telefónicos en más de 80 países, garantizando alta disponibilidad."
+    title: "Virtual Numbers (DIDs)"
+    description: "Gain immediate local presence with telephone numbers in over 80 countries, ensuring high availability."
   - icon: "Layers"
-    title: "Troncales SIP de Alta Capacidad"
-    description: "Conecte su infraestructura actual a la telefonía pública con canales de voz bidireccionales y escalabilidad inmediata."
+    title: "High-Capacity SIP Trunks"
+    description: "Connect your existing infrastructure to the public telephone network with bidirectional voice channels and immediate scalability."
   - icon: "Smartphone"
-    title: "Movilidad Multi-dispositivo"
-    description: "Utilice su extensión en teléfonos IP, computadoras o smartphones, permitiendo que su equipo trabaje desde cualquier lugar."
+    title: "Multi-device Mobility"
+    description: "Use your extension on IP phones, computers, or smartphones, allowing your team to work from anywhere."
 ---

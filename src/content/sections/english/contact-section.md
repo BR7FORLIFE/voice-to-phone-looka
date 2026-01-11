@@ -1,75 +1,75 @@
 ---
 enable: true
-title: "Hablemos sobre las comunicaciones de su empresa"
-description: "Nuestro equipo está listo para asesorarle y ayudarle a implementar una solución de telefonía en la nube adaptada a su negocio."
-subtitle: "Contacto"
+title: "Let's talk about your company's communications"
+description: "Our team is ready to advise and help you implement a cloud telephony solution tailored to your business."
+subtitle: "Contact"
 
 contactList:
   enable: true
   list:
     - icon: "Phone"
-      label: "Llámenos"
+      label: "Call us"
       value: "+1 786 000 0000"
     - icon: "Mail"
-      label: "Escríbanos"
+      label: "Email us"
       value: "sales@voicetophone.com"
     - icon: "Send"
-      label: "Soporte y ventas"
+      label: "Support & Sales"
       value: "@voicetophone"
 
 social:
   enable: true
-  title: "Síganos en redes sociales"
-  # list se mantiene desde social.json
+  title: "Follow us on social media"
+  # list is maintained from social.json
 
 # Check config.toml file for form action related settings
 form:
-  emailSubject: "Nuevo contacto desde VoiceToPhone"
+  emailSubject: "New contact from VoiceToPhone"
   submitButton:
-    label: "Enviar solicitud"
+    label: "Send Request"
     showIcon: "true"
     variant: "outline"
     hoverEffect: "text-flip"
 
   # note:
-  #   Sus datos están protegidos. Nunca compartimos su información con terceros.
-  #   Consulte nuestra [Política de Privacidad](/privacy-policy/).
+  #   Your data is protected. We never share your information with third parties.
+  #   See our [Privacy Policy](/privacy-policy/).
 
   inputs:
     - label: ""
-      placeholder: "Nombre completo"
-      name: "Nombre completo"
+      placeholder: "Full name"
+      name: "Full name"
       required: true
       halfWidth: true
       defaultValue: ""
 
     - label: ""
-      placeholder: "Correo electrónico"
-      name: "Correo electrónico"
+      placeholder: "Email"
+      name: "Email"
       required: true
       type: "email"
       halfWidth: true
       defaultValue: ""
 
     - label: ""
-      placeholder: "Teléfono"
-      name: "Teléfono"
+      placeholder: "Phone"
+      name: "Phone"
       required: true
       type: "text"
       halfWidth: true
       defaultValue: ""
 
     - label: ""
-      placeholder: "Empresa"
-      name: "Empresa"
+      placeholder: "Company"
+      name: "Company"
       required: true
       type: "text"
       halfWidth: true
       defaultValue: ""
 
     - label: ""
-      placeholder: "Motivo de contacto"
-      name: "Motivo de contacto"
+      placeholder: "Reason for contact"
+      name: "Reason for contact"
       required: true
       halfWidth: true
       dropdown:
@@ -77,20 +77,20 @@ form:
         search:
           placeholder: ""
         items:
-          - label: "Solicitar demo"
-            value: "Solicitar demo"
-          - label: "Información comercial"
-            value: "Información comercial"
-          - label: "Soporte técnico"
-            value: "Soporte técnico"
-          - label: "Integraciones / API"
-            value: "Integraciones / API"
-          - label: "Otro"
-            value: "Otro"
+          - label: "Request demo"
+            value: "Request demo"
+          - label: "Business information"
+            value: "Business information"
+          - label: "Technical support"
+            value: "Technical support"
+          - label: "Integrations / API"
+            value: "Integrations / API"
+          - label: "Other"
+            value: "Other"
 
     - label: ""
-      placeholder: "Mensaje"
-      name: "Mensaje"
+      placeholder: "Message"
+      name: "Message"
       tag: "textarea"
       rows: "4"
       required: true
@@ -99,25 +99,16 @@ form:
 
     - label: "Google"
       checked: false
-      name: "Origen del contacto"
+      name: "Origin of contact"
       required: true
-      groupLabel: "¿Cómo nos conoció?"
+      groupLabel: "How did you hear about us?"
       group: "source"
       type: "radio"
       halfWidth: true
       defaultValue: ""
 
-    - label: "Redes sociales"
-      name: "Origen del contacto"
-      required: true
-      groupLabel: ""
-      group: "source"
-      type: "radio"
-      halfWidth: true
-      defaultValue: ""
-
-    - label: "Referencia"
-      name: "Origen del contacto"
+    - label: "Social media"
+      name: "Origin of contact"
       required: true
       groupLabel: ""
       group: "source"
@@ -125,8 +116,8 @@ form:
       halfWidth: true
       defaultValue: ""
 
-    - label: "Otro"
-      name: "Origen del contacto"
+    - label: "Referral"
+      name: "Origin of contact"
       required: true
       groupLabel: ""
       group: "source"
@@ -134,9 +125,18 @@ form:
       halfWidth: true
       defaultValue: ""
 
-    - label: "Acepto los términos y la [política de privacidad](/privacy-policy/)."
-      name: "Aceptación de privacidad"
-      value: "Aceptado"
+    - label: "Other"
+      name: "Origin of contact"
+      required: true
+      groupLabel: ""
+      group: "source"
+      type: "radio"
+      halfWidth: true
+      defaultValue: ""
+
+    - label: "I accept the terms and the [privacy policy](/privacy-policy/)."
+      name: "Privacy acceptance"
+      value: "Accepted"
       checked: false
       required: true
       type: "checkbox"
@@ -145,9 +145,9 @@ form:
 
     - note: success
       parentClass: "hidden text-sm message success"
-      content: "Hemos recibido su mensaje. Nuestro equipo se pondrá en contacto con usted a la brevedad."
+      content: "We have received your message. Our team will contact you shortly."
 
     - note: deprecated
       parentClass: "hidden text-sm message error"
-      content: "Ha ocurrido un error. Por favor escríbanos a [support@voicetophone.com](mailto:support@voicetophone.com)."
+      content: "An error occurred. Please email us at [support@voicetophone.com](mailto:support@voicetophone.com)."
 ---

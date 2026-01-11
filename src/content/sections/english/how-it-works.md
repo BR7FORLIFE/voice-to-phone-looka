@@ -1,35 +1,35 @@
 ---
-enable: true # Controla la visibilidad de esta sección
-title: "¿Qué te ofrecemos en VoiceToPhone?"
-subtitle: "Nuestro proceso"
+enable: true # Control the visibility of this section
+title: "What we offer at VoiceToPhone"
+subtitle: "Our process"
 bgPatternImage: "/images/line-pattern.svg"
 
 list:
-  - title: "Ahorro de costos"
+  - title: "Cost Savings"
     description: |
-      <span class="text-accent text-lg font-semibold mb-2 block">Reduce costes operativos</span>
+      <span class="text-accent text-lg font-semibold mb-2 block">Reduce operating costs</span>
 
-      Reduce costes operativos eliminando infraestructuras físicas y gastos de mantenimiento recurrentes; paga solo por lo que usas y optimiza tu presupuesto de comunicaciones.
+      Reduce operating costs by eliminating physical infrastructure and recurring maintenance expenses; pay only for what you use and optimize your communications budget.
     images:
       src:
         - "责任.webp"
       background: "/images/how-it-works/bg.svg"
       alt: "Ahorro de costos"
-  - title: "Movilidad Total"
+  - title: "Total Mobility"
     description: |
-      <span class="text-accent text-lg font-semibold mb-2 block">Comunicación sin fronteras</span>
+      <span class="text-accent text-lg font-semibold mb-2 block">Communication without borders</span>
 
-      Atiende y realiza llamadas desde cualquier dispositivo y navegador (Chrome, Safari, Mozilla) con la misma calidad y acceso a funciones empresariales, estés donde estés.
+      Make and receive calls from any device and browser (Chrome, Safari, Firefox) with the same quality and access to business features, wherever you are.
     images:
       src:
         - "蓝图.webp"
       background: "/images/how-it-works/bg.svg"
       alt: "Movilidad total"
-  - title: "Flexibilidad"
+  - title: "Flexibility"
     description: |
-      <span class="text-accent text-lg font-semibold mb-2 block">Escala al ritmo de tu negocio</span>
+      <span class="text-accent text-lg font-semibold mb-2 block">Scale at your business's pace</span>
 
-      Ajusta líneas, extensiones y funcionalidades en minutos, sin trámites ni esperas; adapta tu telefonía a picos de demanda o crecimiento inmediato.
+      Adjust lines, extensions, and features in minutes, without paperwork or delays; adapt your telephony to demand spikes or immediate growth.
     images:
       src:
         - "激励.webp"

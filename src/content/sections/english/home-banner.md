@@ -1,23 +1,23 @@
 ---
-enable: true # Controla la visibilidad de esta sección
+enable: true # Control the visibility of this section
 
 infoBlock:
   enable: true
   content: |
-    En VoiceToPhone ayudamos a las empresas a modernizar sus comunicaciones con soluciones de telefonía en la nube seguras, escalables y fáciles de administrar, diseñadas para mejorar la productividad y reducir costos.
+    At VoiceToPhone, we help companies modernize their communications with secure, scalable, and easy-to-manage cloud telephony solutions designed to improve productivity and reduce costs.
 
 mainBlock:
   disableSlider: false
   slides:
-    - title: "¿Su sistema telefónico limita el crecimiento de su empresa?"
+    - title: "Is your phone system limiting your company's growth?"
       description: |
-        Los sistemas tradicionales generan altos costos, poca flexibilidad y problemas de escalabilidad.
+        Traditional systems generate high costs, limited flexibility, and scalability issues.
 
-        Con la telefonía en la nube de VoiceToPhone, su empresa puede crecer sin límites, comunicarse desde cualquier lugar y optimizar sus costos operativos.
+        With VoiceToPhone's cloud telephony, your company can grow without limits, communicate from anywhere, and optimize operational costs.
       backgroundImage: "/images/pexels/call-center/call-center-1.jpg"
       button:
         enable: true
-        label: "Descubrir la solución cloud"
+        label: "Discover our cloud solution"
         url: "/contact"
         rel: ""
         target: ""
@@ -25,15 +25,15 @@ mainBlock:
         variant: "outline-white"
         hoverEffect: "text-flip"
 
-    - title: "¿Equipos remotos con dificultades para comunicarse?"
+    - title: "Are remote teams having trouble communicating?"
       description: |
-        El trabajo moderno exige comunicación rápida, fluida y sin interrupciones.
+        Modern work requires fast, seamless, and uninterrupted communication.
 
-        VoiceToPhone conecta a su equipo desde cualquier lugar y dispositivo con una plataforma unificada de llamadas, SMS y contactos.
+        VoiceToPhone connects your team from any location and device with a unified platform for calls, SMS, and contacts.
       backgroundImage: "/images/pexels/computer/computer-1.jpg"
       button:
         enable: true
-        label: "Conectar a mi equipo"
+        label: "Connect my team"
         url: "/contact"
         rel: ""
         target: ""
@@ -41,15 +41,15 @@ mainBlock:
         variant: "outline-white"
         hoverEffect: "text-flip"
 
-    - title: "¿Listo para una telefonía que evolucione con su negocio?"
+    - title: "Ready for telephony that evolves with your business?"
       description: |
-        Agregue troncales SIP, números, extensiones, sucursales y funcionalidades avanzadas en minutos.
+        Add SIP trunks, numbers, extensions, branches, and advanced features in minutes.
 
-        La telefonía cloud de VoiceToPhone se adapta a su presente y a su crecimiento futuro, sin contratos de permanencia.
+        VoiceToPhone's cloud telephony adapts to your present and future growth, with no lock-in contracts.
       backgroundImage: "/images/pexels/call-center/call-center-2.jpg"
       button:
         enable: true
-        label: "Escalar sin límites"
+        label: "Scale without limits"
         url: "/contact"
         rel: ""
         target: ""
