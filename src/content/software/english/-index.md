@@ -1,6 +1,6 @@
 ---
-title: "Software de Call Center y Telemarketing"
-metaDescription: "Maximice la productividad de sus agentes con nuestros Marcadores Predictivos, Software de Telemarketing y herramientas de supervisión en la nube."
+title: "Call Center & Telemarketing Software"
+metaDescription: "Maximize agent productivity with our Predictive Dialers, Telemarketing Software and cloud supervision tools."
 draft: false
 hasCustomLineAnimationBg: true
 ---
@@ -19,8 +19,8 @@ limit: false
 
 button:
 enable: true
-label: "Solicitar Demo del Software"
-url: "/contacto"
+label: "Request Software Demo"
+url: "/contact"
 rel: ""
 target: ""
 showIcon: "true"
@@ -47,7 +47,7 @@ marqueeDuration: "35s"
 
 servicesSection:
 enable: true
-title: "Complemente su software con telefonía IP"
+title: "Complement your software with IP telephony"
 
 # subtitle: "Infraestructura robusta"
 
@@ -57,8 +57,8 @@ position: "bottom"
 
 button:
 enable: true
-label: "Ver Planes de Telefonía"
-url: "/servicios/telefonia-ip"
+label: "View Telephony Plans"
+url: "/services/voip"
 rel: ""
 target: ""
 showIcon: "true"
@@ -69,7 +69,7 @@ hoverEffect: "text-flip"
 
 faqSection:
 enable: true
-title: "Preguntas frecuentes sobre el Software"
+title: "Frequently asked questions about the software"
 
 # subtitle: "Resolvemos sus dudas técnicas"
 
@@ -80,8 +80,8 @@ showCategories: false
 
 button:
 enable: true
-label: "Hablar con Soporte"
-url: "/contacto"
+label: "Talk to Support"
+url: "/contact"
 rel: ""
 target: ""
 showIcon: "true"
@@ -90,30 +90,30 @@ hoverEffect: "text-flip"
 
 ---
 
-## Potencie sus ventas y atención al cliente
+## Boost your sales and customer service
 
-Transforme la operación de su Contact Center con nuestra suite de software en la nube. VoiceToPhone le ofrece herramientas avanzadas diseñadas para reducir los tiempos de espera, aumentar la tasa de contacto y facilitar la supervisión de sus equipos, ya sea que trabajen en la oficina o de forma remota.
+Transform your Contact Center operation with our cloud software suite. VoiceToPhone provides advanced tools designed to reduce wait times, increase contact rates, and simplify supervision of your teams—whether they work in-office or remotely.
 
-### Marcadores Inteligentes (Dialers)
+### Intelligent Dialers
 
-Olvídese de la marcación manual. Nuestros algoritmos optimizan el tiempo de sus agentes para que solo se concentren en hablar con clientes reales.
+Forget manual dialing. Our algorithms optimize agent time so they focus only on speaking with real customers.
 
-- **Marcador Predictivo:** El sistema lanza múltiples llamadas simultáneamente basándose en estadísticas de conexión. Filtra tonos de ocupado, buzones y números inexistentes, conectando al agente solo cuando un humano responde. Ideal para campañas de alto volumen.
-- **Marcador Progresivo:** Realiza la llamada automáticamente en el momento en que el agente queda libre. Garantiza un flujo constante de trabajo sin los "tiempos muertos" de la marcación manual.
-- **Marcador Preview:** Permite al agente visualizar la ficha del cliente y sus datos antes de decidir lanzar la llamada, ideal para ventas complejas o cobranza personalizada.
+- **Predictive Dialer:** The system launches multiple calls simultaneously based on connection statistics. It filters busy tones, voicemails and invalid numbers, connecting the agent only when a human answers—ideal for high-volume campaigns.
+- **Progressive Dialer:** Automatically places the call when an agent becomes available, ensuring a steady workflow without the "dead time" of manual dialing.
+- **Preview Dialer:** Lets the agent review the customer's record and details before initiating the call—great for consultative sales or personalized collections.
 
-### Gestión y Supervisión en Tiempo Real
+### Real-time Management and Supervision
 
-Tenga el control total de su operación con nuestro Software de Call Center:
+Stay in full control of your operation with our Call Center Software:
 
-1.  **Monitoreo en Vivo:** Visualice el estado de sus agentes (disponible, en llamada, en pausa) y las colas de espera en tiempo real.
-2.  **Grabación de Llamadas:** Almacenamiento seguro de interacciones para control de calidad y auditoría.
-3.  **Analíticas Avanzadas:** Reportes detallados de productividad, duración de llamadas y efectividad de campañas para la toma de decisiones basada en datos.
+1. **Live Monitoring:** View agent statuses (available, on call, on break) and queue metrics in real time.
+2. **Call Recording:** Secure storage of interactions for quality control and audits.
+3. **Advanced Analytics:** Detailed reports on productivity, call duration and campaign effectiveness to support data-driven decisions.
 
-### Automatización y Telemarketing
+### Automation and Telemarketing
 
-Llegue a miles de clientes en minutos con nuestras herramientas de difusión masiva:
+Reach thousands of customers in minutes with our mass-delivery tools:
 
-- **Mensajes de Voz Masivos (Blaster):** Envíe notificaciones pregrabadas a grandes bases de datos.
-- **SMS Marketing:** Campañas de mensajes de texto con altas tasas de apertura.
-- **Integración CRM:** Conecte su flujo de llamadas con su base de datos de clientes para una gestión unificada.
+- **Mass Voice Messages (Blaster):** Send prerecorded notifications to large databases.
+- **SMS Marketing:** Text campaigns with high open rates.
+- **CRM Integration:** Connect call flows to your customer database for unified management.

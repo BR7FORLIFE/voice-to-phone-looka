@@ -1,6 +1,6 @@
 ---
-title: "Marcador Predictivo"
-description: "Potencie su Call Center con algoritmos que predicen la disponibilidad de agentes para conectar solo llamadas exitosas."
+title: "Predictive Dialer"
+description: "Boost your call center with algorithms that predict agent availability to connect only successful calls."
 
 image: "/images/pexels/computer/computer-1.jpg"
 icon: "Activity"
@@ -17,8 +17,8 @@ pricingSection:
 intro:
   enable: true
   image: "/images/pexels/computer/computer-4.jpg"
-  title: "Ventas masivas con tecnología inteligente"
-  description: "Nuestra solución predice cuándo un agente estará libre y lanza llamadas simultáneas, filtrando buzones y tonos de ocupado automáticamente."
+  title: "High-volume sales with intelligent technology"
+  description: "Our solution predicts when an agent will be free and launches simultaneous calls, automatically filtering voicemails and busy signals."
   button:
     enable: true
     label: "Solicitar demo"
@@ -31,13 +31,13 @@ intro:
 
 details:
   enable: true
-  title: "Funcionalidades de alto volumen"
-  description: "Diseñado para campañas que requieren el máximo nivel de contactos por hora."
+  title: "High-volume capabilities"
+  description: "Designed for campaigns that require the highest contact rate per hour."
   list:
     - enable: true
       image: "/images/services/service-details/ivr.jpg"
-      title: "IVR Inteligente"
-      description: "Direccionamiento automatizado para calificar leads antes de pasarlos a un agente."
+      title: "Smart IVR"
+      description: "Automated routing to qualify leads before passing them to an agent."
       button:
         enable: true
         label: "Ver más"
@@ -48,8 +48,8 @@ details:
 
     - enable: true
       image: "/images/services/service-details/grabacion.jpg"
-      title: "Grabación de Llamadas"
-      description: "Almacenamiento en la nube de todas las interacciones para auditoría y entrenamiento."
+      title: "Call Recording"
+      description: "Cloud storage of all interactions for auditing and training."
       button:
         enable: true
         label: "Ver más"
@@ -60,8 +60,8 @@ details:
 
     - enable: true
       image: "/images/services/service-details/estadisticas.jpg"
-      title: "Estadísticas en Tiempo Real"
-      description: "Métricas detalladas de rendimiento para tomar decisiones informadas al instante."
+      title: "Real-time Statistics"
+      description: "Detailed performance metrics to make informed decisions instantly."
       button:
         enable: true
         label: "Ver más"
@@ -72,14 +72,14 @@ details:
 
 impact:
   enable: true
-  title: "Resultados exponenciales"
-  description: "Multiplique su capacidad de contacto sin aumentar su plantilla de agentes."
+  title: "Exponential results"
+  description: "Multiply your contact capacity without increasing your agent headcount."
   list:
-    - Filtrado automático de contestadores
-    - Enrutamiento inteligente de llamadas
-    - Integración nativa con CRM
-    - Gestión omnicanal integrada
-    - Cero inversión en hardware
+    - Automatic answering machine filtering
+    - Intelligent call routing
+    - Native CRM integration
+    - Integrated omnichannel management
+    - Zero hardware investment
 
   statsBlock:
     enable: true
@@ -91,7 +91,7 @@ impact:
           prependValue: ""
           value: "99.9"
           appendValue: "%"
-        description: "Efectividad de conexión"
+        description: "Connection effectiveness"
     md:
       - background:
           type: "image-overlay"
@@ -100,7 +100,7 @@ impact:
           prependValue: ""
           value: "IA"
           appendValue: ""
-        description: "Algoritmos predictivos"
+        description: "Predictive algorithms"
     sm:
       - background:
           type: "light-color"
@@ -109,7 +109,7 @@ impact:
           prependValue: ""
           value: "∞"
           appendValue: ""
-        description: "Escalabilidad total"
+        description: "Total scalability"
       - background:
           type: "light-color"
           image: ""
@@ -117,11 +117,11 @@ impact:
           prependValue: ""
           value: "0"
           appendValue: ""
-        description: "Mantenimiento físico"
+        description: "Physical maintenance"
 
   button:
     enable: true
-    label: "Hablar con un experto"
+    label: "Talk to an expert"
     url: "/contact"
     rel: ""
     target: ""

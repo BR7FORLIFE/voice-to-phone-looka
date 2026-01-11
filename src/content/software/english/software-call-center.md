@@ -1,56 +1,56 @@
 ---
-title: "Software para Call Center"
-description: "Solución de Call Center 100% en la nube: marcadores predictivos, IVR, monitoreo en vivo, integración CRM, grabación y analíticas para optimizar la atención y productividad."
+
+title: "Call Center Software"
+description: "100% cloud Call Center solution: predictive dialers, IVR, live monitoring, CRM integration, recording and analytics to optimize service and productivity."
 image: "/images/pexels/call-center/call-center-1.jpg"
 icon: "Cpu"
 
 pricingSection:
-  enable: true
-  coverImage: "/images/pexels/call-center/call-center-5.jpg"
-  button:
-    enable: true
-    label: "Ver Planes"
-    url: "/rates/software-call-center/"
-    variant: "outline"
+enable: true
+coverImage: "/images/pexels/call-center/call-center-5.jpg"
+button:
+enable: true
+label: "Ver Planes"
+url: "/rates/software-call-center/"
+variant: "outline"
 
 intro:
-  enable: true
-  image: "/images/pexels/call-center/call-center-2.jpg"
-  title: "Software de Call Center centrado en el cliente"
-  description: "Una plataforma en la nube que centraliza comunicaciones, automatiza procesos y proporciona herramientas para mejorar la productividad de agentes y la experiencia del cliente."
-  button:
-    enable: true
-    label: "Solicitar demo"
-    url: "/contact"
-    rel: ""
-    target: ""
-    showIcon: "true"
-    variant: "outline"
-    hoverEffect: "text-flip"
+enable: true
+image: "/images/pexels/call-center/call-center-2.jpg"
+title: "Customer-centered Call Center software"
+description: "A cloud platform that centralizes communications, automates workflows and provides tools to improve agent productivity and customer experience."
+button:
+enable: true
+label: "Request a demo"
+url: "/contact"
+rel: ""
+target: ""
+showIcon: "true"
+variant: "outline"
+hoverEffect: "text-flip"
 
 details:
-  enable: true
-  title: "Principales funcionalidades"
-  description: "Marcador automático, colas de llamadas, IVR, monitoreo en vivo, integración CRM, identificador de llamadas, grabación y estadísticas en tiempo real."
-  list:
-    - enable: true
-      image: "/images/services/service-details/llamadas-automaticas.jpg"
-      title: "Marcador Automático"
-      description: "Lanzamiento automático de llamadas desde listas predefinidas para maximizar el tiempo productivo de los agentes."
-      button:
-        enable: true
-        label: "Ver más"
-        url: "/contact"
-        rel: ""
-        target: ""
-        showIcon: "true"
-        variant: "outline"
-        hoverEffect: "text-flip"
+enable: true
+title: "Key features"
+description: "Auto dialer, call queues, IVR, live monitoring, CRM integration, caller ID, recording and real-time statistics."
+list: - enable: true
+image: "/images/services/service-details/llamadas-automaticas.jpg"
+title: "Auto Dialer"
+description: "Automatically place calls from predefined lists to maximize agent productive time."
+button:
+enable: true
+label: "Learn more"
+url: "/contact"
+rel: ""
+target: ""
+showIcon: "true"
+variant: "outline"
+hoverEffect: "text-flip"
 
     - enable: true
       image: "/images/services/service-details/colas.jpg"
-      title: "Colas de Llamadas"
-      description: "Enrutamiento automatizado y priorización de llamadas hacia el agente más adecuado."
+      title: "Call Queues"
+      description: "Automated routing and prioritization of calls to the most suitable agent."
       button:
         enable: true
         label: "Ver más"
@@ -64,7 +64,7 @@ details:
     - enable: true
       image: "/images/services/service-details/ivr.jpg"
       title: "IVR"
-      description: "Respuesta de voz interactiva para direccionar llamadas y ofrecer opciones automatizadas al cliente."
+      description: "Interactive voice response to route calls and offer automated options to customers."
       button:
         enable: true
         label: "Ver más"
@@ -77,8 +77,8 @@ details:
 
     - enable: true
       image: "/images/services/service-details/monitoreo.jpg"
-      title: "Monitoreo en Vivo"
-      description: "Escucha y supervisa llamadas en tiempo real para control de calidad y coaching de agentes."
+      title: "Live Monitoring"
+      description: "Listen to and supervise calls in real time for quality control and agent coaching."
       button:
         enable: true
         label: "Ver más"
@@ -91,8 +91,8 @@ details:
 
     - enable: true
       image: "/images/services/service-details/crm.jpg"
-      title: "Integración CRM"
-      description: "Unifica la información del cliente entre canales para atención personalizada y flujo de trabajo más eficiente."
+      title: "CRM Integration"
+      description: "Unify customer information across channels for personalized service and more efficient workflows."
       button:
         enable: true
         label: "Ver más"
@@ -104,114 +104,104 @@ details:
         hoverEffect: "text-flip"
 
 impact:
-  enable: true
-  title: "Beneficios del software para Call Center"
-  description: "Mejora la eficiencia operativa, personaliza la atención, automatiza procesos y proporciona análisis en tiempo real para tomar decisiones informadas."
-  list:
-    - "Atención personalizada"
-    - "Automatización y enrutamiento inteligente"
-    - "Gestión omnicanal"
-    - "Registro de datos y análisis"
-    - "Flexibilidad y escalabilidad"
+enable: true
+title: "Benefits of Call Center software"
+description: "Improves operational efficiency, personalizes service, automates processes and provides real-time analytics for informed decisions."
+list: - "Personalized service" - "Automation and intelligent routing" - "Omnichannel management" - "Data logging and analytics" - "Flexibility and scalability"
 
-  statsBlock:
-    enable: true
-    lg:
-      - background:
-          type: "light-color"
-          image: ""
-        title:
-          prependValue: ""
-          value: "99.999"
-          appendValue: "%"
-        description: "Tiempo de actividad"
-    md:
-      - background:
-          type: "image-overlay"
-          image: "/images/services/service-impact-stats-bg.jpg"
-        title:
-          prependValue: ""
-          value: "24/7"
-          appendValue: ""
-        description: "Soporte y disponibilidad"
-    sm:
-      - background:
-          type: "light-color"
-          image: ""
-        title:
-          prependValue: ""
-          value: "0"
-          appendValue: ""
-        description: "Cláusulas de permanencia"
-      - background:
-          type: "light-color"
-          image: ""
-        title:
-          prependValue: ""
-          value: "∞"
-          appendValue: ""
-        description: "Escalable"
+statsBlock:
+enable: true
+lg: - background:
+type: "light-color"
+image: ""
+title:
+prependValue: ""
+value: "99.999"
+appendValue: "%"
+description: "Uptime"
+md: - background:
+type: "image-overlay"
+image: "/images/services/service-impact-stats-bg.jpg"
+title:
+prependValue: ""
+value: "24/7"
+appendValue: ""
+description: "Support and availability"
+sm: - background:
+type: "light-color"
+image: ""
+title:
+prependValue: ""
+value: "0"
+appendValue: ""
+description: "No long-term commitments" - background:
+type: "light-color"
+image: ""
+title:
+prependValue: ""
+value: "∞"
+appendValue: ""
+description: "Scalable"
 
-  button:
-    enable: true
-    label: "Hablar con un experto"
-    url: "/contact"
-    rel: ""
-    target: ""
-    showIcon: "true"
-    variant: "outline"
-    hoverEffect: "text-flip"
----
+button:
+enable: true
+label: "Talk to an expert"
+url: "/contact"
+rel: ""
+target: ""
+showIcon: "true"
+variant: "outline"
+hoverEffect: "text-flip"
 
-## Software para Call Center
+## Call Center Software
 
-El software de centro de llamadas integrado que necesitas para gestionar tu Servicio de Atención al Cliente. Nuestra solución en la nube es ideal para ventas, soporte, cobranzas y campañas de marketing.
+The integrated call center software you need to manage your Customer Service. Our cloud solution is ideal for sales, support, collections and marketing campaigns.
 
-## ¿Qué es un software para Call Center?
+## What is Call Center software?
 
-Un software de Call Center es una solución integral que permite realizar y recibir llamadas, gestionar colas de espera, enrutar las llamadas de manera inteligente, grabar interacciones y generar informes detallados para mejorar la operación.
+Call Center software is a comprehensive solution that enables making and receiving calls, managing queues, intelligently routing calls, recording interactions and generating detailed reports to improve operations.
 
-## Principales Beneficios del Software para Call Center
+## Main benefits of Call Center software
 
-- Atención personalizada: acceso instantáneo a la ficha del cliente para un servicio más efectivo.
-- Automatización y enrutamiento inteligente: reduce tareas repetitivas y conecta al cliente con el agente correcto.
-- Gestión omnicanal: llamadas, chat y redes en un solo lugar.
-- Registro de datos y análisis: métricas en tiempo real para mejorar rendimiento.
-- Flexibilidad y escalabilidad: crece con tu negocio sin grandes inversiones.
+- Personalized service: instant access to the customer record for more effective service.
+- Automation and intelligent routing: reduces repetitive tasks and connects the customer with the right agent.
+- Omnichannel management: calls, chat and social channels in one place.
+- Data logging and analytics: real-time metrics to improve performance.
+- Flexibility and scalability: grow with your business without large investments.
 
-## Descubre la solución centrada en el cliente
+## Discover the customer-centered solution
 
-Nuestra plataforma permite crear campañas, gestionar colas, monitorear agentes en vivo y centralizar la información para ofrecer una experiencia de atención superior.
+Our platform enables campaign creation, queue management, live agent monitoring and centralized information to deliver a superior support experience.
 
-## Principales funcionalidades
+## Key features
 
-- Marcador automático de llamadas
-- Colas de llamadas
-- IVR (Respuesta de voz interactiva)
-- Monitoreo en vivo
-- Integración CRM
-- Identificador de llamadas
-- Información instantánea del cliente
-- Grabación de llamadas
-- Estadísticas de llamadas
+- Auto dialer
+- Call queues
+- IVR (Interactive Voice Response)
+- Live monitoring
+- CRM integration
+- Caller ID
+- Instant customer data
+- Call recording
+- Call analytics
 
-## Gestiona las campañas de tu Call Center
+## Manage your Call Center campaigns
 
-Crear campañas es sencillo: encuestas de satisfacción, cobranzas, ventas telefónicas, soporte técnico, recordatorios y más.
+Creating campaigns is simple: satisfaction surveys, collections, telesales, technical support, reminders and more.
 
-## Mejora la experiencia con IA conversacional (Voicebots)
+## Improve experience with conversational AI (Voicebots)
 
-La IA en voz automatiza interacciones de bajo valor, mejora la productividad y garantiza atención 24/7 con vozbots capaces de realizar tareas repetitivas.
+Voice AI automates low-value interactions, improves productivity and ensures 24/7 service with voicebots capable of performing repetitive tasks.
 
-## Por qué elegir nuestra solución
+## Why choose our solution
 
-- 99.999% de uptime
-- Implementación rápida
-- Reducción de costes
-- Movilidad y trabajo remoto
-- Funcionalidades avanzadas
-- Escalable y segura
+- 99.999% uptime
+- Fast implementation
+- Cost reduction
+- Mobility and remote work
+- Advanced features
+- Scalable and secure
 
-## Comience ahora
+## Get started now
 
-[Habla con un experto](/contact)
+[Talk to an expert](/contact)

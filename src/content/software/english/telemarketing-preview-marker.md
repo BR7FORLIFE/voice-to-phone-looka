@@ -1,6 +1,6 @@
 ---
-title: "Marcador Preview"
-description: "Empodere a sus agentes permitiéndoles revisar la información del cliente antes de iniciar cada llamada."
+title: "Preview Dialer"
+description: "Empower your agents by letting them review customer information before initiating each call."
 
 image: "/images/pexels/computer/computer-3.jpg"
 icon: "UserCheck"
@@ -17,8 +17,8 @@ pricingSection:
 intro:
   enable: true
   image: "/images/pexels/computer/computer-6.jpg"
-  title: "Calidad sobre cantidad en cada contacto"
-  description: "Ideal para ventas consultivas o soporte técnico donde el agente necesita conocer el historial del cliente para cerrar el trato."
+  title: "Quality over quantity in every contact"
+  description: "Ideal for consultative sales or technical support where the agent needs to know the customer's history to close the deal."
   button:
     enable: true
     label: "Solicitar demo"
@@ -31,13 +31,13 @@ intro:
 
 details:
   enable: true
-  title: "Atención 100% personalizada"
-  description: "Unifique la información para un flujo de trabajo más eficiente y humano."
+  title: "100% personalized service"
+  description: "Unify information for a more efficient and human workflow."
   list:
     - enable: true
       image: "/images/services/service-details/crm.jpg"
-      title: "Información Instantánea"
-      description: "Visualización inmediata de la ficha del cliente antes de marcar."
+      title: "Instant Information"
+      description: "Immediate display of the customer's record before dialing."
       button:
         enable: true
         label: "Ver más"
@@ -48,8 +48,8 @@ details:
 
     - enable: true
       image: "/images/services/service-details/colas.jpg"
-      title: "Gestión de Colas"
-      description: "Priorización de contactos basada en criterios de negocio específicos."
+      title: "Queue Management"
+      description: "Prioritization of contacts based on specific business criteria."
       button:
         enable: true
         label: "Ver más"
@@ -60,8 +60,8 @@ details:
 
     - enable: true
       image: "/images/services/service-details/voicebots.jpg"
-      title: "IA Conversacional"
-      description: "Apoyo de Voicebots para tareas repetitivas previas al contacto humano."
+      title: "Conversational AI"
+      description: "Voicebot support for repetitive tasks prior to human contact."
       button:
         enable: true
         label: "Saber más"
@@ -72,14 +72,14 @@ details:
 
 impact:
   enable: true
-  title: "Beneficios del modo Preview"
-  description: "Mejora la satisfacción del cliente al recibir una atención informada y profesional."
+  title: "Benefits of Preview mode"
+  description: "Improves customer satisfaction by delivering informed and professional service."
   list:
-    - Preparación del agente antes de la llamada
-    - Mayor tasa de conversión en ventas complejas
-    - Integración profunda con CRM corporativo
-    - Análisis de datos en tiempo real
-    - Soporte omnicanal (Voz, Chat, Redes)
+    - Agent preparation before the call
+    - Higher conversion rate in complex sales
+    - Deep integration with corporate CRM
+    - Real-time data analytics
+    - Omnichannel support (Voice, Chat, Social)
 
   statsBlock:
     enable: true
@@ -91,7 +91,7 @@ impact:
           prependValue: ""
           value: "100"
           appendValue: "%"
-        description: "En la nube (Cloud)"
+        description: "In the cloud"
     md:
       - background:
           type: "image-overlay"
@@ -100,7 +100,7 @@ impact:
           prependValue: ""
           value: "24/7"
           appendValue: ""
-        description: "Disponibilidad total"
+        description: "Total availability"
     sm:
       - background:
           type: "light-color"
@@ -109,7 +109,7 @@ impact:
           prependValue: ""
           value: "0"
           appendValue: ""
-        description: "Costos de hardware"
+        description: "Hardware costs"
       - background:
           type: "light-color"
           image: ""
@@ -117,11 +117,11 @@ impact:
           prependValue: ""
           value: "∞"
           appendValue: ""
-        description: "Flexibilidad"
+        description: "Flexibility"
 
   button:
     enable: true
-    label: "Consultar ahora"
+    label: "Consult now"
     url: "/contact"
     rel: ""
     target: ""

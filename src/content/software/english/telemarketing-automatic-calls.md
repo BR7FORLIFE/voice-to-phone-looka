@@ -1,6 +1,6 @@
 ---
-title: "Llamadas Automáticas (Blaster)"
-description: "Difusión masiva de mensajes de voz y notificaciones automatizadas para alcanzar a miles de clientes en segundos."
+title: "Automated Calls (Blaster)"
+description: "Mass broadcast of voice messages and automated notifications to reach thousands of customers in seconds."
 
 image: "/images/pexels/computer/computer-4.jpg"
 icon: "Megaphone"
@@ -17,11 +17,11 @@ pricingSection:
 intro:
   enable: true
   image: "/images/pexels/computer/computer-1.jpg"
-  title: "Comunicación masiva y efectiva"
-  description: "Envíe recordatorios, encuestas de satisfacción o campañas de cobranza de forma automatizada sin intervención humana directa."
+  title: "Mass, effective communication"
+  description: "Send reminders, satisfaction surveys or collections campaigns automatically without direct human intervention."
   button:
     enable: true
-    label: "Solicitar demo"
+    label: "Request a demo"
     url: "/contact"
     rel: ""
     target: ""
@@ -31,13 +31,13 @@ intro:
 
 details:
   enable: true
-  title: "Potencia de difusión masiva"
-  description: "Gestione campañas de gran escala con herramientas de automatización de voz."
+  title: "Mass delivery power"
+  description: "Manage large-scale campaigns with voice automation tools."
   list:
     - enable: true
       image: "/images/services/service-details/ivr.jpg"
-      title: "IVR Interactivo"
-      description: "Respuesta de voz interactiva para direccionar llamadas y ofrecer opciones automatizadas al cliente."
+      title: "Interactive IVR"
+      description: "Interactive voice response to route calls and offer automated options to customers."
       button:
         enable: true
         label: "Saber más"
@@ -48,8 +48,8 @@ details:
 
     - enable: true
       image: "/images/services/service-details/voicebots.jpg"
-      title: "IA Conversacional"
-      description: "Voicebots capaces de realizar tareas repetitivas y garantizar atención 24/7."
+      title: "Conversational AI"
+      description: "Voicebots capable of performing repetitive tasks and ensuring 24/7 service."
       button:
         enable: true
         label: "Ver IA"
@@ -60,8 +60,8 @@ details:
 
     - enable: true
       image: "/images/services/service-details/estadisticas.jpg"
-      title: "Analíticas de Campaña"
-      description: "Métricas en tiempo real para mejorar el rendimiento y registro de datos detallado."
+      title: "Campaign Analytics"
+      description: "Real-time metrics to improve performance and detailed data logging."
       button:
         enable: true
         label: "Ver reportes"
@@ -72,14 +72,14 @@ details:
 
 impact:
   enable: true
-  title: "Optimización de procesos"
-  description: "Reduzca costos operativos automatizando las interacciones de bajo valor."
+  title: "Process optimization"
+  description: "Reduce operating costs by automating low-value interactions."
   list:
-    - "Atención 24/7 con Voicebots"
-    - "Automatización de notificaciones"
-    - "Reducción de costes operativos"
-    - "Implementación rápida y segura"
-    - "Escalabilidad sin límites"
+    - "24/7 service with Voicebots"
+    - "Notification automation"
+    - "Lower operating costs"
+    - "Fast and secure implementation"
+    - "Unlimited scalability"
 
   statsBlock:
     enable: true
@@ -91,7 +91,7 @@ impact:
           prependValue: ""
           value: "99.999"
           appendValue: "%"
-        description: "Uptime del servicio"
+        description: "Service uptime"
     md:
       - background:
           type: "image-overlay"
@@ -100,7 +100,7 @@ impact:
           prependValue: ""
           value: "24/7"
           appendValue: ""
-        description: "Disponibilidad de atención"
+        description: "Support availability"
     sm:
       - background:
           type: "light-color"
@@ -109,7 +109,7 @@ impact:
           prependValue: ""
           value: "0"
           appendValue: ""
-        description: "Permanencia obligatoria"
+        description: "Mandatory commitments"
       - background:
           type: "light-color"
           image: ""
@@ -117,11 +117,11 @@ impact:
           prependValue: ""
           value: "∞"
           appendValue: ""
-        description: "Capacidad de envíos"
+        description: "Sending capacity"
 
   button:
     enable: true
-    label: "Configurar Blaster"
+    label: "Configure Blaster"
     url: "/contact"
     rel: ""
     target: ""
