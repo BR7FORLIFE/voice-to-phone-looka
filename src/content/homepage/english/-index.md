@@ -3,6 +3,15 @@ title: "Cloud telephony for modern businesses"
 metaDescription: "Centralize your company's communications with VoiceToPhone. Secure, scalable cloud telephony with no long-term commitment, designed for modern work."
 
 # Override Default Content of `/sections/services-section.md`
+
+# title={homepage?.data.featureCard?.title ?? "Conoce a VoiceToPhone"}
+#       description={homepage?.data.featureCard?.description ??
+#         "Líderes en telecomunicaciones en la nube, conectando empresas con el mundo a través de soluciones de telefonía IP robustas, escalables y de alta disponibilidad en más de 80 países."}
+
+featureCard:
+  title: "Meet VoiceToPhone"
+  description: "Leaders in cloud telecommunications, connecting businesses to the world through robust, scalable, high-availability IP telephony solutions in over 80 countries."
+
 servicesSection:
   enable: true
   title: "Communication solutions that drive your business"
