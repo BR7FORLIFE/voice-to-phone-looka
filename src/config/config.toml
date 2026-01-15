@@ -4,7 +4,7 @@
   description      = "Telefonía en la nube para empresas modernas. Centralice llamadas, SMS y contactos en una sola plataforma, reduzca costos y escale su negocio sin límites."
   tagline          = "Comunicación sin límites para empresas modernas"
   taglineSeparator = " - "
-  baseUrl          = "https://voicetophone.com"
+  baseUrl          = "https://voice-to-phone.netlify.app/"
   logo             = "https://www.voicetophone.com/global/img/3voiper.png"
   logoAlternate    = "https://www.voicetophone.com/global/logo_footer.png"
   logoText         = ""
