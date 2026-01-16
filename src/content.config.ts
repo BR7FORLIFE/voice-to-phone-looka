@@ -1,6 +1,4 @@
 import { defineCollection, z } from "astro:content";
-import { he } from "date-fns/locale";
-import { title } from "node:process";
 
 export const sharedButton = z
   .object({
@@ -65,10 +63,10 @@ const animatedNumber = z.object({
   appendValue: z.string(),
 });
 
-// Pages collection schema
-const pagesCollection = defineCollection({
-  schema: page,
-});
+// // Pages collection schema
+// const pagesCollection = defineCollection({
+//   schema: page,
+// });
 
 const servicesSection = z.object({
   enable: z.boolean().optional(),
@@ -209,78 +207,78 @@ const serviceCollection = defineCollection({
   ),
 });
 
-// Post collection schema
-const blogCollection = defineCollection({
-  schema: page.merge(
-    z.object({
-      categories: z.array(z.string()).default(["others"]),
-      author: z.string().optional(),
-      excerpt: z.string().optional(),
-      settings: z
-        .object({
-          content: z.enum(["blog"]).optional(),
-          layout: z.enum(["grid"]).optional(),
-          columns: z
-            .union([z.literal(1), z.literal(2), z.literal(3)])
-            .optional(),
-          limit: z.union([z.number().int(), z.literal(false)]).optional(),
-          gap: z.enum(["gap-6", "gap-8"]).optional(),
-          card: z.object({
-            layout: z
-              .enum(["classic", "overlay", "modern", "horizontal"])
-              .optional(),
-          }),
-        })
-        .optional(),
-      single: z
-        .object({
-          layout: z.enum(["minimal", "modern"]),
-        })
-        .optional(),
-    }),
-  ),
-});
+// // Post collection schema
+// const blogCollection = defineCollection({
+//   schema: page.merge(
+//     z.object({
+//       categories: z.array(z.string()).default(["others"]),
+//       author: z.string().optional(),
+//       excerpt: z.string().optional(),
+//       settings: z
+//         .object({
+//           content: z.enum(["blog"]).optional(),
+//           layout: z.enum(["grid"]).optional(),
+//           columns: z
+//             .union([z.literal(1), z.literal(2), z.literal(3)])
+//             .optional(),
+//           limit: z.union([z.number().int(), z.literal(false)]).optional(),
+//           gap: z.enum(["gap-6", "gap-8"]).optional(),
+//           card: z.object({
+//             layout: z
+//               .enum(["classic", "overlay", "modern", "horizontal"])
+//               .optional(),
+//           }),
+//         })
+//         .optional(),
+//       single: z
+//         .object({
+//           layout: z.enum(["minimal", "modern"]),
+//         })
+//         .optional(),
+//     }),
+//   ),
+// });
 
-// Portfolio Collection
-export const portfolioCollection = defineCollection({
-  schema: page.merge(
-    z.object({
-      categories: z.array(z.string()).optional(),
-      masonryImage: z.string().optional(),
-      information: z
-        .array(
-          z.object({
-            icon: z.string(),
-            label: z.string(),
-            value: z.string(),
-          }),
-        )
-        .optional(),
-      indexPortfolioSection: z
-        .object({
-          enable: z.boolean(),
-          uniqueId: z.boolean().optional(),
-          headType: z.enum(["filter", "heading"]),
-          filter: z.object({
-            layout: z.enum(["classic", "boxed", "modern"]),
-          }),
-          head: z.object({
-            title: z.string(),
-            subtitle: z.string(),
-            button: sharedButtonTag.optional(),
-          }),
-          body: z.object({
-            content: z.enum(["portfolio", "blog"]).optional(),
-            layout: z.enum(["masonry", "grid"]).optional(),
-            card: z.object({
-              layout: z.enum(["classic", "overlay"]),
-            }),
-          }),
-        })
-        .optional(),
-    }),
-  ),
-});
+// // Portfolio Collection
+// export const portfolioCollection = defineCollection({
+//   schema: page.merge(
+//     z.object({
+//       categories: z.array(z.string()).optional(),
+//       masonryImage: z.string().optional(),
+//       information: z
+//         .array(
+//           z.object({
+//             icon: z.string(),
+//             label: z.string(),
+//             value: z.string(),
+//           }),
+//         )
+//         .optional(),
+//       indexPortfolioSection: z
+//         .object({
+//           enable: z.boolean(),
+//           uniqueId: z.boolean().optional(),
+//           headType: z.enum(["filter", "heading"]),
+//           filter: z.object({
+//             layout: z.enum(["classic", "boxed", "modern"]),
+//           }),
+//           head: z.object({
+//             title: z.string(),
+//             subtitle: z.string(),
+//             button: sharedButtonTag.optional(),
+//           }),
+//           body: z.object({
+//             content: z.enum(["portfolio", "blog"]).optional(),
+//             layout: z.enum(["masonry", "grid"]).optional(),
+//             card: z.object({
+//               layout: z.enum(["classic", "overlay"]),
+//             }),
+//           }),
+//         })
+//         .optional(),
+//     }),
+//   ),
+// });
 
 export const ratesCollection = defineCollection({
   schema: page.merge(
@@ -291,72 +289,37 @@ export const ratesCollection = defineCollection({
   ),
 });
 
-export const ratePageCollection = defineCollection({
-  schema: page.merge(
-    z.object({
-      ratePlans: z
-        .array(
-          z.object({
-            planName: z.string(),
-            price: z.string(),
-            features: z.array(z.string()),
-            button: sharedButtonTag.optional(),
-          }),
-        )
-        .optional(),
-    }),
-  ),
-});
+// export const ratePageCollection = defineCollection({
+//   schema: page.merge(
+//     z.object({
+//       ratePlans: z
+//         .array(
+//           z.object({
+//             planName: z.string(),
+//             price: z.string(),
+//             features: z.array(z.string()),
+//             button: sharedButtonTag.optional(),
+//           }),
+//         )
+//         .optional(),
+//     }),
+//   ),
+// });
 
-export const rateVirtualNumberByCountryCollection = defineCollection({
-  // schema: page.merge(
-  //   z.object({
-  //     whatIs: z.string().optional(),
-  //     feature: z.string().optional(),
-  //     getItNow: sharedButtonTag.optional(),
-  //     adquireVirtualNumber: z.string().optional(),
-  //     howAdquire: z.object({
-  //       description: z.string().optional(),
-  //       steps: z.array(z.string()).optional(),
-  //     }),
-  //     adventages: z
-  //       .object({
-  //         descripction: z.string().optional(),
-  //         items: z
-  //           .array(
-  //             z.object({
-  //               title: z.string(),
-  //               icon: z.string().optional(),
-  //             }),
-  //           )
-  //           .optional(),
-  //       })
-  //       .optional(),
-  //   }),
-  // ),
-});
+
 
 // Export collections
 export const collections = {
-  // blog: blogCollection,
   services: serviceCollection,
-  // "case-studies": portfolioCollection,
   software: serviceCollection,
-  // pages: pagesCollection,
   rates: ratesCollection,
-  "rate-page": ratePageCollection,
-  "rate-virtual-number-by-country": rateVirtualNumberByCountryCollection,
+  // "rate-page": ratePageCollection,
 
   "ip-telephony": defineCollection({}),
   sections: defineCollection({}),
   about: defineCollection({}),
   contact: defineCollection({}),
-  // faq: defineCollection({}),
-  // team: defineCollection({}),
-  // pricing: defineCollection({}),
   homepage: defineCollection({}),
-  // author: defineCollection({}),
-  // career: defineCollection({}),
   widgets: defineCollection({}),
   help: defineCollection({}),
 };
