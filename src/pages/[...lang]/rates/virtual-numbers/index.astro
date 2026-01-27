@@ -37,19 +37,60 @@ pages = pages.sort((a, b) =>
   }),
 );
 
-const grouped = pages.reduce((acc, p) => {
-  const title = (p.data?.title || "").trim();
-  const letter = title ? title[0].toUpperCase() : "#";
-  if (!acc[letter]) acc[letter] = [];
-  acc[letter].push(p);
-  return acc;
-}, {});
+// Type helpers
+type Country = { id: string; title: string; url: string };
 
-const letters = Object.keys(grouped).sort((a, b) =>
-  a.localeCompare(b, "es", { sensitivity: "base" }),
-);
+// --- Countries constant (sorted alphabetically) ---------------------------------
+const countries: Array<{ id: string; title: string; url: string }> = (
+  pages as any[]
+)
+  .map((p: any) => {
+    const id = p.id;
+    const title = (p.data?.title || "").trim();
 
-const { Content } = await entry.render();
+    // Sanitize slug: some entries include the language folder (e.g. "spanish/alemania").
+    // Use only the last path segment so URLs become `/rates/virtual-numbers/alemania/`.
+    const rawSlug = String(p.slug || p.filePath || id || "");
+    const slugSegment = rawSlug.split("/").filter(Boolean).pop() || rawSlug;
+
+    return {
+      id,
+      title,
+      url: getLocaleUrlCTM(
+        `/rates/virtual-numbers/${slugSegment}/`,
+        Astro.currentLocale,
+      ),
+    };
+  })
+  .filter((c) => c.title)
+  .sort((a, b) =>
+    a.title.localeCompare(b.title, "es", { sensitivity: "base" }),
+  );
+
+// Slider configuration (3 columnas por slide)
+const COLUMNS_PER_SLIDE = 3;
+const ROWS_PER_COLUMN = 6; // ajustable — controla cuántos items por columna
+const ITEMS_PER_SLIDE = COLUMNS_PER_SLIDE * ROWS_PER_COLUMN;
+function chunk<T>(arr: T[], size: number): T[][] {
+  const out: T[][] = [];
+  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
+  return out;
+}
+const slides = chunk(countries, ITEMS_PER_SLIDE);
+
+// Keep an alphabet list (optional) derived from the canonical `countries` list
+const letters = (
+  Array.from(
+    countries.reduce((acc, c) => {
+      const L = (c.title?.[0] || "#").toUpperCase();
+      acc.add(L);
+      return acc;
+    }, new Set()),
+  ) as string[]
+).sort((a, b) => a.localeCompare(b, "es", { sensitivity: "base" }));
+
+const rendered = (await (entry as any).render?.()) ?? { Content: null };
+const { Content } = rendered;
 ---
 
 <Base {...entry?.data}>
@@ -82,42 +123,203 @@ const { Content } = await entry.render();
           <Content />
         </div>
 
-        <div class="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          class="mt-12 mb-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <h2 class="col-span-full mb-4 text-2xl font-semibold">
             {Astro.currentLocale == "es" ? "Países" : "Countries"}
           </h2>
 
-          {
-            letters.map((letter) => {
-              return (
-                <div class="mb-6">
-                  <h3 class="mt-4 text-xl font-semibold">{letter}</h3>
-                  <ul class="mt-2 grid grid-cols-1 gap-2">
-                    {grouped[letter].map((r) => {
-                      const slug =
-                        r.data?.customSlug ||
-                        r.id
-                          .replace(/\.mdx?|\.md/g, "")
-                          .split("/")
-                          .pop();
-                      const url = getLocaleUrlCTM(
-                        `/rates/virtual-numbers/${slug}/`,
-                        Astro.currentLocale,
-                      );
+          <div class="col-span-full mx-auto w-[980px] max-w-full">
+            <div class="relative">
+              <!-- Search input (client-side filter) -->
+              <div class="mb-6">
+                <label for="vtp-search" class="sr-only">
+                  {
+                    Astro.currentLocale == "es"
+                      ? "Buscar país"
+                      : "Search countries"
+                  }
+                </label>
+                <div class="relative mx-auto max-w-xl">
+                  <input
+                    id="vtp-search"
+                    type="search"
+                    autocomplete="off"
+                    placeholder={Astro.currentLocale == "es"
+                      ? "Buscar por país o prefijo"
+                      : "Search by country or prefix"}
+                    class="focus:ring-primary-500 w-full rounded-md border border-gray-200 bg-white px-4 py-3 pr-10 text-sm shadow-sm placeholder:opacity-60 focus:ring-2 focus:outline-none"
+                    aria-controls="vtp-slider"
+                  />
 
-                      return (
-                        <li>
-                          <a class="link" href={url}>
-                            {r.data.title}
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ul>
+                  <button
+                    id="vtp-search-clear"
+                    type="button"
+                    class="absolute top-1/2 right-2 inline-flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-md bg-transparent text-gray-400 hover:text-gray-600 focus:outline-none"
+                    aria-label={Astro.currentLocale == "es"
+                      ? "Limpiar búsqueda"
+                      : "Clear search"}
+                    hidden>
+                    <span aria-hidden="true">✕</span>
+                  </button>
                 </div>
-              );
-            })
-          }
+
+                <!-- Server-side status (visible) -->
+                <div
+                  class="mt-3 text-center text-sm text-gray-500"
+                  role="status"
+                  aria-live="polite">
+                  {
+                    `${countries.length} ${Astro.currentLocale == "es" ? "países" : "countries"} · ${slides.length} ${Astro.currentLocale == "es" ? "páginas" : "pages"}`
+                  }
+                </div>
+              </div>
+
+              <div
+                id="vtp-slider"
+                class="overflow-hidden"
+                data-locale={Astro.currentLocale}>
+                <div
+                  class="slider-track flex transition-transform duration-500"
+                  style="transform: translateX(0%);">
+                  {
+                    slides.map((slide: Country[], si: number) => (
+                      <div class="w-full min-w-full py-2">
+                        <div class="grid grid-cols-3 gap-10">
+                          {Array.from({ length: COLUMNS_PER_SLIDE }).map(
+                            (_, colIndex: number) => {
+                              const start = colIndex * ROWS_PER_COLUMN;
+                              const colItems = slide.slice(
+                                start,
+                                start + ROWS_PER_COLUMN,
+                              );
+                              return (
+                                <ul class="space-y-3">
+                                  {colItems.map((item: Country) => (
+                                    <li class="group -my-1 rounded-md px-2 py-1 transition-all duration-150 hover:translate-x-0.5 hover:bg-slate-50 motion-safe:transform-gpu motion-reduce:transform-none">
+                                      <a
+                                        href={item.url}
+                                        class="block w-full text-blue-600 hover:underline">
+                                        {item.title}
+                                      </a>
+                                    </li>
+                                  ))}
+                                </ul>
+                              );
+                            },
+                          )}
+                        </div>
+                      </div>
+                    ))
+                  }
+                </div>
+              </div>
+
+              <!-- Full-list fallback (server-rendered). Visible unless JS hides it on successful init -->
+              <div
+                id="vtp-full-list"
+                class="mt-6 border-t pt-4 text-sm text-gray-700"
+                role="region"
+                aria-label="Lista completa de países">
+                <ul
+                  class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+                  {
+                    countries.map((c) => (
+                      <li>
+                        <a
+                          href={c.url}
+                          class="block py-1 text-blue-600 hover:underline">
+                          {c.title}
+                        </a>
+                      </li>
+                    ))
+                  }
+                </ul>
+              </div>
+
+              <nav
+                class="mt-10 flex items-center justify-center gap-3 pb-6"
+                aria-label="Paginación países">
+                <button
+                  id="vtp-prev"
+                  type="button"
+                  class="focus:ring-primary-500 rounded bg-gray-100 p-2 hover:bg-gray-200 focus:ring-2 focus:ring-offset-2 focus:outline-none"
+                  aria-label="Anterior">
+                  <svg
+                    class="h-5 w-5 text-gray-700"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                    focusable="false"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 16L6 10l6-6">
+                    </path>
+                  </svg>
+                </button>
+
+                <div id="vtp-dots" class="flex items-center gap-3">
+                  {
+                    slides.map((_, i: number) => (
+                      <button
+                        type="button"
+                        class="vtp-dot focus:ring-primary-500 flex h-8 w-8 transform transform-gpu cursor-pointer items-center justify-center rounded-full bg-gray-100 text-gray-700 transition-all duration-200 will-change-transform hover:scale-105 hover:bg-gray-200 hover:brightness-95 focus:ring-2 focus:ring-offset-2 focus:outline-none"
+                        data-index={i}
+                        aria-pressed="false"
+                        title={`Página ${i + 1}`}
+                        aria-label={`Página ${i + 1}`}>
+                        <span class="text-sm">{i + 1}</span>
+                      </button>
+                    ))
+                  }
+
+                  {
+                    /* noscript fallback (server-rendered) — shows page numbers if JS fails) */
+                  }
+                  <noscript>
+                    <div class="flex items-center gap-2">
+                      {
+                        Array.from({ length: slides.length }).map((_, i) => (
+                          <a
+                            class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-sm text-gray-700"
+                            href={`#`}
+                            aria-label={`Página ${i + 1}`}>
+                            {i + 1}
+                          </a>
+                        ))
+                      }
+                    </div>
+                  </noscript>
+                </div>
+
+                <button
+                  id="vtp-next"
+                  type="button"
+                  class="focus:ring-primary-500 rounded bg-gray-100 p-2 hover:bg-gray-200 focus:ring-2 focus:ring-offset-2 focus:outline-none"
+                  aria-label="Siguiente">
+                  <svg
+                    class="h-5 w-5 text-gray-700"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                    focusable="false"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8 4l6 6-6 6">
+                    </path>
+                  </svg>
+                </button>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -125,3 +327,490 @@ const { Content } = await entry.render();
 
   <CallToAction />
 </Base>
+
+<style>
+  /* Active pagination dot — intensified hover / focus (visual + accessible) */
+  .vtp-dot--active,
+  .vtp-dot[aria-current="true"] {
+    background-image:
+      radial-gradient(
+        circle at 30% 30%,
+        rgba(255, 255, 255, 0.06),
+        transparent 30%
+      ),
+      linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: #fff !important;
+    box-shadow: 0 14px 40px rgba(2, 6, 23, 0.18);
+    border: none;
+  }
+</style>
+
+<!-- countries JSON moved out of main markup (keeps DOM clean) -->
+<script
+  id="vtp-countries-data"
+  type="application/json"
+  set:html={JSON.stringify(countries)}
+/>
+
+<script type="module">
+  (function () {
+    // boot + robust error handling
+    try {
+      console.log("vtp:boot");
+      window.__vtpPresent = true;
+      // read locale from DOM (safe in client) — injected server-side on the #vtp-slider element
+      const LOCALE =
+        document.getElementById("vtp-slider")?.dataset.locale || "es";
+      const IS_ES = LOCALE === "es";
+
+      const COLUMNS_PER_SLIDE = 3;
+      const ROWS_PER_COLUMN = 6;
+      const ITEMS_PER_SLIDE = COLUMNS_PER_SLIDE * ROWS_PER_COLUMN;
+      const DEBOUNCE_MS = 160;
+
+      const track = document.querySelector("#vtp-slider .slider-track");
+      const dotsWrap = document.getElementById("vtp-dots");
+      const prev = document.getElementById("vtp-prev");
+      const next = document.getElementById("vtp-next");
+      const searchInput = document.getElementById("vtp-search");
+      const searchClear = document.getElementById("vtp-search-clear");
+      const countriesJsonEl = document.getElementById("vtp-countries-data");
+
+      // If critical elements are missing, log details but try to attach search input handlers when available.
+      const missing = [];
+      if (!track) missing.push("#vtp-slider .slider-track");
+      if (!dotsWrap) missing.push("#vtp-dots");
+      if (!prev) missing.push("#vtp-prev");
+      if (!next) missing.push("#vtp-next");
+      if (!countriesJsonEl) missing.push("#vtp-countries-data");
+      if (missing.length) {
+        console.warn(
+          "vtp:init - missing DOM elements (partial functionality). Missing:",
+          missing.join(", "),
+        );
+      }
+
+      // continue only if countries data exists — otherwise attach search handlers only
+      if (!countriesJsonEl) {
+        // attach search listeners as far as possible and exit
+        if (searchInput) {
+          console.info(
+            "vtp:init - countries JSON missing; attaching search-only listeners",
+          );
+          attachSearchListenersFallback();
+        }
+        return;
+      }
+
+      let ORIGINAL_COUNTRIES = [];
+      try {
+        const raw = countriesJsonEl.textContent?.trim();
+        if (raw) {
+          ORIGINAL_COUNTRIES = JSON.parse(raw);
+        } else {
+          // fallback: some engines/html-encoders may have escaped the JSON into innerHTML
+          const html =
+            countriesJsonEl.innerHTML || countriesJsonEl.innerText || "";
+          const decoded = html
+            .replace(/&quot;/g, '"')
+            .replace(/&amp;/g, "&")
+            .replace(/&lt;/g, "<")
+            .replace(/&gt;/g, ">");
+          ORIGINAL_COUNTRIES = decoded ? JSON.parse(decoded) : [];
+        }
+      } catch (err) {
+        console.error(
+          "vtp:parse countries JSON failed — content:",
+          countriesJsonEl.innerHTML.slice(0, 200),
+          err,
+        );
+        ORIGINAL_COUNTRIES = [];
+      }
+      console.debug &&
+        console.debug("vtp:init countries", ORIGINAL_COUNTRIES.length);
+      window.__vtpDebug = Object.assign(window.__vtpDebug || {}, {
+        countriesCount: ORIGINAL_COUNTRIES.length,
+      });
+
+      // hide the server-rendered full list only when JS initialized correctly
+      const fullListEl = document.getElementById("vtp-full-list");
+      if (fullListEl) fullListEl.style.display = "none";
+
+      let visibleCountries = ORIGINAL_COUNTRIES.slice();
+      let slides = [];
+      let current = 0;
+
+      const debounce = (fn, ms) => {
+        let t;
+        return (...args) => {
+          clearTimeout(t);
+          t = setTimeout(() => {
+            try {
+              fn(...args);
+            } catch (err) {
+              console.error("vtp:search handler error", err);
+            }
+          }, ms);
+        };
+      };
+
+      function stripDiacritics(s) {
+        try {
+          if (String.prototype.normalize) {
+            // NFD + remove combining marks (widely supported range)
+            return String(s)
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "");
+          }
+        } catch (err) {
+          /* ignore and fallback */
+        }
+        return String(s).replace(/[\u0300-\u036f]/g, "");
+      }
+      function normalize(q) {
+        return stripDiacritics(String(q || "").toLowerCase()).trim();
+      }
+
+      function chunk(arr, size) {
+        const out = [];
+        for (let i = 0; i < arr.length; i += size)
+          out.push(arr.slice(i, i + size));
+        return out;
+      }
+
+      function createCountryItem(item, highlight) {
+        const li = document.createElement("li");
+        li.className =
+          "group -my-1 rounded-md px-2 py-1 transition-all duration-150 hover:translate-x-0.5 hover:bg-slate-50 motion-safe:transform-gpu motion-reduce:transform-none";
+        const a = document.createElement("a");
+        a.className = "block w-full text-blue-600 hover:underline";
+        a.href = item.url;
+        if (highlight) {
+          // insert highlighted HTML safely (we control content source)
+          const safe = String(item.title).replace(
+            new RegExp(highlight, "ig"),
+            (m) =>
+              `<mark class="bg-yellow-100 text-yellow-800 rounded-sm px-0.5">${m}</mark>`,
+          );
+          a.innerHTML = safe;
+        } else {
+          a.textContent = item.title;
+        }
+        li.appendChild(a);
+        return li;
+      }
+
+      function createSlideNode(slideArray, highlight) {
+        const outer = document.createElement("div");
+        outer.className = "w-full min-w-full py-2";
+        const grid = document.createElement("div");
+        grid.className = "grid grid-cols-3 gap-10";
+        for (let col = 0; col < COLUMNS_PER_SLIDE; col++) {
+          const ul = document.createElement("ul");
+          ul.className = "space-y-3";
+          const start = col * ROWS_PER_COLUMN;
+          const colItems = slideArray.slice(start, start + ROWS_PER_COLUMN);
+          colItems.forEach((it) =>
+            ul.appendChild(createCountryItem(it, highlight)),
+          );
+          grid.appendChild(ul);
+        }
+        outer.appendChild(grid);
+        return outer;
+      }
+
+      /* Attach search listeners safely (used as fallback when partial DOM exists) */
+      function attachSearchListenersFallback() {
+        if (!searchInput) return;
+        try {
+          if (!searchInput._vtpAttached) {
+            const attachOnce = (evt) => {
+              const handler = (e) => {
+                if (typeof onSearch === "function") return onSearch(e);
+                // if handler not ready yet, retry shortly
+                setTimeout(() => {
+                  if (typeof onSearch === "function") onSearch(e);
+                }, 50);
+              };
+              searchInput.addEventListener(evt, handler);
+            };
+            attachOnce("input");
+            attachOnce("keyup");
+            attachOnce("search");
+            searchInput._vtpAttached = true;
+          }
+          if (searchClear && !searchClear._vtpAttached) {
+            searchClear.addEventListener("click", () => {
+              searchInput.value = "";
+              if (typeof onSearch === "function") onSearch();
+              else
+                setTimeout(() => {
+                  if (typeof onSearch === "function") onSearch();
+                }, 50);
+              searchInput.focus();
+            });
+            searchClear._vtpAttached = true;
+          }
+          // if there's an initial value, trigger filter (defer if handler not ready)
+          if (searchInput.value) {
+            if (typeof onSearch === "function") onSearch();
+            else
+              setTimeout(() => {
+                if (typeof onSearch === "function") onSearch();
+              }, 50);
+          }
+        } catch (err) {
+          console.error("vtp:attachSearchListenersFallback error", err);
+        }
+      }
+
+      function renderSlidesFromCountries(list, highlight = null) {
+        console.debug &&
+          console.debug("vtp:renderSlidesFromCountries start", {
+            requested: list.length,
+          });
+        slides = chunk(list, ITEMS_PER_SLIDE);
+        track.innerHTML = "";
+        dotsWrap.innerHTML = "";
+
+        if (slides.length === 0) {
+          const msg = document.createElement("div");
+          msg.setAttribute("role", "status");
+          msg.className = "py-8 text-center text-sm text-gray-600";
+          msg.textContent =
+            searchInput && searchInput.value
+              ? IS_ES
+                ? `No se encontraron países para "${searchInput.value}"`
+                : `No countries found for "${searchInput.value}"`
+              : IS_ES
+                ? "No hay países disponibles"
+                : "No countries available";
+          track.appendChild(msg);
+          return;
+        }
+
+        slides.forEach((s, si) => {
+          const node = createSlideNode(s, highlight);
+          node.setAttribute("data-slide-index", String(si));
+          track.appendChild(node);
+
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className =
+            "vtp-dot focus:ring-primary-500 flex h-8 w-8 transform transform-gpu cursor-pointer items-center justify-center rounded-full transition-all duration-200 will-change-transform bg-gray-100 text-gray-700 hover:scale-105 hover:bg-gray-200 hover:brightness-95 focus:ring-2 focus:ring-offset-2 focus:outline-none";
+          btn.setAttribute("data-index", String(si));
+          btn.setAttribute(
+            "aria-label",
+            `${IS_ES ? "Página" : "Page"} ${si + 1}`,
+          );
+          btn.innerHTML = `<span class="text-sm">${si + 1}</span>`;
+          btn.addEventListener("click", () => {
+            current = si;
+            update();
+            btn.focus();
+          });
+          dotsWrap.appendChild(btn);
+        });
+
+        // defensive: if dots weren't rendered for any reason, synthesize them after loop
+        if (dotsWrap.children.length === 0 && slides.length > 0) {
+          console.warn("vtp:render - dots missing after render, synthesizing");
+          slides.forEach((_, si) => {
+            const btn = document.createElement("button");
+            btn.type = "button";
+            btn.className =
+              "vtp-dot h-8 w-8 rounded-full bg-gray-100 text-gray-700";
+            btn.dataset.index = String(si);
+            btn.innerHTML = `<span class="text-sm">${si + 1}</span>`;
+            btn.addEventListener("click", () => {
+              current = si;
+              update();
+            });
+            dotsWrap.appendChild(btn);
+          });
+        }
+      }
+
+      function setDotVisual(dot, isActive) {
+        // toggle a dedicated class and also swap Tailwind utility classes so the
+        // active state wins over the default (bg-gray-100) styling regardless
+        // of stylesheet order.
+        dot.classList.toggle("vtp-dot--active", isActive);
+
+        if (isActive) {
+          dot.classList.remove("bg-gray-100", "text-gray-700");
+          dot.classList.add(
+            "bg-blue-600",
+            "text-white",
+            "scale-110",
+            "shadow-md",
+          );
+        } else {
+          dot.classList.remove(
+            "bg-blue-600",
+            "text-white",
+            "scale-110",
+            "shadow-md",
+          );
+          dot.classList.add("bg-gray-100", "text-gray-700");
+        }
+
+        dot.setAttribute("aria-current", isActive ? "true" : "false");
+        dot.setAttribute("aria-pressed", isActive ? "true" : "false");
+
+        if (isActive) {
+          if (!dot.querySelector(".sr-only")) {
+            const s = document.createElement("span");
+            s.className = "sr-only";
+            s.textContent = ` — ${IS_ES ? "página actual" : "current page"}`;
+            dot.appendChild(s);
+          }
+        } else {
+          const sr = dot.querySelector(".sr-only");
+          if (sr) sr.remove();
+        }
+      }
+
+      function update() {
+        const total = slides.length;
+        if (current < 0) current = 0;
+        if (current >= total) current = Math.max(0, total - 1);
+        track.style.transform = `translateX(-${current * 100}%)`;
+        const dots = Array.from(dotsWrap.querySelectorAll(".vtp-dot"));
+        dots.forEach((d, i) => setDotVisual(d, i === current));
+        prev.setAttribute(
+          "aria-label",
+          `${IS_ES ? "Anterior — página" : "Previous — page"} ${current === 0 ? total : current}`,
+        );
+        next.setAttribute(
+          "aria-label",
+          `${IS_ES ? "Siguiente — página" : "Next — page"} ${current + 2 > total ? 1 : current + 2}`,
+        );
+      }
+
+      function performFilter(q) {
+        const nq = normalize(q);
+        if (!nq) return ORIGINAL_COUNTRIES.slice();
+        return ORIGINAL_COUNTRIES.filter((c) =>
+          normalize(c.title).includes(nq),
+        );
+      }
+
+      // enhanced search handler: debounced, logs for debugging and returns the match token for highlighting
+      const onSearch = debounce(() => {
+        try {
+          const q = searchInput && searchInput.value ? searchInput.value : "";
+          const token = normalize(q);
+          visibleCountries = performFilter(q);
+          renderSlidesFromCountries(visibleCountries, token || null);
+          current = 0;
+          update();
+          if (searchClear) searchClear.hidden = !q;
+          // small debug hook (will not break in production)
+          if (window && window.__vtpDebug)
+            console.debug("vtp:filter", {
+              q,
+              visible: visibleCountries.length,
+            });
+        } catch (err) {
+          console.error("vtp:onSearch error", err);
+        }
+      }, DEBOUNCE_MS);
+
+      // Attach listeners robustly and provide fallbacks
+      (function attachSearch() {
+        if (!searchInput) return;
+        // guard: avoid duplicate listeners
+        if (!searchInput._vtpAttached) {
+          searchInput.addEventListener("input", onSearch);
+          searchInput.addEventListener("keyup", onSearch);
+          searchInput.addEventListener("search", onSearch);
+          searchInput._vtpAttached = true;
+        }
+
+        if (searchClear && !searchClear._vtpAttached) {
+          searchClear.addEventListener("click", () => {
+            try {
+              searchInput.value = "";
+              onSearch();
+              searchInput.focus();
+            } catch (err) {
+              console.error(err);
+            }
+          });
+          searchClear._vtpAttached = true;
+        }
+
+        // trigger initial filter if input already has value (server-populated, etc.)
+        if (searchInput.value) onSearch();
+      })();
+
+      if (searchInput) {
+        searchInput.addEventListener("input", onSearch);
+        searchInput.addEventListener("search", onSearch);
+      }
+      if (searchClear)
+        searchClear.addEventListener("click", () => {
+          if (!searchInput) return;
+          searchInput.value = "";
+          searchInput.dispatchEvent(new Event("input"));
+          searchInput.focus();
+        });
+
+      prev.addEventListener("click", () => {
+        current = (current - 1 + slides.length) % slides.length;
+        update();
+      });
+      next.addEventListener("click", () => {
+        current = (current + 1) % slides.length;
+        update();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") prev.click();
+        if (e.key === "ArrowRight") next.click();
+      });
+
+      visibleCountries = ORIGINAL_COUNTRIES.slice();
+      renderSlidesFromCountries(visibleCountries, null);
+      current = 0;
+      update();
+      // sanity: log DOM counts after initial render
+      console.log("vtp:after-initial-render", {
+        trackChildren: track.children.length,
+        dots: dotsWrap.children.length,
+        visible: visibleCountries.length,
+      });
+
+      // expose a forceFilter helper for debugging in the console
+      window.__vtp = window.__vtp || {};
+      window.__vtp.forceFilter = (q) => {
+        const token = normalize(q || "");
+        const visible = performFilter(q || "");
+        renderSlidesFromCountries(visible, token || null);
+        current = 0;
+        update();
+        return { visible: visible.length, slides: slides.length };
+      };
+
+      // fallback: event-delegate clicks on dotsWrap (works even if buttons are added later)
+      if (dotsWrap && !dotsWrap._vtpDelegation) {
+        dotsWrap.addEventListener("click", (e) => {
+          const btn = e.target.closest && e.target.closest(".vtp-dot");
+          if (!btn) return;
+          const idx = Number(btn.getAttribute("data-index"));
+          if (!Number.isNaN(idx)) {
+            current = idx;
+            update();
+            btn.focus();
+          }
+        });
+        dotsWrap._vtpDelegation = true;
+      }
+
+      // expose for debugging (dev only)
+      // window.__vtp = { renderSlidesFromCountries, performFilter };
+    } catch (err) {
+      console.error("vtp:unhandled error", err);
+    }
+  })();
+</script>
