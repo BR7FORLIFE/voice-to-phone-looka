@@ -5,6 +5,8 @@ customSlug: "españa"
 description: "Obtén tu número virtual o DID de España y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de España."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/españa/es"
+
+continent: "europe"
 ---
 
 # Número de Teléfono Virtual de España

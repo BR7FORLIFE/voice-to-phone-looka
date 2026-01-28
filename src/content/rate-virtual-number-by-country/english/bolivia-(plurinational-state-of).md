@@ -5,6 +5,8 @@ customSlug: "bolivia-(plurinational-state-of)"
 description: "Get your Bolivia (Plurinational State of) virtual phone and receive calls wherever you are, using your PC, smartphone or voip. Functional for whatsapp and to create your virtual Pbx of   ."
 date: 2026-01-11
 source: "https://www.voicetophone.com/virtual-number/bolivia-(plurinational-state-of)/en"
+
+continent: "south-america"
 ---
 
 # Bolivia (Plurinational State of) Virtual Phone Number

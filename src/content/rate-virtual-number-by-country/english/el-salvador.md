@@ -5,6 +5,8 @@ customSlug: "el-salvador"
 description: "Get your El Salvador virtual phone and receive calls wherever you are, using your PC, smartphone or voip. Functional for whatsapp and to create your virtual Pbx of   ."
 date: 2026-01-11
 source: "https://www.voicetophone.com/virtual-number/el-salvador/en"
+
+continent: "north-america"
 ---
 
 # El Salvador Virtual Phone Number

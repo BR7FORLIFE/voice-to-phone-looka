@@ -5,6 +5,8 @@ customSlug: "italia"
 description: "Obtén tu número virtual o DID de Italia y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Italia."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/italia/es"
+
+continent: "europe"
 ---
 
 # Número de Teléfono Virtual de Italia

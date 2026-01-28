@@ -5,6 +5,8 @@ customSlug: "ecuador"
 description: "Obtén tu número virtual o DID de Ecuador y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Ecuador."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/ecuador/es"
+
+continent: "south-america"
 ---
 
 # Número de Teléfono Virtual de Ecuador

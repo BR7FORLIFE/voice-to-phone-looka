@@ -5,6 +5,8 @@ customSlug: "cyprus"
 description: "Get your Cyprus virtual phone and receive calls wherever you are, using your PC, smartphone or voip. Functional for whatsapp and to create your virtual Pbx of   ."
 date: 2026-01-11
 source: "https://www.voicetophone.com/virtual-number/cyprus/en"
+
+continent: "europe"
 ---
 
 # Cyprus Virtual Phone Number

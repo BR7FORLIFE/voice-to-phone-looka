@@ -5,6 +5,8 @@ customSlug: "united-kingdom"
 description: "Get your United Kingdom virtual phone and receive calls wherever you are, using your PC, smartphone or voip. Functional for whatsapp and to create your virtual Pbx of   ."
 date: 2026-01-11
 source: "https://www.voicetophone.com/virtual-number/united-kingdom/en"
+
+continent: "other"
 ---
 
 # United Kingdom Virtual Phone Number

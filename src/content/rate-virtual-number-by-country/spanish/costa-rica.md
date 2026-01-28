@@ -5,6 +5,8 @@ customSlug: "costa-rica"
 description: "Obtén tu número virtual o DID de Costa Rica y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Costa Rica."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/costa-rica/es"
+
+continent: "north-america"
 ---
 
 # Número de Teléfono Virtual de Costa Rica

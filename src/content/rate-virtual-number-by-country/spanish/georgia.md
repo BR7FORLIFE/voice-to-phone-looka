@@ -5,6 +5,8 @@ customSlug: "georgia"
 description: "Obtén tu número virtual o DID de Georgia y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Georgia."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/georgia/es"
+
+continent: "europe"
 ---
 
 # Número de Teléfono Virtual de Georgia

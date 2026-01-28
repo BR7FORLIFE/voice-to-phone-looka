@@ -5,6 +5,8 @@ customSlug: "brasil"
 description: "Obtén tu número virtual o DID de Brasil y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Brasil."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/brasil/es"
+
+continent: "south-america"
 ---
 
 # Número de Teléfono Virtual de Brasil

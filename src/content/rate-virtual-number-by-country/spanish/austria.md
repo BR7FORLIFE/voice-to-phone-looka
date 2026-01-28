@@ -5,6 +5,8 @@ customSlug: "austria"
 description: "Obtén tu número virtual o DID de Austria y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Austria."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/austria/es"
+
+continent: "europe"
 ---
 
 # Número de Teléfono Virtual de Austria

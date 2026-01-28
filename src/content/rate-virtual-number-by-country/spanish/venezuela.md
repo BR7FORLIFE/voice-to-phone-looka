@@ -5,6 +5,8 @@ customSlug: "venezuela"
 description: "Obtén tu número virtual o DID de Venezuela y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Venezuela."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/venezuela/es"
+
+continent: "south-america"
 ---
 
 # Número de Teléfono Virtual de Venezuela

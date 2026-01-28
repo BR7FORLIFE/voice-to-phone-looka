@@ -5,6 +5,8 @@ customSlug: "mexico"
 description: "Obtén tu número virtual o DID de Mexico y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Mexico."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/mexico/es"
+
+continent: "north-america"
 ---
 
 # Número de Teléfono Virtual de Mexico

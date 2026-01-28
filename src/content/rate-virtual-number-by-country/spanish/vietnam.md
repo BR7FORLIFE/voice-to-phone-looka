@@ -5,6 +5,8 @@ customSlug: "vietnam"
 description: "Obtén tu número virtual o DID de Vietnam y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Vietnam."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/vietnam/es"
+
+continent: "asia"
 ---
 
 # Número de Teléfono Virtual de Vietnam

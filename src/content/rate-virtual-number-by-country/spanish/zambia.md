@@ -5,6 +5,8 @@ customSlug: "zambia"
 description: "Obtén tu número virtual o DID de Zambia y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Zambia."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/zambia/es"
+
+continent: "africa"
 ---
 
 # Número de Teléfono Virtual de Zambia

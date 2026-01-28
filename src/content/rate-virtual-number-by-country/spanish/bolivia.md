@@ -5,6 +5,8 @@ customSlug: "bolivia"
 description: "Obtén tu número virtual o DID de Bolivia y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Bolivia."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/bolivia/es"
+
+continent: "south-america"
 ---
 
 # Número de Teléfono Virtual de Bolivia

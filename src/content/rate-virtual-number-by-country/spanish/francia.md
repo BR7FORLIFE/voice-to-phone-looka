@@ -5,6 +5,8 @@ customSlug: "francia"
 description: "Obtén tu número virtual o DID de Francia y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Francia."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/francia/es"
+
+continent: "europe"
 ---
 
 # Número de Teléfono Virtual de Francia

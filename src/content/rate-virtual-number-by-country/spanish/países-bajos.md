@@ -5,6 +5,8 @@ customSlug: "países-bajos"
 description: "Obtén tu número virtual o DID de Países Bajos y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Países Bajos."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/países-bajos/es"
+
+continent: "europe"
 ---
 
 # Número de Teléfono Virtual de Países Bajos

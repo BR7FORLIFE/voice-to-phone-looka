@@ -5,6 +5,8 @@ customSlug: "numero-virtual"
 description: "Contrata números telefónicos virtuales DID fijos y móviles e incrementa las ventas de tu empresa. Voicetophone - Proveedor de teléfonos virtuales"
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/es"
+
+continent: "other"
 ---
 
 # Números Virtuales

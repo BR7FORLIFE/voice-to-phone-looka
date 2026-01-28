@@ -5,6 +5,8 @@ customSlug: "singapur"
 description: "Obtén tu número virtual o DID de Singapur y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Singapur."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/singapur/es"
+
+continent: "other"
 ---
 
 # Número de Teléfono Virtual de Singapur

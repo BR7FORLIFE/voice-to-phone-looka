@@ -5,6 +5,8 @@ customSlug: "argentina"
 description: "Get your Argentina virtual phone and receive calls wherever you are, using your PC, smartphone or voip. Functional for whatsapp and to create your virtual Pbx of   ."
 date: 2026-01-11
 source: "https://www.voicetophone.com/virtual-number/argentina/en"
+
+continent: "south-america"
 ---
 
 # Argentina Virtual Phone Number

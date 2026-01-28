@@ -5,6 +5,8 @@ customSlug: "corea-del-sur"
 description: "Obtén tu número virtual o DID de Corea del Sur y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Corea del Sur."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/corea-del-sur/es"
+
+continent: "asia"
 ---
 
 # Número de Teléfono Virtual de Corea del Sur

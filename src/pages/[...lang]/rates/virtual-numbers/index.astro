@@ -38,12 +38,22 @@ pages = pages.sort((a, b) =>
 );
 
 // Type helpers
-type Country = { id: string; title: string; url: string };
+type Country = {
+  id: string;
+  title: string;
+  url: string;
+  continent: string;
+  code?: string;
+};
 
 // --- Countries constant (sorted alphabetically) ---------------------------------
-const countries: Array<{ id: string; title: string; url: string }> = (
-  pages as any[]
-)
+const countries: Array<{
+  id: string;
+  title: string;
+  url: string;
+  continent: string;
+  code?: string;
+}> = (pages as any[])
   .map((p: any) => {
     const id = p.id;
     const title = (p.data?.title || "").trim();
@@ -60,6 +70,13 @@ const countries: Array<{ id: string; title: string; url: string }> = (
         `/rates/virtual-numbers/${slugSegment}/`,
         Astro.currentLocale,
       ),
+      // continent should be present in frontmatter (added via scripts/add-continent.mjs)
+      continent: (p.data?.continent as string) || "other",
+      // code: two-letter visual shorthand derived from slug (fallback to first letters of title)
+      code:
+        (slugSegment && slugSegment.slice(0, 2).toUpperCase()) ||
+        (title && title.slice(0, 2).toUpperCase()) ||
+        "--",
     };
   })
   .filter((c) => c.title)
@@ -89,31 +106,52 @@ const letters = (
   ) as string[]
 ).sort((a, b) => a.localeCompare(b, "es", { sensitivity: "base" }));
 
+// --- Continents (UI & server-side grouping) -----------------------------------
+const CONTINENT_ORDER = [
+  "europe",
+  "north-america",
+  "south-america",
+  "asia",
+  "africa",
+  "oceania",
+  "other",
+];
+
+const continentLabels: Record<string, string> = {
+  europe: Astro.currentLocale == "es" ? "Europa" : "Europe",
+  "north-america":
+    Astro.currentLocale == "es" ? "Norteamérica" : "North America",
+  "south-america": Astro.currentLocale == "es" ? "Sudamérica" : "South America",
+  asia: Astro.currentLocale == "es" ? "Asia" : "Asia",
+  africa: Astro.currentLocale == "es" ? "África" : "Africa",
+  oceania: Astro.currentLocale == "es" ? "Oceanía" : "Oceania",
+  other: Astro.currentLocale == "es" ? "Otros" : "Other",
+};
+
+const continents = Array.from(new Set(countries.map((c) => c.continent))).sort(
+  (a, b) => CONTINENT_ORDER.indexOf(a) - CONTINENT_ORDER.indexOf(b),
+);
+
 const rendered = (await (entry as any).render?.()) ?? { Content: null };
 const { Content } = rendered;
 ---
 
 <Base {...entry?.data}>
   <section>
-    <OptimizedImage
-      src="/images/rates/virtual-numbers-header.jpg"
-      alt="Virtual Numbers"
-      class="h-64 w-full object-cover"
-      width={1920}
-      height={400}
-      loading="lazy"
-    />
     <div class="container">
-      <div class="mx-auto max-w-5xl">
+      <div class="mx-auto max-w-5xl pb-12">
         {
           entry?.data?.title && (
-            <h1 class="text-4xl" set:html={entry?.data?.title} />
+            <h1
+              class="mx-auto text-center text-4xl font-semibold"
+              set:html={entry?.data?.title}
+            />
           )
         }
         {
           entry?.data?.description && (
             <p
-              class="mt-4 text-lg opacity-70"
+              class="mx-auto mt-4 w-2/3 text-center text-lg opacity-70"
               set:html={entry?.data?.description}
             />
           )
@@ -125,10 +163,6 @@ const { Content } = rendered;
 
         <div
           class="mt-12 mb-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <h2 class="col-span-full mb-4 text-2xl font-semibold">
-            {Astro.currentLocale == "es" ? "Países" : "Countries"}
-          </h2>
-
           <div class="col-span-full mx-auto w-[980px] max-w-full">
             <div class="relative">
               <!-- Search input (client-side filter) -->
@@ -169,6 +203,33 @@ const { Content } = rendered;
                     aria-controls="vtp-slider"
                   />
 
+                  <div
+                    class="mt-2 sm:absolute sm:top-1/2 sm:right-12 sm:mt-0 sm:-translate-y-1/2">
+                    <label for="vtp-continent-select" class="sr-only">
+                      {
+                        Astro.currentLocale == "es"
+                          ? "Seleccionar continente"
+                          : "Select continent"
+                      }
+                    </label>
+                    <select
+                      id="vtp-continent-select"
+                      class="focus:ring-primary-500 rounded-md border border-gray-200 bg-white px-3 py-2 text-sm shadow-sm focus:ring-2 focus:outline-none">
+                      <option value="all">
+                        {
+                          Astro.currentLocale == "es"
+                            ? "Todos los continentes"
+                            : "All continents"
+                        }
+                      </option>
+                      {
+                        continents.map((c) => (
+                          <option value={c}>{continentLabels[c] || c}</option>
+                        ))
+                      }
+                    </select>
+                  </div>
+
                   <button
                     id="vtp-search-clear"
                     type="button"
@@ -192,6 +253,9 @@ const { Content } = rendered;
                 </div>
               </div>
 
+              <h2 class="col-span-full mb-4 text-2xl font-semibold">
+                {Astro.currentLocale == "es" ? "Países" : "Countries"}
+              </h2>
               <div
                 id="vtp-slider"
                 class="overflow-hidden"
@@ -232,26 +296,83 @@ const { Content } = rendered;
                 </div>
               </div>
 
-              <!-- Full-list fallback (server-rendered). Visible unless JS hides it on successful init -->
+              <!-- Full-list fallback (server-rendered) grouped by continent -->
               <div
                 id="vtp-full-list"
                 class="mt-6 border-t pt-4 text-sm text-gray-700"
                 role="region"
                 aria-label="Lista completa de países">
-                <ul
-                  class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-                  {
-                    countries.map((c) => (
-                      <li>
-                        <a
-                          href={c.url}
-                          class="block py-1 text-blue-600 hover:underline">
-                          {c.title}
-                        </a>
-                      </li>
-                    ))
-                  }
-                </ul>
+                {
+                  // Centered cards layout per continent (visual: two-column on small, 3 on md, 4 on lg)
+                  CONTINENT_ORDER.map((contKey) => {
+                    const items = countries.filter(
+                      (c) => c.continent === contKey,
+                    );
+                    if (!items || items.length === 0) return null;
+                    return (
+                      <div class="mb-10">
+                        <h3 class="mb-6 flex items-center gap-3 text-2xl font-semibold">
+                          <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-blue-50 text-blue-600">
+                            🌐
+                          </span>
+                          {continentLabels[contKey]}
+                        </h3>
+
+                        <div class="mx-auto max-w-5xl">
+                          <ul class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4">
+                            {items.map((c) => (
+                              <li>
+                                <a
+                                  href={c.url}
+                                  class="vtp-country-card group focus:ring-primary-500 block rounded-lg border border-gray-100 bg-white p-4 shadow-sm transition-shadow duration-150 hover:shadow-md focus:ring-2 focus:outline-none">
+                                  <div class="flex items-center gap-3">
+                                    <div class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-slate-50 text-lg font-semibold text-slate-700">
+                                      {c.code}
+                                    </div>
+                                    <div class="min-w-0">
+                                      <div class="truncate text-lg font-semibold text-slate-900">
+                                        {c.title}
+                                      </div>
+                                      <div class="mt-1 text-sm text-slate-500">
+                                        {Astro.currentLocale == "es"
+                                          ? "Desde"
+                                          : "From"}{" "}
+                                        <span class="font-medium text-slate-800">
+                                          ${7}
+                                        </span>
+                                        /
+                                        <span class="text-sm">
+                                          {Astro.currentLocale == "es"
+                                            ? "mes"
+                                            : "mo"}
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <div class="ml-auto hidden items-center text-slate-400 group-hover:text-slate-600 md:flex">
+                                      <svg
+                                        class="h-5 w-5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          stroke-width="2"
+                                          d="M9 5l7 7-7 7"
+                                        />
+                                      </svg>
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    );
+                  })
+                }
               </div>
 
               <nav
@@ -360,14 +481,24 @@ const { Content } = rendered;
     box-shadow: 0 14px 40px rgba(2, 6, 23, 0.18);
     border: none;
   }
+
+  /* Country card styles */
+  .vtp-country-card .truncate {
+    display: block;
+  }
+  .vtp-country-card:focus {
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.14);
+  }
 </style>
 
 <!-- countries JSON moved out of main markup (keeps DOM clean) -->
-<script
+<div
   id="vtp-countries-data"
-  type="application/json"
-  set:html={JSON.stringify(countries)}
-/>
+  data-json={encodeURIComponent(JSON.stringify(countries))}
+  data-count={countries.length}
+  style="display:none"
+  aria-hidden="true">
+</div>
 
 <script type="module">
   (function () {
@@ -392,6 +523,13 @@ const { Content } = rendered;
       const searchInput = document.getElementById("vtp-search");
       const searchClear = document.getElementById("vtp-search-clear");
       const countriesJsonEl = document.getElementById("vtp-countries-data");
+      const continentSelect = document.getElementById("vtp-continent-select");
+      console.log(
+        "vtp:dataset.count",
+        countriesJsonEl &&
+          countriesJsonEl.dataset &&
+          countriesJsonEl.dataset.count,
+      );
 
       // If critical elements are missing, log details but try to attach search input handlers when available.
       const missing = [];
@@ -420,38 +558,141 @@ const { Content } = rendered;
       }
 
       let ORIGINAL_COUNTRIES = [];
+      // Declare outside the try so logs and later code can access it safely
+      let rawCandidates = [];
       try {
-        const raw = countriesJsonEl.textContent?.trim();
-        if (raw) {
-          ORIGINAL_COUNTRIES = JSON.parse(raw);
+        // Try several strategies to read the JSON safely and be resilient to
+        // HTML escaping or encoding issues produced by the template engine.
+        if (
+          countriesJsonEl &&
+          countriesJsonEl.dataset &&
+          countriesJsonEl.dataset.json
+        ) {
+          try {
+            rawCandidates.push(
+              decodeURIComponent(countriesJsonEl.dataset.json),
+            );
+          } catch (e) {
+            rawCandidates.push(countriesJsonEl.dataset.json);
+          }
+        }
+
+        // Fallback to normal candidates
+        rawCandidates.push(
+          countriesJsonEl.textContent,
+          countriesJsonEl.innerText,
+          countriesJsonEl.innerHTML,
+        );
+        // normalize
+        for (let i = 0; i < rawCandidates.length; i++)
+          rawCandidates[i] =
+            typeof rawCandidates[i] === "string" ? rawCandidates[i].trim() : "";
+
+        console.debug &&
+          console.debug(
+            "vtp:rawCandidates lengths",
+            rawCandidates.map((s) => s.length),
+          );
+
+        // Helper: decode HTML entities via DOM
+        const decodeHtmlEntities = (s) => {
+          try {
+            const ta = document.createElement("textarea");
+            ta.innerHTML = s;
+            return ta.value;
+          } catch (e) {
+            return s;
+          }
+        };
+
+        let parsed = null;
+        for (const candidate of rawCandidates) {
+          if (!candidate) continue;
+          // Attempt 1: direct parse
+          try {
+            parsed = JSON.parse(candidate);
+            break;
+          } catch (e) {
+            // Attempt 2: decode HTML entities then parse
+            try {
+              const decoded = decodeHtmlEntities(candidate)
+                .replace(/&quot;/g, '"')
+                .replace(/&amp;/g, "&")
+                .replace(/&lt;/g, "<")
+                .replace(/&gt;/g, ">")
+                .trim();
+              parsed = JSON.parse(decoded);
+              break;
+            } catch (err2) {
+              // Attempt 3: try to unescape common sequences (double-encoding)
+              try {
+                const unescaped = candidate
+                  .replace(/\\&quot;/g, '"')
+                  .replace(/\\n/g, "\\n")
+                  .replace(/\\\"/g, '"')
+                  .trim();
+                parsed = JSON.parse(unescaped);
+                break;
+              } catch (err3) {
+                // keep trying with other candidates
+              }
+            }
+          }
+        }
+
+        if (Array.isArray(parsed)) {
+          ORIGINAL_COUNTRIES = parsed;
         } else {
-          // fallback: some engines/html-encoders may have escaped the JSON into innerHTML
-          const html =
-            countriesJsonEl.innerHTML || countriesJsonEl.innerText || "";
-          const decoded = html
-            .replace(/&quot;/g, '"')
-            .replace(/&amp;/g, "&")
-            .replace(/&lt;/g, "<")
-            .replace(/&gt;/g, ">");
-          ORIGINAL_COUNTRIES = decoded ? JSON.parse(decoded) : [];
+          console.warn(
+            "vtp:parsed countries is not an array or was empty",
+            parsed,
+          );
+          ORIGINAL_COUNTRIES = [];
         }
       } catch (err) {
         console.error(
-          "vtp:parse countries JSON failed — content:",
-          countriesJsonEl.innerHTML.slice(0, 200),
+          "vtp:parse countries JSON failed — sample:",
+          (
+            countriesJsonEl &&
+            (countriesJsonEl.innerHTML || countriesJsonEl.innerText || "")
+          ).slice(0, 200),
           err,
         );
         ORIGINAL_COUNTRIES = [];
       }
-      console.debug &&
-        console.debug("vtp:init countries", ORIGINAL_COUNTRIES.length);
+
+      // Diagnostic logging (always use console.log so messages are visible in
+      // filtered dev consoles) and expose to debugging object.
+      console.log(
+        "vtp:rawCandidates sample lengths",
+        rawCandidates.map((s) => s.length),
+      );
+      // show a small sample (first non-empty candidate) to help debug encoding issues
+      const sampleCandidate =
+        rawCandidates.find((s) => s && s.length > 0) || "";
+      console.log("vtp:raw sample", sampleCandidate.slice(0, 200));
+
+      console.log("vtp:initial countries count", ORIGINAL_COUNTRIES.length);
       window.__vtpDebug = Object.assign(window.__vtpDebug || {}, {
         countriesCount: ORIGINAL_COUNTRIES.length,
+        parsedPreview:
+          (ORIGINAL_COUNTRIES && ORIGINAL_COUNTRIES.slice(0, 6)) || [],
       });
 
-      // hide the server-rendered full list only when JS initialized correctly
+      // Only hide the server-rendered full-list if parsing produced countries
       const fullListEl = document.getElementById("vtp-full-list");
-      if (fullListEl) fullListEl.style.display = "none";
+      if (fullListEl) {
+        if (ORIGINAL_COUNTRIES.length > 0) {
+          console.log(
+            "vtp:init - parsed countries; hiding server-rendered full list",
+          );
+          fullListEl.style.display = "none";
+        } else {
+          console.warn(
+            "vtp:init - no countries parsed; leaving server-rendered full list visible as fallback",
+          );
+        }
+      }
 
       let visibleCountries = ORIGINAL_COUNTRIES.slice();
       let slides = [];
@@ -559,6 +800,7 @@ const { Content } = rendered;
           if (searchClear && !searchClear._vtpAttached) {
             searchClear.addEventListener("click", () => {
               searchInput.value = "";
+              if (continentSelect) continentSelect.value = "all";
               if (typeof onSearch === "function") onSearch();
               else
                 setTimeout(() => {
@@ -707,10 +949,16 @@ const { Content } = rendered;
 
       function performFilter(q) {
         const nq = normalize(q);
-        if (!nq) return ORIGINAL_COUNTRIES.slice();
-        return ORIGINAL_COUNTRIES.filter((c) =>
-          normalize(c.title).includes(nq),
-        );
+        const continent = (continentSelect && continentSelect.value) || "all";
+        let results = !nq
+          ? ORIGINAL_COUNTRIES.slice()
+          : ORIGINAL_COUNTRIES.filter((c) => normalize(c.title).includes(nq));
+        if (continent && continent !== "all") {
+          results = results.filter(
+            (c) => (c.continent || "other") === continent,
+          );
+        }
+        return results;
       }
 
       // enhanced search handler: debounced, logs for debugging and returns the match token for highlighting
@@ -749,6 +997,7 @@ const { Content } = rendered;
           searchClear.addEventListener("click", () => {
             try {
               searchInput.value = "";
+              if (continentSelect) continentSelect.value = "all";
               onSearch();
               searchInput.focus();
             } catch (err) {
@@ -756,6 +1005,17 @@ const { Content } = rendered;
             }
           });
           searchClear._vtpAttached = true;
+        }
+
+        if (continentSelect && !continentSelect._vtpAttached) {
+          continentSelect.addEventListener("change", () => {
+            try {
+              if (typeof onSearch === "function") onSearch();
+            } catch (err) {
+              console.error(err);
+            }
+          });
+          continentSelect._vtpAttached = true;
         }
 
         // trigger initial filter if input already has value (server-populated, etc.)
@@ -770,6 +1030,7 @@ const { Content } = rendered;
         searchClear.addEventListener("click", () => {
           if (!searchInput) return;
           searchInput.value = "";
+          if (continentSelect) continentSelect.value = "all";
           searchInput.dispatchEvent(new Event("input"));
           searchInput.focus();
         });

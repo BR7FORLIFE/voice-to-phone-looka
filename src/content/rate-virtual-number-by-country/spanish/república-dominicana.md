@@ -5,6 +5,8 @@ customSlug: "república-dominicana"
 description: "Obtén tu número virtual o DID de República Dominicana y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de República Dominicana."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/república-dominicana/es"
+
+continent: "other"
 ---
 
 # Número de Teléfono Virtual de República Dominicana

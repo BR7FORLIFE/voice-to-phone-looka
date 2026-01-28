@@ -5,6 +5,8 @@ customSlug: "poland"
 description: "Get your Poland virtual phone and receive calls wherever you are, using your PC, smartphone or voip. Functional for whatsapp and to create your virtual Pbx of   ."
 date: 2026-01-11
 source: "https://www.voicetophone.com/virtual-number/poland/en"
+
+continent: "europe"
 ---
 
 # Poland Virtual Phone Number

@@ -5,6 +5,8 @@ customSlug: "nueva-zelanda"
 description: "Obtén tu número virtual o DID de Nueva Zelanda y recibe llamadas estes donde estes, utilizando tu Pc, teléfono inteligente o voip. Funcional para whatsapp y para crear tu Pbx virtual de Nueva Zelanda."
 date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/nueva-zelanda/es"
+
+continent: "oceania"
 ---
 
 # Número de Teléfono Virtual de Nueva Zelanda

@@ -5,6 +5,8 @@ customSlug: "portugal"
 description: "Get your Portugal virtual phone and receive calls wherever you are, using your PC, smartphone or voip. Functional for whatsapp and to create your virtual Pbx of   ."
 date: 2026-01-11
 source: "https://www.voicetophone.com/virtual-number/portugal/en"
+
+continent: "europe"
 ---
 
 # Portugal Virtual Phone Number
