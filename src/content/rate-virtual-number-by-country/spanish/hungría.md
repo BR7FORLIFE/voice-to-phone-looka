@@ -7,6 +7,7 @@ date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/hungría/es"
 
 continent: "other"
+iso: "hu"
 ---
 
 # Número de Teléfono Virtual de Hungría

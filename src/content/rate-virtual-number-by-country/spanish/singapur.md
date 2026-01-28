@@ -7,6 +7,7 @@ date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/singapur/es"
 
 continent: "other"
+iso: "sg"
 ---
 
 # Número de Teléfono Virtual de Singapur

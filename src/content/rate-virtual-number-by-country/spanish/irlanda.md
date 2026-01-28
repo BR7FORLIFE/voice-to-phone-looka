@@ -7,6 +7,7 @@ date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/irlanda/es"
 
 continent: "other"
+iso: "ie"
 ---
 
 # Número de Teléfono Virtual de Irlanda

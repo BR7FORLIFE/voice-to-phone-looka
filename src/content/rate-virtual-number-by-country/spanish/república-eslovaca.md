@@ -7,6 +7,7 @@ date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/república-eslovaca/es"
 
 continent: "other"
+iso: "sk"
 ---
 
 # Número de Teléfono Virtual de República Eslovaca

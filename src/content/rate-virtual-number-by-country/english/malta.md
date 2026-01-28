@@ -7,6 +7,7 @@ date: 2026-01-11
 source: "https://www.voicetophone.com/virtual-number/malta/en"
 
 continent: "other"
+iso: "mt"
 ---
 
 # Malta Virtual Phone Number

@@ -7,6 +7,7 @@ date: 2026-01-11
 source: "https://www.voicetophone.com/virtual-number/spain/en"
 
 continent: "other"
+iso: "es"
 ---
 
 # Spain Virtual Phone Number

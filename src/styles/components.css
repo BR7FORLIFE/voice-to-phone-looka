@@ -370,6 +370,57 @@ footer {
 }
 
 /* Details styling */
+
+/* Voice-to-Phone Countries UI */
+.vtp-country-card {
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+.vtp-country-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+}
+.vtp-country-card .truncate {
+  display: block;
+}
+.vtp-country-card--compact {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+.vtp-country-card:focus {
+  box-shadow: 0 6px 24px rgba(37, 99, 235, 0.12);
+}
+.vtp-country-flag {
+  width: 28px;
+  height: 18px;
+  object-fit: cover;
+}
+.vtp-country-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: #f8fafc; /* slate-50 */
+  color: #374151; /* slate-700 */
+  font-weight: 600;
+}
+.vtp-country-price {
+  color: #374151;
+  font-weight: 600;
+}
+/* Results counter */
+#vtp-results {
+  font-size: 0.9rem;
+  color: #6b7280; /* text-gray-500 */
+}
+#vtp-results-count {
+  font-weight: 600;
+  color: #111827; /* text-gray-900 */
+}
+#vtp-results-filter {
+  color: #6b7280;
+}
 details {
   margin-bottom: 1rem;
   border: 1px solid #e5e7eb;

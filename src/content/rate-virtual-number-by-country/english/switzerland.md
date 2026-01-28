@@ -7,6 +7,7 @@ date: 2026-01-11
 source: "https://www.voicetophone.com/virtual-number/switzerland/en"
 
 continent: "other"
+iso: "ch"
 ---
 
 # Switzerland Virtual Phone Number

@@ -7,6 +7,7 @@ date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/letonia/es"
 
 continent: "other"
+iso: "lv"
 ---
 
 # Número de Teléfono Virtual de Letonia

@@ -7,6 +7,7 @@ date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/bahrein/es"
 
 continent: "other"
+iso: "bh"
 ---
 
 # Número de Teléfono Virtual de Bahrein

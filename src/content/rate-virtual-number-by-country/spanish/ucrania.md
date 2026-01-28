@@ -7,6 +7,7 @@ date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/ucrania/es"
 
 continent: "other"
+iso: "ua"
 ---
 
 # Número de Teléfono Virtual de Ucrania

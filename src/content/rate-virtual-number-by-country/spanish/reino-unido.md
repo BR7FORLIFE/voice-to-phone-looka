@@ -7,6 +7,7 @@ date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/reino-unido/es"
 
 continent: "other"
+iso: "gb"
 ---
 
 # Número de Teléfono Virtual de Reino Unido

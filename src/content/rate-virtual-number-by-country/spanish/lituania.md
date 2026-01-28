@@ -7,6 +7,7 @@ date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/lituania/es"
 
 continent: "other"
+iso: "lt"
 ---
 
 # Número de Teléfono Virtual de Lituania

@@ -7,6 +7,7 @@ date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/sudáfrica/es"
 
 continent: "other"
+iso: "za"
 ---
 
 # Número de Teléfono Virtual de Sudáfrica

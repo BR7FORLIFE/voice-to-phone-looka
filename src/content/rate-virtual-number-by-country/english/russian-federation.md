@@ -7,6 +7,7 @@ date: 2026-01-11
 source: "https://www.voicetophone.com/virtual-number/russian-federation/en"
 
 continent: "other"
+iso: "ru"
 ---
 
 # Russian Federation Virtual Phone Number

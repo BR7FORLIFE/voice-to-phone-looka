@@ -1,0 +1,75 @@
+---
+import CustomButton from "@/layouts/components/CustomButton.astro";
+
+interface Props {
+  title: string;
+  url: string;
+  iso?: string;
+  code?: string;
+  price?: number | string;
+  compact?: boolean;
+  locale?: string;
+}
+
+const {
+  title,
+  url,
+  iso,
+  code = "--",
+  price = 7,
+  compact = false,
+  locale = Astro.currentLocale,
+} = Astro.props as Props;
+const PRICE_LABEL = locale === "es" ? "Desde" : "From";
+---
+
+<a
+  href={url}
+  class={`vtp-country-card group focus:ring-primary-500 block rounded-lg border border-gray-100 bg-white p-4 shadow-sm transition-shadow duration-150 hover:shadow-lg hover:-translate-y-0.5 focus:ring-2 focus:outline-none ${compact ? "vtp-country-card--compact" : ""}`}>
+  <div class="flex items-center gap-3">
+    {
+      iso ? (
+        <img
+          src={`https://flagcdn.com/${(iso || "").toLowerCase()}.svg`}
+          alt={`${title} flag`}
+          role="img"
+          width="28"
+          height="18"
+          loading="lazy"
+          class="vtp-country-flag rounded-sm object-cover"
+          onerror={`this.remove(); this.insertAdjacentHTML('afterend', '<div class="vtp-country-badge inline-flex h-8 w-12 items-center justify-center rounded-sm bg-slate-50 text-sm font-semibold text-slate-700'>${code}</div>')`}
+        />
+      ) : (
+        <div class="vtp-country-badge inline-flex h-8 w-12 items-center justify-center rounded-sm bg-slate-50 text-sm font-semibold text-slate-700">
+          {code}
+        </div>
+      )
+    }
+
+    <div class="min-w-0 flex-1">
+      <div class="truncate text-lg font-semibold text-slate-900">{title}</div>
+      {
+        !compact && (
+          <div class="mt-1 text-sm text-slate-500">
+            {PRICE_LABEL}{" "}
+            <span class="font-medium text-slate-800">${price}</span>
+            <span class="text-sm">/{locale === "es" ? "mes" : "mo"}</span>
+          </div>
+        )
+      }
+    </div>
+
+    {
+      !compact && (
+        <div class="ml-auto hidden md:flex">
+          <CustomButton
+            label={locale === "es" ? "Ver" : "View"}
+            url={url}
+            variant="outline"
+            size="md"
+          />
+        </div>
+      )
+    }
+  </div>
+</a>

@@ -7,6 +7,7 @@ date: 2026-01-11
 source: "https://www.voicetophone.com/numero-virtual/república-checa/es"
 
 continent: "other"
+iso: "cz"
 ---
 
 # Número de Teléfono Virtual de República Checa
